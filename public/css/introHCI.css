@@ -51,3 +51,53 @@
 .likeCtr {
      text-align: center;
 }
+
+.top-header {
+     height: 100px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     display: table;
+     /*border-style: solid;*/
+     background-color: #ffcccc; 
+}
+
+.date-square {
+     height: 100px;
+     width: 100px;
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
+     border-style: solid;
+}
+
+.heading-theme {
+     height: 100px;
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
+     border-style: solid;
+}
+
+.main {
+     top: 100px;
+}
+
+.bottom-navbar {
+     height: 50px;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     display: table;
+     /*border-style: solid;*/
+     background-color: #ffcccc;
+}
+
+.col-5 {
+     height: 50px;
+     width: 20%;
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
+     border-style: solid;
+}
