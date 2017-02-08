@@ -3,8 +3,8 @@ repo
 
 Project Description
 
+Team Members
+====
+Siru A
 Irene Garcia
-=======
-
-Name: Siru A
-
+Tina Ke
