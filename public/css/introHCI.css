@@ -52,6 +52,15 @@
      text-align: center;
 }
 
+
+/***** CSS for Aware-A-Day starts here! *****/
+
+/* NOTE: this applies to EVERYTHING */
+body {
+      font: 20px Montserrat, sans-serif;
+}
+
+/* top-header will contain the date-square and heading-theme divs */
 .top-header {
      height: 100px;
      width: 100%;
@@ -60,9 +69,11 @@
      display: table;
      /*border-style: solid;*/
      background-color: #ffcccc; 
-     font-size: 20px;
+     /*font-size: 20px;*/
+     color: #f5f6f7;
 }
 
+/* square box that shows a short version of the date */
 .date-square {
      height: 100px;
      width: 100px;
@@ -74,9 +85,10 @@
      border-width: 1px;
      border-color: white;
      background-color: #ffcccc;
-     font-size: 180%;
+     /*font-size: 180%;*/
 }
 
+/* shows the theme of the day at the top */
 .heading-theme {
      height: 100px;
      display: table-cell;
@@ -87,17 +99,10 @@
      border-width: 1px;
      border-color: white;
      background-color: #ffcccc;
-     font-size: 150%;
+     /*font-size: 150%;*/
 }
 
-.main {
-     margin-top: 100px;
-     margin-bottom: 50px;
-     /*position: relative;*/
-     /*overflow-y: scroll;*/
-     padding: 20px;
-}
-
+/* the bottom navigation bar */
 .bottom-navbar {
      height: 50px;
      width: 100%;
@@ -108,6 +113,7 @@
      background-color: #ffcccc;
 }
 
+/* container for 5 buttons for the bottom-navbar */
 .col-5 {
      height: 50px;
      width: 20%;
@@ -121,6 +127,17 @@
      font-size: 80%;
 }
 
+/* the main container where content will be held */
+.main {
+     margin-top: 100px;
+     margin-bottom: 50px;
+     /*position: relative;*/
+     /*overflow-y: scroll;*/
+     padding: 20px;
+     line-height: 0.3;
+}
+
+/* HOME gets a special container for content */
 .home {
      margin-bottom: 50px;
      /*position: relative;*/
@@ -128,52 +145,14 @@
      padding: 20px;
 }
 
-body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 0.3;
-      color: #f5f6f7;
-  }
-.navbar {
-      padding-top: 0px;
-      padding-bottom: 0px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 18px;
-      letter-spacing: 5px;
-      z-index: 9999;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar .navbar-brand:hover, .navbar .active navbar-brand {
-      color: #f57381 !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #fff !important;
-      background-color: #f57381 !important;
-  }
-  .well{
-     color:black;
-     text-align: left;
-     background-color: pink;
-     transition: box-shadow 1s;  
-  }
-  .well:hover{
-     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  @media(max-width: 768px){
-          .well{
-               font-size: 15px;
-          }
-          .heading-theme{
-               font-size: 20px;
-          }
-       }
+.well{
+   color:black;
+   text-align: left;
+   background-color: pink;
+   transition: box-shadow 1s; 
+   font-size: 15px; 
+}
 
-     /* Add these lines in the header in order to apply the style of bootstrap
-     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
-     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-     <script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-     <script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-     */
+.well:hover{
+   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
