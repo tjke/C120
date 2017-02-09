@@ -67,10 +67,8 @@ body {
      position: fixed;
      top: 0;
      display: table;
-     /*border-style: solid;*/
-     background-color: #ffcccc; 
-     /*font-size: 20px;*/
-     color: #f5f6f7;
+     background-color: grey;
+     color: white;
 }
 
 /* square box that shows a short version of the date */
@@ -84,7 +82,7 @@ body {
      border-style: solid;
      border-width: 1px;
      border-color: white;
-     background-color: #ffcccc;
+     background-color: #4dc3ff; /* darker */
      /*font-size: 180%;*/
 }
 
@@ -98,7 +96,7 @@ body {
      border-style: solid;
      border-width: 1px;
      border-color: white;
-     background-color: #ffcccc;
+     background-color: #80d4ff;
      /*font-size: 150%;*/
 }
 
@@ -109,8 +107,16 @@ body {
      position: fixed;
      bottom: 0;
      display: table;
-     /*border-style: solid;*/
-     background-color: #ffcccc;
+     background-color: grey;
+     color: white;
+}
+
+.bottom-navbar a {
+     color: white;
+}
+
+.bottom-navbar a:hover {
+     text-decoration: none;
 }
 
 /* container for 5 buttons for the bottom-navbar */
@@ -124,7 +130,12 @@ body {
      border-style: solid;
      border-width: 1px;
      border-color: white;
+     background-color: #80d4ff;
      font-size: 80%;
+}
+
+.col-5:hover {
+     background-color: #4dc3ff; /* darker */
 }
 
 /* the main container where content will be held */
@@ -134,14 +145,11 @@ body {
      /*position: relative;*/
      /*overflow-y: scroll;*/
      padding: 20px;
-     line-height: 0.3;
 }
 
 /* HOME gets a special container for content */
 .home {
      margin-bottom: 50px;
-     /*position: relative;*/
-     /*overflow-y: scroll;*/
      padding: 20px;
 }
 
@@ -149,7 +157,8 @@ body {
    color:black;
    text-align: left;
    background-color: pink;
-   transition: box-shadow 1s; 
+   transition: box-shadow 1s;
+   line-height: 0.3;
    font-size: 15px; 
 }
 
