@@ -60,6 +60,7 @@
      display: table;
      /*border-style: solid;*/
      background-color: #ffcccc; 
+     font-size: 20px;
 }
 
 .date-square {
@@ -126,3 +127,53 @@
      /*overflow-y: scroll;*/
      padding: 20px;
 }
+
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 0.3;
+      color: #f5f6f7;
+  }
+.navbar {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 18px;
+      letter-spacing: 5px;
+      z-index: 9999;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar .navbar-brand:hover, .navbar .active navbar-brand {
+      color: #f57381 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #f57381 !important;
+  }
+  .well{
+     color:black;
+     text-align: left;
+     background-color: pink;
+     transition: box-shadow 1s;  
+  }
+  .well:hover{
+     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  @media(max-width: 768px){
+          .well{
+               font-size: 15px;
+          }
+          .heading-theme{
+               font-size: 20px;
+          }
+       }
+
+     /* Add these lines in the header in order to apply the style of bootstrap
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     */
