@@ -9,29 +9,30 @@
 	color: #CC00AA;
 }
 
-.jumbotron {
-	position: fixed;
+.date {
+	position: absolute;
      left: 0;
      top: 0%;
      width: 100%;
      text-align: center;
      /*left: 50px;*/
-	background: none;
+	background: #ffcccc;
 }
 
-.jumbotron:after {
+/*.date:after {
      content:"";
      background: blue;
      opacity: 0.9;
-     top: 25%;
+     top: 20%;
      left: 20%;
      bottom: 0;
      right: 20%;
      position: absolute;
-     z-index: -1;	
-}
+     z-index: -1;
+}*/
 
-.jumbotron p {
+.date p {
+     vertical-align: center;
      color: #6e6e6e;
 }
 .theme {
@@ -71,26 +72,16 @@
      text-align: center;
 }
 
-
-/***** CSS for Aware-A-Day starts here! *****/
-
-/* NOTE: this applies to EVERYTHING */
-body {
-      font: 20px Montserrat, sans-serif;
-}
-
-/* top-header will contain the date-square and heading-theme divs */
 .top-header {
      height: 100px;
      width: 100%;
      position: fixed;
      top: 0;
      display: table;
-     background-color: grey;
-     color: white;
+     /*border-style: solid;*/
+     background-color: #ffcccc; 
 }
 
-/* square box that shows a short version of the date */
 .date-square {
      height: 100px;
      width: 100px;
@@ -101,11 +92,10 @@ body {
      border-style: solid;
      border-width: 1px;
      border-color: white;
-     background-color: #4dc3ff; /* darker */
-     /*font-size: 180%;*/
+     background-color: #ffcccc;
+     font-size: 180%;
 }
 
-/* shows the theme of the day at the top */
 .heading-theme {
      height: 100px;
      display: table-cell;
@@ -115,30 +105,28 @@ body {
      border-style: solid;
      border-width: 1px;
      border-color: white;
-     background-color: #80d4ff;
-     /*font-size: 150%;*/
+     background-color: #ffcccc;
+     font-size: 150%;
 }
 
-/* the bottom navigation bar */
+.main {
+     margin-top: 100px;
+     margin-bottom: 50px;
+     /*position: relative;*/
+     /*overflow-y: scroll;*/
+     padding: 20px;
+}
+
 .bottom-navbar {
      height: 50px;
      width: 100%;
      position: fixed;
      bottom: 0;
      display: table;
-     background-color: grey;
-     color: white;
+     /*border-style: solid;*/
+     background-color: #ffcccc;
 }
 
-.bottom-navbar a {
-     color: white;
-}
-
-.bottom-navbar a:hover {
-     text-decoration: none;
-}
-
-/* container for 5 buttons for the bottom-navbar */
 .col-5 {
      height: 50px;
      width: 20%;
@@ -149,39 +137,12 @@ body {
      border-style: solid;
      border-width: 1px;
      border-color: white;
-     background-color: #80d4ff;
-     font-size: 70%;
+     font-size: 80%;
 }
 
-.col-5:hover {
-     background-color: #4dc3ff; /* darker */
-}
-
-/* the main container where content will be held */
-.main {
-     margin-top: 100px;
+.home {
      margin-bottom: 50px;
      /*position: relative;*/
      /*overflow-y: scroll;*/
      padding: 20px;
-}
-
-/* HOME gets a special container for content */
-.home {
-     margin-bottom: 50px;
-     padding: 20px;
-}
-
-.well{
-   color:black;
-   text-align: left;
-   background-color: pink;
-   transition: box-shadow 1s;
-   padding: 16px;
-   /*line-height: 0.3;*/
-   font-size: 15px; 
-}
-
-.well:hover{
-   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
