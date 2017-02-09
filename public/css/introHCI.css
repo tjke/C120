@@ -10,18 +10,23 @@
 }
 
 .jumbotron {
-	position: relative;
+	position: fixed;
+     left: 0;
+     top: 0%;
+     width: 100%;
+     text-align: center;
+     /*left: 50px;*/
 	background: none;
 }
 
 .jumbotron:after {
      content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
+     background: blue;
+     opacity: 0.9;
+     top: 25%;
+     left: 20%;
      bottom: 0;
-     right: 0;
+     right: 20%;
      position: absolute;
      z-index: -1;	
 }
@@ -29,7 +34,21 @@
 .jumbotron p {
      color: #6e6e6e;
 }
+.theme {
+     position: absolute;
+     left: 0;
+     top: 31%;
+     width: 100%;
+     text-align: center;
+}
 
+.day-description{
+     position: absolute;
+     left: 0;
+     top: 65%;
+     width: 100%;
+     text-align: center;
+}
 .project a {
      text-align: center;
 }
