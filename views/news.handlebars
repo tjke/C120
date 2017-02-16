@@ -9,9 +9,40 @@
   	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   	<script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<script type="text/javascript">
+	var newsData ;
+    /*function loadNews() {
+        var params = {
+            // Request parameters
+            "q": "microsoft",
+            "count": "8",
+            "offset": "0",
+            "mkt": "en-us",
+            "safeSearch": "Moderate",
+        };
+      
+        $.ajax({
+            url: "https://api.cognitive.microsoft.com/bing/v5.0/news/search?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","a07871d6e0834d1686b1971a820607dc");
+            },
+            type: "GET",
+            // Request body
+            data: "{body}",
+        })
+        .done(function(data) {
+            console.log("success");
+        })
+        .fail(function() {
+            console.log("error");
+        });
+    };*/
+</script>
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,7 +53,7 @@
     <![endif]-->        
 </head>
 
-<body>
+<body onload=loadNews()>
 		<!--<div class="jumbotron">
 			<h1>Michael Bernstein</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
@@ -44,7 +75,17 @@
 
 	<!-- main content of the page goes here -->
 	<div class="main">
-		News goes here!
+		{{#each news}}
+		<div>
+			<div class="left-image"><img src={{image.thumbnail.contentUrl}}></div>
+			<div>
+				<h3><a href={{url}}>{{name}}</a></h3>
+				<i>{{datePublished}}</i><br>
+				{{description}}
+			</div>
+		</div>
+		<hr>
+		{{/each}}
 	</div>
 
 	<!-- top header: shows date and teme -->

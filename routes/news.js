@@ -1,4 +1,5 @@
 var days = require('../days.json')['days'];
+var news = require('../tempNews.json')['value'];
 
 // month arrays
 var months = ["January","February","March","April","May","June","July","August","October","November","December"];
@@ -18,11 +19,13 @@ var day = days[0]; // default data
 exports.view = function(req, res){
 	setDayData();
 	console.log(day);
+	console.log(news);
 	var passData = {
   		"mon": mon,
   		"date": date,
   		"theme": theme,
-  		"category": category
+  		"category": category,
+  		"news": news
   	};
   	res.render('news', passData);
 };

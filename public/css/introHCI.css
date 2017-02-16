@@ -216,3 +216,8 @@
      /*overflow-y: scroll;*/
      padding: 20px;
 }
+
+.left-image {
+     float: left;
+     margin: 10px;
+}

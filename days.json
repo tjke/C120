@@ -7,6 +7,7 @@
 			"date": 1,
 			"theme": "Awareness Day",
 			"summary": "Let's be aware of a cause.",
+			"query": "awareness day",
 			"challenge": "Do something nice for today.",
 			"category": "other",
 			"orgs": [ {
@@ -28,6 +29,7 @@
 			"date": 10,
 			"theme": "National Umbrella Day",
 			"summary": "This day honors one of the world’s most useful inventions, the umbrella! Not only does the umbrella help keep us dry from the rain, but it also protects us from the heat of the sun.",
+			"query": "umbrella day",
 			"challenge": "Gift an umbrella to someone in the homeless community.",
 			"category": "other",
 			"orgs": [ {
@@ -49,6 +51,7 @@
 			"date": 17,
 			"theme": "Random Acts of Kindness Day",
 			"summary": "It is celebrated by individuals, groups and organizations nationwide to encourage acts of kindness.",
+			"query": "random acts of kindness",
 			"challenge": "Buy flowers for cashiers at grocery stores.",
 			"category": "kindness",
 			"orgs": [ {
