@@ -11,3 +11,23 @@
 
 }
 
+#completedbtn{
+	background: grey;
+	font-size: 16px;
+	padding: 18px;
+	outline: 0;
+}
+.button{
+	/*background-color: green;
+	border: none;
+	color: white;
+	padding: 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+*/
+}
+
