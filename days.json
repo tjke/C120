@@ -1,0 +1,32 @@
+{
+	"days": 
+	[
+		{
+			"id": 0,
+			"month": "Month",
+			"date": 1,
+			"theme": "Awareness Day",
+			"summary": "Let's be aware of a cause.",
+			"challenge": "Do something nice for today.",
+			"category": "other"
+		},
+		{
+			"id": 1,
+			"month": "February",
+			"date": 10,
+			"theme": "National Umbrella Day",
+			"summary": "This day honors one of the world’s most useful inventions, the umbrella! Not only does the umbrella help keep us dry from the rain, but it also protects us from the heat of the sun.",
+			"challenge": "Gift an umbrella to someone in the homeless community.",
+			"category": "other"
+		},
+		{
+			"id": 2,
+			"month": "February",
+			"date": 17,
+			"theme": "Random Acts of Kindness Day",
+			"summary": "Let's be aware of a cause (kindness).",
+			"challenge": "Do an act of kindness for someone.",
+			"category": "kindness"
+		}
+	]
+}
