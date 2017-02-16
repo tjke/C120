@@ -76,23 +76,26 @@
 		</div>
 		<!--The list of organizations-->
 		<div class="list text-center">
-		<a href="http://www.goodwill.org/donate-and-shop/donate-stuff/"><div class="well well-lg">Goodwill Industries International, Inc.</div></a>
+		{{#each orgs}}
+		<a href={{orgURL}}><div class="well well-lg">{{orgName}}</div></a>
+		{{/each}}
+		<!--<a href="http://www.goodwill.org/donate-and-shop/donate-stuff/"><div class="well well-lg">Goodwill Industries International, Inc.</div></a>
 		<a href="http://salvationarmyusa.org/"><div class="well well-lg">The Salvation Army</div></a>
 		<a href="http://pickupplease.org/about-vva/"><div class="well well-lg">Vietnam Veterans of America</div></a>
 		<a href="http://friendsofpineridgereservation.org/projects/"><div class="well well-lg">Friends of Pine Ridge Reservation</div></a>
 		<a href="http://www.ucpsdthrift.org/how-to-donate-to-UCP-thrift-store.html?gclid=COLQxa7qgdICFQ9EfgodxtsMdQ"><div class="well well-lg">United Cerebral Palsy</div></a>
 		<a href="http://www.sdrescue.org/ways-to-give/donate-goods/"><div class="well well-lg">San Diego Rescue Mission</div></a>
-		<a href="http://umbrellanepal.org/"><div class="well well-lg">The Umbrella Foundation</div></a>
+		<a href="http://umbrellanepal.org/"><div class="well well-lg">The Umbrella Foundation</div></a>-->
 	</div>
 	</div>
 
 	<!-- top header: shows date and teme -->
 	<div class="top-header">
 		<div class="date-square">
-			Feb<br>10
+			{{mon}}<br>{{date}}
 		</div>
 		<div class="heading-theme">
-			National Umbrella Day
+			{{theme}}
 		</div>
 	</div>
 

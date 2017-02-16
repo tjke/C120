@@ -47,12 +47,13 @@
 	<div class="main">
 		<div class="challenge">
 		<h2>Today's Challenge is </h2>
-			<h3 id="challenge"> Gift an umbrella!</h3>
+			<h3 id="challenge"> {{challenge}}</h3>
 		</div>
-			<div class="challenge-description" style="text-align:left">
-			<p> About this challenge: </p>
+			<!--<div class="challenge-description" style="text-align:left">
+			<p> About this challenge: <p>
+>>>>>>> 55cbaf87fd2f80a14b3fc18ea428ec48d797031b
 				<p> Give an umbrella to a homeless or someone in need of one! </p>
-			</div>
+			</div>-->
 			<div class="completed">
 				<button id="completedbtn"> Challenge Completed!</button>
 				<!--<p> participants<span id="displayCount"> 0 </span> times. </p>-->
@@ -62,10 +63,10 @@
 	<!-- top header: shows date and teme -->
 	<div class="top-header">
 		<div class="date-square">
-			Feb<br>10
+			{{mon}}<br>{{date}}
 		</div>
 		<div class="heading-theme">
-			National Umbrella Day
+			{{theme}}
 		</div>
 	</div>
 
