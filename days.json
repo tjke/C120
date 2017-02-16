@@ -8,7 +8,19 @@
 			"theme": "Awareness Day",
 			"summary": "Let's be aware of a cause.",
 			"challenge": "Do something nice for today.",
-			"category": "other"
+			"category": "other",
+			"orgs": [ {
+				"orgName": "Organization 1",
+				"orgURL": "#"
+			},
+			{	
+				"orgName": "Organization 2",
+				"orgURL": "#"
+			},
+			{	
+				"orgName": "Organization 3",
+				"orgURL": "#"
+			}]
 		},
 		{
 			"id": 1,
@@ -17,7 +29,19 @@
 			"theme": "National Umbrella Day",
 			"summary": "This day honors one of the world’s most useful inventions, the umbrella! Not only does the umbrella help keep us dry from the rain, but it also protects us from the heat of the sun.",
 			"challenge": "Gift an umbrella to someone in the homeless community.",
-			"category": "other"
+			"category": "other",
+			"orgs": [ {
+				"orgName": "Goodwill Industries International, Inc.",
+				"orgURL": "http://www.goodwill.org/donate-and-shop/donate-stuff/"
+			},
+			{	
+				"orgName": "The Salvation Army",
+				"orgURL": "http://salvationarmyusa.org/"
+			},
+			{	
+				"orgName": "Vietnam Veterans of America",
+				"orgURL": "http://pickupplease.org/about-vva/"
+			}]
 		},
 		{
 			"id": 2,
@@ -26,7 +50,19 @@
 			"theme": "Random Acts of Kindness Day",
 			"summary": "It is celebrated by individuals, groups and organizations nationwide to encourage acts of kindness.",
 			"challenge": "Buy flowers for cashiers at grocery stores.",
-			"category": "kindness"
+			"category": "kindness",
+			"orgs": [ {
+				"orgName": "Think Kindness",
+				"orgURL": "http://thinkkindness.org/"
+			},
+			{	
+				"orgName": "Random Acts of Kindness Foundation",
+				"orgURL": "https://www.randomactsofkindness.org/"
+			},
+			{	
+				"orgName": "Random Acts",
+				"orgURL": "http://www.randomacts.org/"
+			}]
 		}
 	]
 }

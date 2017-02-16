@@ -12,6 +12,7 @@ var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
 var category = "other";
+var orgs = [];
 var day = days[0]; // default data
 
 
@@ -22,7 +23,8 @@ exports.view = function(req, res){
   		"mon": mon,
   		"date": date,
   		"theme": theme,
-  		"category": category
+  		"category": category,
+  		"orgs": orgs
   	};
   	res.render('organizations', passData);
 };
@@ -54,6 +56,8 @@ function setDayData() {
 				category = days[i].category;
 				day = days[i]; // getting the theme day data
 				console.log("   Found a match: " + days[i].month + " " + date);
+				orgs = days[i].orgs;
+				//console.log(orgs);
 				break;
 			}
 		}
