@@ -1,0 +1,33 @@
+{
+	"trophies": 
+	[
+		{
+			"id": 0,
+			"trophy_title": "Trophy A",
+			"trophy_description": "Complete 10 challenges",
+			"trophy_image": "#",
+			"progress": 80
+		},
+		{
+			"id": 1,
+			"trophy_title": "Trophy B",
+			"trophy_description": "Donate to 10 organizations",
+			"trophy_image": "#",
+			"progress": 40
+		},
+		{
+			"id": 2,
+			"trophy_title": "Trophy C",
+			"trophy_description": "Open the app for 10 days continuously",
+			"trophy_image": "#",
+			"progress": 20
+		},
+		{
+			"id": 3,
+			"trophy_title": "Trophy D",
+			"trophy_description": "Share challenges to 10 friends",
+			"trophy_image": "#",
+			"progress": 60
+		}
+	]
+}

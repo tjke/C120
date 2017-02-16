@@ -1,4 +1,5 @@
 var days = require('../days.json')['days'];
+var trophies = require('../trophies.json')['trophies'];
 
 // month arrays
 var months = ["January","February","March","April","May","June","July","August","October","November","December"];
@@ -12,17 +13,20 @@ var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
 var category = "other";
+//var trophies = [];
 var day = days[0]; // default data
 
 
 exports.view = function(req, res){
 	setDayData();
 	console.log(day);
+	console.log(trophies);
 	var passData = {
   		"mon": mon,
   		"date": date,
   		"theme": theme,
-  		"category": category
+  		"category": category,
+  		"trophies": trophies
   	};
   	res.render('trophies', passData);
 };
