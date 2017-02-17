@@ -9,6 +9,7 @@
 			"summary": "Let's be aware of a cause.",
 			"query": "awareness day",
 			"challenge": "Do something nice for today.",
+			"participants": 0,
 			"category": "other",
 			"orgs": [ {
 				"orgName": "Organization 1",
@@ -31,6 +32,7 @@
 			"summary": "This day honors one of the world’s most useful inventions, the umbrella! Not only does the umbrella help keep us dry from the rain, but it also protects us from the heat of the sun.",
 			"query": "umbrella day",
 			"challenge": "Gift an umbrella to someone in the homeless community.",
+			"participants": 0,
 			"category": "other",
 			"orgs": [ {
 				"orgName": "Goodwill Industries International, Inc.",
@@ -53,6 +55,7 @@
 			"summary": "It is celebrated by individuals, groups and organizations nationwide to encourage acts of kindness.",
 			"query": "random acts of kindness",
 			"challenge": "Buy flowers for cashiers at grocery stores.",
+			"participants": 0,
 			"category": "kindness",
 			"orgs": [ {
 				"orgName": "Think Kindness",

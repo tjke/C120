@@ -11,6 +11,7 @@ var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
+var participants = 0;
 var category = "other";
 var day = days[0]; // default data
 
@@ -23,6 +24,7 @@ exports.view = function(req, res){
   		"date": date,
   		"theme": theme,
   		"challenge": challenge,
+  		"participants": participants,
   		"category": category
   	};
   	res.render('challenge', passData);
@@ -52,6 +54,7 @@ function setDayData() {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				challenge = days[i].challenge;
+				participants = days[i].participants;
 				category = days[i].category;
 				day = days[i]; // getting the theme day data
 				console.log("   Found a match: " + days[i].month + " " + date);
