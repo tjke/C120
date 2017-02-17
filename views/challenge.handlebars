@@ -81,5 +81,14 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<script>
+	$("#completedbtn").click(projectClick);
+
+function projectClick (e){
+	e.preventDefault();
+	$(this).css("background-color", "grey");
+}
+
+	</script>
 </body>
 </html>

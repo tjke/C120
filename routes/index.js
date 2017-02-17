@@ -15,6 +15,18 @@ var category = "other";
 var day = days[0]; // default data
 
 
+/*
+var modal = document.getElementById("myhelpbtn");
+var helpbtn = document.getElementById("help");
+var span = document.getElementsByClassName("close")[0];
+
+helpbtn.onclick = function(){
+	modal.style.display = "block";
+}
+span.onclick = function(){
+	modal.style.display = "none";
+}*/
+
 exports.view = function(req, res){
 	setDayData();
 	console.log(day);
