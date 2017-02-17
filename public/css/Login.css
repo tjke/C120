@@ -1,0 +1,41 @@
+.App-Name{
+	text-align: center;
+	background-color: pink;
+	color: snow;
+	margin: 0px;
+	padding: 0px;
+}
+.heading{
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+}
+h3{
+	color: lightgray;
+}
+.buttons{
+	padding-left: 0px;
+	margin-left: 0px;
+	position: left;
+}
+.form2{
+	margin: 10px;
+}
+/*body{
+	background-color: black;
+}
+h2, label{
+	color:snow;
+}
+.modal-content{
+	background-color: black;
+}
+.form1{
+	background-color: #f57381;
+}
+.col-center-block {  
+    float: none;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+}
