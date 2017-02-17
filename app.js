@@ -14,6 +14,7 @@ var news = require('./routes/news');
 var organizations = require('./routes/organizations');
 var challenge = require('./routes/challenge');
 var trophies = require('./routes/trophies');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -46,6 +47,7 @@ app.get('/news', news.view);
 app.get('/organizations', organizations.view);
 app.get('/challenge', challenge.view);
 app.get('/trophies', trophies.view);
+app.get('/login', login.view);
 // Example route
 // app.get('/users', user.list);
 
