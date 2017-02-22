@@ -9,18 +9,32 @@
 			"summary": "Let's be aware of a cause.",
 			"query": "awareness day",
 			"challenge": "Do something nice for today.",
+			"participants": 0,
 			"category": "other",
 			"orgs": [ {
-				"orgName": "Organization 1",
-				"orgURL": "#"
+				"orgName": "American Red Cross",
+				"orgURL": "http://www.redcross.org/",
+				"orgSummary": "Check out this organization!"
 			},
 			{	
-				"orgName": "Organization 2",
-				"orgURL": "#"
+				"orgName": "Doctors Without Borders",
+				"orgURL": "http://www.doctorswithoutborders.org/",
+				"orgSummary": "Check out this organization!"
 			},
 			{	
-				"orgName": "Organization 3",
-				"orgURL": "#"
+				"orgName": "The Nature Conservancy",
+				"orgURL": "http://www.nature.org/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "United States Fund for UNICEF",
+				"orgURL": "https://www.unicefusa.org/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "World Wildlife Fund",
+				"orgURL": "http://www.worldwildlife.org/",
+				"orgSummary": "Check out this organization!"
 			}]
 		},
 		{
@@ -31,18 +45,42 @@
 			"summary": "This day honors one of the world’s most useful inventions, the umbrella! Not only does the umbrella help keep us dry from the rain, but it also protects us from the heat of the sun.",
 			"query": "umbrella day",
 			"challenge": "Gift an umbrella to someone in the homeless community.",
+			"participants": 0,
 			"category": "other",
 			"orgs": [ {
 				"orgName": "Goodwill Industries International, Inc.",
-				"orgURL": "http://www.goodwill.org/donate-and-shop/donate-stuff/"
+				"orgURL": "http://www.goodwill.org/donate-and-shop/donate-stuff/",
+				"orgSummary": "Check out this organization!"
 			},
 			{	
 				"orgName": "The Salvation Army",
-				"orgURL": "http://salvationarmyusa.org/"
+				"orgURL": "http://salvationarmyusa.org/",
+				"orgSummary": "Check out this organization!"
 			},
 			{	
 				"orgName": "Vietnam Veterans of America",
-				"orgURL": "http://pickupplease.org/about-vva/"
+				"orgURL": "http://pickupplease.org/about-vva/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "Friends of Pine Ridge Reservation",
+				"orgURL": "http://pickupplease.org/about-vva/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "United Cerebral Palsy",
+				"orgURL": "http://www.ucpsdthrift.org/how-to-donate-to-UCP-thrift-store.html?gclid=COLQxa7qgdICFQ9EfgodxtsMdQ",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "San Diego Rescue Mission",
+				"orgURL": "http://www.sdrescue.org/ways-to-give/donate-goods/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "The Umbrella Foundation",
+				"orgURL": "http://umbrellanepal.org/",
+				"orgSummary": "Check out this organization!"
 			}]
 		},
 		{
@@ -53,18 +91,88 @@
 			"summary": "It is celebrated by individuals, groups and organizations nationwide to encourage acts of kindness.",
 			"query": "random acts of kindness",
 			"challenge": "Buy flowers for cashiers at grocery stores.",
+			"participants": 0,
 			"category": "kindness",
 			"orgs": [ {
 				"orgName": "Think Kindness",
-				"orgURL": "http://thinkkindness.org/"
+				"orgURL": "http://thinkkindness.org/",
+				"orgSummary": "Check out this organization!"
 			},
 			{	
 				"orgName": "Random Acts of Kindness Foundation",
-				"orgURL": "https://www.randomactsofkindness.org/"
+				"orgURL": "https://www.randomactsofkindness.org/",
+				"orgSummary": "Check out this organization!"
 			},
 			{	
 				"orgName": "Random Acts",
-				"orgURL": "http://www.randomacts.org/"
+				"orgURL": "http://www.randomacts.org/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "Random Acts of Flowers",
+				"orgURL": "http://randomactsofflowers.org/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "Wheels for Wishes",
+				"orgURL": "http://www.wheelsforwishes.org/",
+				"orgSummary": "Check out this organization!"
+			},
+			{	
+				"orgName": "Kindness Ranch",
+				"orgURL": "http://www.kindnessranch.org/",
+				"orgSummary": "Check out this organization!"
+			}]
+		},
+		{
+			"id": 3,
+			"month": "February",
+			"date": 24,
+			"theme": "National Skip the Straw Day",
+			"summary": "Today, people are encouraged to drink without a straw in order to protect our environment.",
+			"query": "skip the straw day",
+			"challenge": "Have a drink without a straw.",
+			"participants": 0,
+			"category": "environment",
+			"orgs": [ {
+				"orgName": "The Ocean Cleanup",
+				"orgURL": "https://www.theoceancleanup.com/",
+				"orgSummary": "The Ocean Cleanup develops advanced technologies to rid the world’s oceans of plastic."
+			},
+			{	
+				"orgName": "The Ocean Agency",
+				"orgURL": "http://www.theoceanagency.org/",
+				"orgSummary": "The Ocean Agency (formerly known as Underwater Earth) is a not-for-profit organisation founded in 2010, whose mission is to protect ocean."
+			},
+			{	
+				"orgName": "Oceana",
+				"orgURL": "http://oceana.org/",
+				"orgSummary": "Oceana, founded in 2001, is the largest international advocacy organization focused solely on ocean conservation."
+			},
+			{	
+				"orgName": "5 Gyres",
+				"orgURL": "https://www.5gyres.org/",
+				"orgSummary": "5 Gyres is a non-profit organization dedicated to researching plastic pollution in the world’s oceans, and actively promoting solutions."
+			},
+			{	
+				"orgName": "Ocean Conservancy",
+				"orgURL": "http://www.oceanconservancy.org/",
+				"orgSummary": "We use the best in science-based solutions to tackle the biggest threats to our ocean."
+			},
+			{	
+				"orgName": "Plastic Pollution Coalition",
+				"orgURL": "http://www.plasticpollutioncoalition.org/",
+				"orgSummary": "Plastic Pollution Coalition is a global alliance of individuals, organizations and businesses working together to stop plastic pollution and its toxic impacts on humans, animals and the environment."
+			},
+			{	
+				"orgName": "The Ocean Project",
+				"orgURL": "http://theoceanproject.org/",
+				"orgSummary": "The Ocean Project mission is to inspire action to protect our world’s ocean."
+			},
+			{	
+				"orgName": "Mission Blue",
+				"orgURL": "https://www.mission-blue.org/",
+				"orgSummary": "Under the banner “Mission Blue,” this multi-year, global partnership initiative is aimed at restoring health and productivity to the ocean by inspiring people to care and act, reducing the impact of fishing, and promoting the creation of marine protected areas (MPAs)."
 			}]
 		}
 	]

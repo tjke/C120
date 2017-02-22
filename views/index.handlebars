@@ -9,10 +9,12 @@
   	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   	<script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<!--Bootstrap-->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!--Custom CSS-->
 	<link href="/css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+	<link href="/css/home.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,81 +25,67 @@
 </head>
 
 <body>
-		<!--<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
-
-		<h4>Projects</h4>
-		{{#each projects}}
-			<div class="project" id="{{id}}">
-				<div class="thumbnail">
-					<a href="/project/{{id}}">
-						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
-						<h4>{{title}}</h4>
-					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
-					<div class="details"></div>
-				</div>
-			</div>
-		{{/each}}-->
-
 	<!-- main content of the page goes here -->
 	<div class="home">
 		<div class="header">
 			<a style="float:top" href="/login">Login</a>
-		<div class="button">
-			<button id="help">?</button>
-			<div id="myhelpbtn">
-			<!--Content in help button-->
-				<div class="help-content">
-					<span class="close"> &times; </span>
-					<p> Welcome to Aware&middot;A&middot;Day! <br> <br>Aware&middot;A&middot;Day provides you with a daily theme and a daily challenge. Challenges are tangible ways for you to address issues that affect you and/or community. You are able to win trophy rewards as you complete the daily challenges. Aware&middot;A&middot;Day also allows you to browse different news articles and organizations relating to the theme of the day. </p>
+			<div class="button">
+				<button id="help">?</button>
+				<div id="myhelpbtn">
+				<!--Content in help button-->
+					<div class="help-content">
+						<span class="close"> &times; </span>
+						<p> Welcome to Aware&middot;A&middot;Day! <br> <br>Aware&middot;A&middot;Day provides you with a daily theme and a daily challenge. Challenges are tangible ways for you to address issues that affect you and/or community. You are able to win trophy rewards as you complete the daily challenges. Aware&middot;A&middot;Day also allows you to browse different news articles and organizations relating to the theme of the day. </p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 		<div class="date">
-			<p style="font-size: 290%">{{month}} {{date}}</p>
+			<p>{{month}} {{date}}</p>
 		</div>
 		<div class="theme">
-			<p style="font-size: 250%">Today is </p>
-				<p style="font-size: 175%">{{theme}}!</p>
+			<p style="font-size: 350%">Today is </p>
+				<p style="font-size: 250%">{{theme}}!</p>
 				<!--<p class="themecolor"> in center </p>-->
 		</div>
-
+<!--
 
 		<div class="icon">
 			<a href="/challenge" style="font-size: 14px; color:black; font-weight: bold"> Challenge </a>
-		</div>
+		</div> -->
+		<div class="icon"></div>
 
 		<div class="day-description">
 			<p>{{summary}}</p>
 		</div>
-	</div>
-
-	<!-- top header: shows date and theme -->
-	<!--<div class="top-header">
-		<div class="date-square">
-			Feb 10
-		</div>
-		<div class="heading-theme">
-			National Umbrella Day
-		</div>
-	</div>-->
+	</div><!--/home-->
 
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
-		<div class="col-5"><a href="/">Home</a></div>
-		<div class="col-5"><a href="/news">News</a></div>
-		<div class="col-5"><a href="/organizations">Organizations</a></div>
-		<div class="col-5"><a href="/challenge">Challenge</a></div>
-		<div class="col-5"><a href="/trophies">Trophies</a></div>
-	</div>
+		<div class="col-5 navbar-font"><a href="/">Home</a></div>
+		<div class="col-5 navbar-small-font"><a href="/challenge">Challenge</a></div>
+		<div class="col-5 navbar-small-font"><a href="/organizations">Organizations</a></div>
+		<div class="col-5 navbar-font"><a href="/news">News</a></div>
+		<div class="col-5 navbar-font"><a href="/trophies">Trophies</a></div>
+	</div><!--/navbar-->
 
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDRhai38EtSB6BzazJtVnpD4FD0I0_3Av0",
+	    authDomain: "awareaday.firebaseapp.com",
+	    databaseURL: "https://awareaday.firebaseio.com",
+	    storageBucket: "awareaday.appspot.com",
+	    messagingSenderId: "385024179257"
+	  };
+	  firebase.initializeApp(config);
+	</script><!--/Firebase-->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<!--Custom JS-->
 	<script src="/js/introHCI.js"></script>
 </body>
 </html>

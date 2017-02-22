@@ -1,0 +1,13 @@
+.well{
+   color: black;
+   text-align: left;
+   /*background-color: pink;*/
+   transition: box-shadow 1s;
+   padding: 15px;
+   /*line-height: 0.3;*/
+   font-size: 15px; 
+}
+
+.well:hover{
+   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}

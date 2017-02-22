@@ -9,10 +9,12 @@
   	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   	<script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<!--Bootstrap-->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!--Custom CSS-->
 	<link href="/css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+	<link href="/css/organizations.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,76 +22,23 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]--> 
-    <style>
-	  /*body {
-	      font: 20px Montserrat, sans-serif;
-	      line-height: 0.3;
-	      color: #f5f6f7;
-	  }*/
-	  /*.well{
-	  	color:black;
-	  	text-align: left;
-	  	background-color: red;
-	  	transition: box-shadow 1s;  
-	  }
-	  .well:hover{
-	  	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-	  }
-
-	  @media(max-width: 768px){
-	  	.well{
-	  		font-size: 15px;
-	  	}
-	  	.heading-theme{
-	  		font-size: 20px;
-	  	}
-	  }*/
-	</style>
 </head>
 
 <body>
-		<!--<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
-
-		<h4>Projects</h4>
-		{{#each projects}}
-			<div class="project" id="{{id}}">
-				<div class="thumbnail">
-					<a href="/project/{{id}}">
-						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
-						<h4>{{title}}</h4>
-					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
-					<div class="details"></div>
-				</div>
-			</div>
-		{{/each}}-->
-
 	<!-- main content of the page goes here -->
 	<div class="main">
 		<!--The organization title-->
-		<div class="container-fluid bg-1 text-center" 
-     	style="background-color: #f57381; color: #ffffff;">
-		<h1>ORGANIZATIONS</h1>
-		</div>
+		<div class="page-title">Organizations</div>
 		<!--The list of organizations-->
 		<div class="list text-center">
-		{{#each orgs}}
-		<a href={{orgURL}}><div class="well well-lg">{{orgName}}</div></a>
-		{{/each}}
-		<!--<a href="http://www.goodwill.org/donate-and-shop/donate-stuff/"><div class="well well-lg">Goodwill Industries International, Inc.</div></a>
-		<a href="http://salvationarmyusa.org/"><div class="well well-lg">The Salvation Army</div></a>
-		<a href="http://pickupplease.org/about-vva/"><div class="well well-lg">Vietnam Veterans of America</div></a>
-		<a href="http://friendsofpineridgereservation.org/projects/"><div class="well well-lg">Friends of Pine Ridge Reservation</div></a>
-		<a href="http://www.ucpsdthrift.org/how-to-donate-to-UCP-thrift-store.html?gclid=COLQxa7qgdICFQ9EfgodxtsMdQ"><div class="well well-lg">United Cerebral Palsy</div></a>
-		<a href="http://www.sdrescue.org/ways-to-give/donate-goods/"><div class="well well-lg">San Diego Rescue Mission</div></a>
-		<a href="http://umbrellanepal.org/"><div class="well well-lg">The Umbrella Foundation</div></a>-->
-	</div>
-	</div>
+			{{#each orgs}}
+			<div class="well well-lg"><a href={{orgURL}}>{{orgName}}</a>
+			<p>{{orgSummary}}</p></div>
+			{{/each}}
+		</div>
+	</div><!--/main-->
 
-	<!-- top header: shows date and teme -->
+	<!-- top header: shows date and theme -->
 	<div class="top-header">
 		<div class="date-square">
 			{{mon}}<br>{{date}}
@@ -97,19 +46,33 @@
 		<div class="heading-theme">
 			{{theme}}
 		</div>
-	</div>
+	</div><!--/header-->
 
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
-		<div class="col-5"><a href="/">Home</a></div>
-		<div class="col-5"><a href="/news">News</a></div>
-		<div class="col-5"><a href="/organizations">Organizations</a></div>
-		<div class="col-5"><a href="/challenge">Challenge</a></div>
-		<div class="col-5"><a href="/trophies">Trophies</a></div>
-	</div>
+		<div class="col-5 navbar-font"><a href="/">Home</a></div>
+		<div class="col-5 navbar-small-font"><a href="/challenge">Challenge</a></div>
+		<div class="col-5 navbar-small-font"><a href="/organizations">Organizations</a></div>
+		<div class="col-5 navbar-font"><a href="/news">News</a></div>
+		<div class="col-5 navbar-font"><a href="/trophies">Trophies</a></div>
+	</div><!--/navbar-->
 
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDRhai38EtSB6BzazJtVnpD4FD0I0_3Av0",
+	    authDomain: "awareaday.firebaseapp.com",
+	    databaseURL: "https://awareaday.firebaseio.com",
+	    storageBucket: "awareaday.appspot.com",
+	    messagingSenderId: "385024179257"
+	  };
+	  firebase.initializeApp(config);
+	</script><!--/Firebase-->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<!--Custom JS-->
 	<script src="/js/introHCI.js"></script>
 </body>
 </html>
