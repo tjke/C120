@@ -11,7 +11,6 @@ var mon = "Mon";
 var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
-var challenge = "Do something nice for today.";
 var category = "other";
 //var trophies = [];
 var day = days[0]; // default data
@@ -37,7 +36,10 @@ function setDayData() {
 
 	// get the current Month and Date
 	var m = months[d.getMonth()];
+	month = m;
+	mon = mons[d.getMonth()];
 	var n = d.getDate();
+	date = n;
 	console.log(m + " " + n);
 
 	for(var i = 0; i < days.length; i++ ) {
@@ -49,12 +51,8 @@ function setDayData() {
 			
 			// find a day within the same week
 			if( days[i].date-5 <= n && n <= days[i].date+1) {
-				month = days[i].month;
-				mon = mons[d.getMonth()];
-				date = days[i].date;
 				theme = days[i].theme;
 				summary = days[i].summary;
-				challenge = days[i].challenge;
 				category = days[i].category;
 				day = days[i]; // getting the theme day data
 				console.log("   Found a match: " + days[i].month + " " + date);

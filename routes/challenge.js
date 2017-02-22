@@ -50,7 +50,10 @@ function setDayData() {
 
 	// get the current Month and Date
 	var m = months[d.getMonth()];
+	month = m;
+	mon = mons[d.getMonth()];
 	var n = d.getDate();
+	date = n;
 	console.log(m + " " + n);
 
 	for(var i = 0; i < days.length; i++ ) {
@@ -62,9 +65,6 @@ function setDayData() {
 			
 			// find a day within the same week
 			if( days[i].date-5 <= n && n <= days[i].date+1) {
-				month = days[i].month;
-				mon = mons[d.getMonth()];
-				date = days[i].date;
 				theme = days[i].theme;
 				summary = days[i].summary;
 				challenge = days[i].challenge;
