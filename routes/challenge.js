@@ -16,19 +16,6 @@ var day = days[0]; // default data
 
 var count = 0;
 
-//$("#completedbtn").click(projectClick);
-
-function projectClick (e){
-	e.preventDefault();
-	$("#completedbtn").css("background-color", "7fff00");
-}
-
-/*$("#completedbtn").click(upCount);
-function upCount(event){
-	count++;
-	console.log("hello" + count);
-}*/
-
 exports.view = function(req, res){
 	setDayData();
 	console.log(day);
@@ -75,12 +62,3 @@ function setDayData() {
 	}
 }
 
-/*function upCount () {
-	var element = document.getElementById(completedbtn);
-	var count = 0;
-	console.log(count);
-	$("#completedbtn").on("click", function(){
-		count++;
-		console.log("hello" + count);
-	})
-}*/
