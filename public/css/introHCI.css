@@ -1,6 +1,6 @@
 /* NOTE: this applies to EVERYTHING */
 body {
-      font: 20px Montserrat, sans-serif;
+      font: 13px Montserrat, sans-serif;
 }
 
 /* top-header will contain the date-square and heading-theme divs */
@@ -24,7 +24,7 @@ body {
      border-width: 1px;
      border-color: white;
      background-color: #4dc3ff; /* darker */
-     font-size: 150%;
+     font-size: 220%;
 }
 /* shows the theme of the day at the top */
 .heading-theme {
@@ -37,7 +37,7 @@ body {
      border-width: 1px;
      border-color: white;
      background-color: #80d4ff;
-     font-size: 150%;
+     font-size: 200%;
 }
 
 /* the bottom navigation bar */
@@ -74,10 +74,10 @@ body {
      background-color: #4dc3ff; /* darker */
 }
 .navbar-font {
-     font-size: 80%;
+     font-size: 120%;
 }
-#navbar-org-font {
-     font-size: 70%;
+.navbar-small-font {
+     font-size: 90%;
 }
 
 /* the main container where content will be held */
@@ -85,4 +85,14 @@ body {
      margin-top: 100px;
      margin-bottom: 75px;
      padding: 20px;
+}
+
+/* for page titles */
+.page-title{
+     text-align: center;
+     margin-bottom: 10px;
+     padding: 10px;
+     background-color: #4dc3ff; /* darker */
+     color: white;
+     font-size: 300%;
 }

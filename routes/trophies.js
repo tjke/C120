@@ -50,7 +50,7 @@ function setDayData() {
 			console.log("Found a matching month; days[i].date=" + days[i].date + "; Week " + weekBegin + "-" + weekEnd);
 			
 			// find a day within the same week
-			if( days[i].date-5 <= n && n <= days[i].date+1) {
+			if( days[i].date-4 <= n && n <= days[i].date+2) {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				category = days[i].category;

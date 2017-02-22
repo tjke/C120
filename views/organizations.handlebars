@@ -28,14 +28,12 @@
 	<!-- main content of the page goes here -->
 	<div class="main">
 		<!--The organization title-->
-		<div class="container-fluid bg-1 text-center" 
-     	style="background-color: #f57381; color: #ffffff;">
-			<h1>ORGANIZATIONS</h1>
-		</div>
+		<div class="page-title">Organizations</div>
 		<!--The list of organizations-->
 		<div class="list text-center">
 			{{#each orgs}}
-			<a href={{orgURL}}><div class="well well-lg">{{orgName}}</div></a>
+			<div class="well well-lg"><a href={{orgURL}}>{{orgName}}</a>
+			<p>{{orgSummary}}</p></div>
 			{{/each}}
 		</div>
 	</div><!--/main-->
@@ -53,8 +51,8 @@
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
 		<div class="col-5 navbar-font"><a href="/">Home</a></div>
-		<div class="col-5 navbar-font"><a href="/challenge">Challenge</a></div>
-		<div class="col-5" id="navbar-org-font"><a href="/organizations">Organizations</a></div>
+		<div class="col-5 navbar-small-font"><a href="/challenge">Challenge</a></div>
+		<div class="col-5 navbar-small-font"><a href="/organizations">Organizations</a></div>
 		<div class="col-5 navbar-font"><a href="/news">News</a></div>
 		<div class="col-5 navbar-font"><a href="/trophies">Trophies</a></div>
 	</div><!--/navbar-->

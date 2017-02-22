@@ -77,6 +77,7 @@
 
 	<!-- main content of the page goes here -->
 	<div class="main">
+		<div class="page-title">News</div>
 		{{#each news}}
 		<div>
 			<div class="left-image"><img src={{image.thumbnail.contentUrl}}></div>
@@ -103,8 +104,8 @@
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
 		<div class="col-5 navbar-font"><a href="/">Home</a></div>
-		<div class="col-5 navbar-font"><a href="/challenge">Challenge</a></div>
-		<div class="col-5" id="navbar-org-font"><a href="/organizations">Organizations</a></div>
+		<div class="col-5 navbar-small-font"><a href="/challenge">Challenge</a></div>
+		<div class="col-5 navbar-small-font"><a href="/organizations">Organizations</a></div>
 		<div class="col-5 navbar-font"><a href="/news">News</a></div>
 		<div class="col-5 navbar-font"><a href="/trophies">Trophies</a></div>
 	</div><!--/navbar-->
