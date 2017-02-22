@@ -1,6 +1,8 @@
 'use strict';
 
-/*var days = require('../days.json')['days'];
+// gathering HTML elements
+var dateHTML = document.getElementById("date");
+var themeHTML = document.getElementById("theme");
 
 // month arrays
 var months = ["January","February","March","April","May","June","July","August","October","November","December"];
@@ -15,11 +17,18 @@ var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
-var day = days[0]; // default data
-var orgs = days[0].orgs; // default orgs data*/
+var days; // array of data
+//var day = days[0]; // default data
+//var orgs = days[0].orgs; // default orgs data
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
+	// firebase stuff
+	var daysRef = firebase.database().ref().child("days");
+	daysRef.on("child_added", snap => {
+		days = snap.val();
+		console.log(days);
+	});
 	initializePage();
 });
 
@@ -27,10 +36,13 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	setDayData();
+	/*database.on('value', function(datasnapshot) {
+		console.log(datasnapshot);
+	});*/
 }
 
-/*function setDayData() {
+function setDayData() {
 	var d = new Date();
 
 	// get the current Month and Date
@@ -40,8 +52,13 @@ function initializePage() {
 	var n = d.getDate();
 	date = n;
 	console.log(m + " " + n);
+	dateHTML.innerText = m + " " + n;
 
-	for(var i = 0; i < days.length; i++ ) {
+	/*var firebaseRef = firebase.database().ref();
+	var themeText = themeHTML.value;
+	firebaseRef.push().set*/
+
+	/*for(var i = 0; i < days.length; i++ ) {
 		// find a matching month
 		if(days[i].month == m) {
 			var weekBegin = days[i].date - 5;
@@ -58,16 +75,5 @@ function initializePage() {
 				break;
 			}
 		}
-	}
-}*/
-
-var modal = document.getElementById("myhelpbtn");
-var helpbtn = document.getElementById("help");
-var span = document.getElementsByClassName("close")[0];
-
-helpbtn.onclick = function(){
-	modal.style.display = "block";
-}
-span.onclick = function(){
-	modal.style.display = "none";
+	}*/
 }
