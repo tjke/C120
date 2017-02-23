@@ -30,10 +30,18 @@ $(document).ready(function() {
  */
 function initializePage() {
 	setDayData();
+
+	// defining click listeners
+	$("#signup-btn").click(signup);
+	$("#login-btn").click(login);
+	$("#help").click(displayHelp);
+	$(".close").click(displayHelp);
+	$("#completedbtn").click(greyButton);
+	$("#completedbtn").click(updateCount);
 }
 
 // does error checking when Sign Up button is clicked
-function signup() {
+function signup(e) {
 	var signupMessageHTML = document.getElementById("signupMessage");
 	var user = document.getElementById("signupUser").value;
 	var pass = document.getElementById("signupPassword").value;
@@ -74,7 +82,7 @@ function writeUserData(user, pass, mail) {
 }
 
 // does error checking when Login button is clicked
-function login() {
+function login(e) {
 	var loginMessageHTML = document.getElementById("loginMessage");
 	var user = document.getElementById("loginUser").value;
 	var pass = document.getElementById("loginPassword").value;
@@ -118,7 +126,7 @@ function login() {
 }
 
 // displays the Help documentation
-function displayHelp(){
+function displayHelp(e){
 	var modal = document.getElementById("myhelpbtn");
 	var helpbth = document.getElementById("help");
 	var span = document.getElementsByClassName("close")[0];
@@ -160,6 +168,12 @@ function setDayData() {
 	
 }
 
+// greys out the Challenge Completed button
+function greyButton(e){
+	e.preventDefault();
+	$(this).css("background-color", "grey");
+}
+
 // display the number of participants for Challenges page
 function displayParticipants() {
 	var participantsHTML = document.getElementById("displayCount");
@@ -178,7 +192,7 @@ function displayParticipants() {
 }
 
 // updates the participants count number for the server and for display
-function updateCount() {
+function updateCount(e) {
 	var newCount = 0;
 	// get old count
 	var countRef = firebase.database().ref('challenges/' + data + '/count');

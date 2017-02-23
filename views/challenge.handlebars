@@ -30,7 +30,7 @@
 		<div class="page-title" style="background-color: {{darkerColor}}">Challenge</div>
 		<div class="challenge">
 			<h2>Today's challenge is</h2>
-			<h3 id="challenge">{{challenge}}</h3>
+			<h3 id="challenge" style="border-color: {{darkerColor}}">{{challenge}}</h3>
 		</div>
 			<!--<div class="challenge-description" style="text-align:left">
 			<p> About this challenge: <p>
@@ -45,11 +45,11 @@
 			</div>
 	</div> -->
 		<div class="completed">
-			<button id="completedbtn" onclick=updateCount()>Challenge Completed!</button>
+			<button id="completedbtn">Challenge Completed!</button>
 			<!--<p> participants<span id="displayCount"> 0 </span> times. </p>-->
 			<div class="participants">
 				<p><b>Number of participants:</b></p>
-				<p id="displayCount"></p>
+				<p id="displayCount">(loading...)</p>
 				<p id="partUpdateMessage"></p>
 			</div>
 		</div>
@@ -90,13 +90,6 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
-	<script>
-		$("#completedbtn").click(projectClick);
-		function projectClick (e){
-			e.preventDefault();
-			$(this).css("background-color", "grey");
-		}
-	</script>
 	<!-- Font Awesome -->
     <script src="https://use.fontawesome.com/91c786b0d4.js"></script>
 </body>
