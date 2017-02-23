@@ -1,16 +1,16 @@
+/* container for each organization item */
 .well{
    padding: 15px;
    text-align: left;
    /*line-height: 0.3;*/
    transition: box-shadow 1s;
    color: black;
-   font-size: 15px; 
 }
-
 .well:hover{
    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
+/* Donate button */
 .button{
 	float:right;
 }

@@ -31,7 +31,7 @@ function initializePage() {
 	// defining click listeners
 	$("#signup-btn").click(signup);
 	$("#login-btn").click(login);
-	$("#help").click(displayHelp);
+	$("#help-btn").click(displayHelp);
 	$(".close").click(displayHelp);
 	$("#completedbtn").click(greyButton);
 	$("#completedbtn").click(updateCount);
@@ -124,8 +124,8 @@ function login(e) {
 
 // displays the Help documentation
 function displayHelp(e){
-	var modal = document.getElementById("myhelpbtn");
-	var helpbth = document.getElementById("help");
+	var modal = document.getElementById("myhelp");
+	var helpbtn = document.getElementById("help-btn");
 	var span = document.getElementsByClassName("close")[0];
 	console.log(modal.style.display);
 	if (modal.style.display !== "block"){

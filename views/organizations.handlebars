@@ -34,16 +34,19 @@
 		<div class="list text-center">
 			{{#each orgs}}
 			<div class="well well-lg">
-				<div class="row">
-					<div class="col-xs-12">
-				<a href={{orgURL}}><h4>{{orgName}}</h4></a>
-				<p>{{orgSummary}}</p>
-				</div>
+			<div class="row">
+				<!--org content-->
 				<div class="col-xs-12">
+					<a href={{orgURL}}><h4>{{orgName}}</h4></a>
+					<p>{{orgSummary}}</p>
+				</div>
+				<!--Donate button-->
+				<div class="col-xs-12">
+
 				<div class="btn btn-default btn-default-ghost btn-sm button"><a class="button-text" href={{donateURL}}>Donate</a></div>
+				</div>
 			</div>
 			</div>
-		</div>
 			{{/each}}
 		</div>
 	</div><!--/main-->
