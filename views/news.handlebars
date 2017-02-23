@@ -56,28 +56,11 @@
 </head>
 
 <body>
-		<!--<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
-
-		<h4>Projects</h4>
-		{{#each projects}}
-			<div class="project" id="{{id}}">
-				<div class="thumbnail">
-					<a href="/project/{{id}}">
-						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
-						<h4>{{title}}</h4>
-					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
-					<div class="details"></div>
-				</div>
-			</div>
-		{{/each}}-->
-
 	<!-- main content of the page goes here -->
 	<div class="main">
+		<!-- News title-->
 		<div class="page-title" style="background-color: {{darkerColor}}">News</div>
+
 		{{#each news}}
 		<div>
 			<div class="left-image"><img src={{image.thumbnail.contentUrl}}></div>

@@ -28,15 +28,18 @@
 	<!-- main content of the page goes here -->
 	<div class="home">
 		<div class="header">
+			<!--Login link-->
 			<a style="float:top" href="/login">Login</a>
+
+			<!--Help button-->
 			<div class="help-button">
-				<button id="help"onclick=displayHelp()>?</button>
+				<button id="help")>?</button>
 				<div id="myhelpbtn" >
 				<!--Content in help button-->
 					<div class="help-content" >
-						<span class="close" onclick=displayHelp()> &times; </span>
-						<p><center>Welcome to <b>Aware&middot;A&middot;Day</b>!</center>
-						<br>
+						<!--X button-->
+						<span class="close"> &times; </span>
+						<p><center>Welcome to <b>Aware&middot;A&middot;Day</b>!</center><br>
 						Aware&middot;A&middot;Day presents you with a daily theme and a daily challenge.
 						<br><br>
 						<a href="/challenge">Challenges</a> are tangible ways for you to address issues that affect you and your community.
@@ -49,25 +52,23 @@
 			</div>
 		</div>
 
+		<!--show date-->
 		<div class="date" style="background-color: {{color}}">
 			<p id="date">{{month}} {{date}}</p>
 		</div>
+		<!--show theme-->
 		<div class="theme">
 			<p style="font-size: 300%">Today is </p>
-				<p style="font-size: 250%" id="theme">{{theme}}!</p>
-				<!--<p class="themecolor"> in center </p>-->
+			<p style="font-size: 250%" id="theme">{{theme}}!</p>
 		</div>
-<!--
-
-		<div class="icon">
-			<a href="/challenge" style="font-size: 14px; color:black; font-weight: bold"> Challenge </a>
-		</div> -->
-		
-
+		<!--day description-->
 		<div class="day-description">
 			<p>{{summary}}</p>
 		</div>
-		<div class="icon" style="background-color: {{darkerColor}}"><a href="/challenge">See Today's<br>Challenge</a></div>
+		<!--icon-->
+		<div class="icon" style="background-color: {{darkerColor}}">
+			<a href="/challenge">See Today's<br>Challenge</a>
+		</div>
 	</div><!--/home-->
 
 	<!-- bottom navbar -->

@@ -70,10 +70,3 @@ function setDayData() {
 		}
 	}
 }
-
-/*console.log('hello');
-$("#completedbtn").click(upCount);
-
-funtion upCount(event){
-	$(this).text("changed");
-}*/

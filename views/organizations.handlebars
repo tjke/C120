@@ -27,13 +27,16 @@
 <body>
 	<!-- main content of the page goes here -->
 	<div class="main">
-		<!--The organization title-->
+		<!--Organization title-->
 		<div class="page-title" style="background-color: {{darkerColor}}">Organizations</div>
+		
 		<!--The list of organizations-->
 		<div class="list text-center">
 			{{#each orgs}}
-			<div class="well well-lg"><a href={{orgURL}}><h4>{{orgName}}</h4></a>
-			<p>{{orgSummary}}</p></div>
+			<div class="well well-lg">
+				<a href={{orgURL}}><h4>{{orgName}}</h4></a>
+				<p>{{orgSummary}}</p>
+			</div>
 			{{/each}}
 		</div>
 	</div><!--/main-->

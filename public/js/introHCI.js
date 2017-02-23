@@ -17,23 +17,29 @@ var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
 var data; // array of data
-//var day = days[0]; // default data
-//var orgs = days[0].orgs; // default orgs data
+
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
 });
 
-/*
- * Function that is called when the document is ready.
- */
+//Function that is called when the document is ready.
 function initializePage() {
 	setDayData();
+
+	// defining click listeners
+	$("#signup-btn").click(signup);
+	$("#login-btn").click(login);
+	$("#help").click(displayHelp);
+	$(".close").click(displayHelp);
+	$("#completedbtn").click(greyButton);
+	$("#completedbtn").click(updateCount);
 }
 
+
 // does error checking when Sign Up button is clicked
-function signup() {
+function signup(e) {
 	var signupMessageHTML = document.getElementById("signupMessage");
 	var user = document.getElementById("signupUser").value;
 	var pass = document.getElementById("signupPassword").value;
@@ -43,7 +49,6 @@ function signup() {
 	if(user != "" && pass != "" && mail != "") {
 		console.log(user + ": " + pass + " (" + mail + ")");
 		writeUserData(user,pass,mail);
-		//alert("An account has been created for " + mail);
 		signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";
 	}
 	// empty input fields errors
@@ -58,7 +63,6 @@ function signup() {
 		if( mail == "" ) {
 			signupErrorMessage += "<br>You must provide an email!";
 		}
-		//alert(signupErrorMessage);
 		signupMessageHTML.innerHTML = "<font color=red>" + signupErrorMessage + "</font><br><br>";
 	}	
 }
@@ -74,7 +78,7 @@ function writeUserData(user, pass, mail) {
 }
 
 // does error checking when Login button is clicked
-function login() {
+function login(e) {
 	var loginMessageHTML = document.getElementById("loginMessage");
 	var user = document.getElementById("loginUser").value;
 	var pass = document.getElementById("loginPassword").value;
@@ -117,8 +121,9 @@ function login() {
 	}	
 }
 
+
 // displays the Help documentation
-function displayHelp(){
+function displayHelp(e){
 	var modal = document.getElementById("myhelpbtn");
 	var helpbth = document.getElementById("help");
 	var span = document.getElementsByClassName("close")[0];
@@ -157,7 +162,12 @@ function setDayData() {
 	}
 	data = month + " " + newDate;
 	console.log("Getting theme from date " + data);
-	
+}
+
+// greys out the Challenge Completed button
+function greyButton(e){
+	e.preventDefault();
+	$(this).css("background-color", "grey");
 }
 
 // display the number of participants for Challenges page
@@ -178,7 +188,7 @@ function displayParticipants() {
 }
 
 // updates the participants count number for the server and for display
-function updateCount() {
+function updateCount(e) {
 	var newCount = 0;
 	// get old count
 	var countRef = firebase.database().ref('challenges/' + data + '/count');
