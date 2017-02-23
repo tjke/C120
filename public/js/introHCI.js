@@ -117,6 +117,19 @@ function login() {
 	}	
 }
 
+function display(){
+	var modal = document.getElementById("myhelpbtn");
+	var helpbth = document.getElementById("help");
+	var span = document.getElementsByClassName("close")[0];
+console.log(modal.style.display);
+	if (modal.style.display !== "block"){
+		modal.style.display = "block";
+	}
+	else if (modal.style.display === "block"){
+		modal.style.display = "none";
+	}
+	}
+
 /*function setDayData() {
 	var d = new Date();
 

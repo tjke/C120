@@ -95,23 +95,26 @@
 }
 
 .icon {
-     position: relative;
+    position:relative;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    background-color: #80d4ff;
+    margin-left: auto;
+    margin-right: auto;
+
+     /*position: relative;
      text-align: center;
-    /* margin-top: 50px;*/
-     margin-left: auto;
-     margin-right: auto;
+    /margin-top: 50px;
      margin-top: auto;
      margin-bottom: auto;
      display: block;
-     width: 75px;
-     height: 75px;
      border-radius:50px;
      font-size:100px;
      color:#fff;
-     line-height:20px;
-    /* text-align:center;*/
-     text-decoration:none;
-     background: purple;
+     line-height:20px;*/
 }
 
 .day-description{
