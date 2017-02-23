@@ -1,21 +1,20 @@
 .main{
 	text-align: center;
 }
-.challenge{
 
-}
 #challenge{
 	border: solid;
 	padding: 10px;
 	outline-offset: 5px;
-
+	border-radius: 20px;
 }
 
 #completedbtn{
+	padding: 18px;
+	margin-top: 15px;
+	outline: 0;
 	background: white;
 	font-size: 16px;
-	padding: 18px;
-	outline: 0;
 }
 .button{
 	/*background-color: green;
@@ -31,3 +30,17 @@
 */
 }
 
+.participants {
+	margin-top: 15px;
+	font-size: 150%;
+}
+
+#displayCount {
+	font-size: 180%;
+	color: #003380; /* dark blue */
+}
+
+#partUpdateMessage {
+	font-size: 75%;
+	color: green;
+}

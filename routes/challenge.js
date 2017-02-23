@@ -13,6 +13,8 @@ var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
+var color = "#80d4ff";
+var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
 
 var count = 0;
@@ -26,7 +28,9 @@ exports.view = function(req, res){
   		"theme": theme,
   		"challenge": challenge,
   		"participants": participants,
-  		"category": category
+  		"category": category,
+  		"color": color,
+  		"darkerColor": darkerColor
   	};
   	res.render('challenge', passData);
 };
@@ -57,17 +61,12 @@ function setDayData() {
 				challenge = days[i].challenge;
 				participants = days[i].participants;
 				category = days[i].category;
+				color = days[i].color;
+				darkerColor = days[i].darkerColor;
 				day = days[i]; // getting the theme day data
-				console.log("   Found a match: " + days[i].month + " " + date);
+				console.log("   Found a match: " + days[i].month + " " + days[i].date);
 				break;
 			}
 		}
 	}
 }
-
-/*console.log('hello');
-$("#completedbtn").click(upCount);
-
-funtion upCount(event){
-	$(this).text("changed");
-}*/

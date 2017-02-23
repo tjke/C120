@@ -12,20 +12,9 @@ var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
 var category = "other";
+var color = "#80d4ff";
+var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
-
-
-/*
-var modal = document.getElementById("myhelpbtn");
-var helpbtn = document.getElementById("help");
-var span = document.getElementsByClassName("close")[0];
-
-helpbtn.onclick = function(){
-	modal.style.display = "block";
-}
-span.onclick = function(){
-	modal.style.display = "none";
-}*/
 
 exports.view = function(req, res){
 	setDayData();
@@ -35,11 +24,12 @@ exports.view = function(req, res){
   		"date": date,
   		"theme": theme,
   		"summary": summary,
-  		"category": category
+  		"category": category,
+  		"color": color,
+  		"darkerColor": darkerColor
   	};
   	res.render('index', passData);
 };
-
 
 function setDayData() {
 	var d = new Date();
@@ -64,8 +54,10 @@ function setDayData() {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				category = days[i].category;
+				color = days[i].color;
+				darkerColor = days[i].darkerColor;
 				day = days[i]; // getting the theme day data
-				console.log("   Found a match: " + days[i].month + " " + date);
+				console.log("   Found a match: " + days[i].month + " " + days[i].date);
 				break;
 			}
 		}

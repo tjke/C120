@@ -28,46 +28,56 @@
 	<!-- main content of the page goes here -->
 	<div class="home">
 		<div class="header">
+			<!--Login link-->
 			<a style="float:top" href="/login">Login</a>
-			<div class="button">
-				<button id="help">?</button>
-				<div id="myhelpbtn">
+
+			<!--Help button-->
+			<div class="help-button">
+				<button id="help")>?</button>
+				<div id="myhelpbtn" >
 				<!--Content in help button-->
-					<div class="help-content">
+					<div class="help-content" >
+						<!--X button-->
 						<span class="close"> &times; </span>
-						<p> Welcome to Aware&middot;A&middot;Day! <br> <br>Aware&middot;A&middot;Day provides you with a daily theme and a daily challenge. Challenges are tangible ways for you to address issues that affect you and/or community. You are able to win trophy rewards as you complete the daily challenges. Aware&middot;A&middot;Day also allows you to browse different news articles and organizations relating to the theme of the day. </p>
+						<p><center>Welcome to <b>Aware&middot;A&middot;Day</b>!</center><br>
+						Aware&middot;A&middot;Day presents you with a daily theme and a daily challenge.
+						<br><br>
+						<a href="/challenge">Challenges</a> are tangible ways for you to address issues that affect you and your community.
+						<br><br>
+						Aware&middot;A&middot;Day also allows you to browse different <a href="/organizations">Organizations</a> and <a href="/news">News</a> articles related to the theme of the day.
+						<br><br>
+						You are able to win <a href="/trophies">Trophies</a> as you complete the daily challenges. </p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="date">
-			<p>{{month}} {{date}}</p>
+		<!--show date-->
+		<div class="date" style="background-color: {{color}}">
+			<p id="date">{{month}} {{date}}</p>
 		</div>
+		<!--show theme-->
 		<div class="theme">
-			<p style="font-size: 350%">Today is </p>
-				<p style="font-size: 250%">{{theme}}!</p>
-				<!--<p class="themecolor"> in center </p>-->
+			<p style="font-size: 300%">Today is </p>
+			<p style="font-size: 250%" id="theme">{{theme}}!</p>
 		</div>
-<!--
-
-		<div class="icon">
-			<a href="/challenge" style="font-size: 14px; color:black; font-weight: bold"> Challenge </a>
-		</div> -->
-		<div class="icon"><a href="/challenge" style="font-size: 14px; color:black; font-weight:bold; text-decoration:none"> Challenge </a></div>
-
+		<!--day description-->
 		<div class="day-description">
 			<p>{{summary}}</p>
+		</div>
+		<!--icon-->
+		<div class="icon" style="background-color: {{darkerColor}}">
+			<a href="/challenge">See Today's<br>Challenge</a>
 		</div>
 	</div><!--/home-->
 
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
-		<div class="col-5 navbar-font"><a href="/">Home</a></div>
-		<div class="col-5 navbar-small-font"><a href="/challenge">Challenge</a></div>
-		<div class="col-5 navbar-small-font"><a href="/organizations">Organizations</a></div>
-		<div class="col-5 navbar-font"><a href="/news">News</a></div>
-		<div class="col-5 navbar-font"><a href="/trophies">Trophies</a></div>
+		<div class="col-5 navbar-font" style="background-color: {{darkerColor}}"><a href="/"><i class="fa fa-home fa-3x" aria-hidden="true"></i><br>Home</a></div>
+		<div class="col-5 navbar-small-font" style="background-color: {{color}}"><a href="/challenge"><i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i><br>Challenge</a></div>
+		<div class="col-5 navbar-small-font" style="background-color: {{color}}"><a href="/organizations"><i class="fa fa-heart fa-3x" aria-hidden="true"></i><br>Organizations</a></div>
+		<div class="col-5 navbar-font" style="background-color: {{color}}"><a href="/news"><i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i><br>News</a></div>
+		<div class="col-5 navbar-font" style="background-color: {{color}}"><a href="/trophies"><i class="fa fa-trophy fa-3x" aria-hidden="true"></i><br>Trophies</a></div>
 	</div><!--/navbar-->
 
 	<!--Firebase-->
@@ -87,5 +97,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<!--Custom JS-->
 	<script src="/js/introHCI.js"></script>
+	<!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/91c786b0d4.js"></script>
 </body>
 </html>

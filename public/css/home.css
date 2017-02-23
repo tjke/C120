@@ -1,117 +1,128 @@
 /* HOME gets a special container for content */
 .home {
-     margin-bottom: 75px;
-     padding: 20px;
+    margin-bottom: 70px;
+    padding: 20px;
 }
 
-.button{
-     position: absolute;
-     right: 10px;
-     top: 5px;
+.help-button{
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
 
 #help{
-     width: 25px;
-     height: 25px;
-     background: gray;
-     border-color: #000;
-     border-radius: 4em;
-     outline: 0;
+    width: 25px;
+    height: 25px;
+    background: #bbbbbb;
+    border-color: #000;
+    border-radius: 20px;
+    outline: 0;
+    /*top: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius:50px;
+    font-size:18px;
+    color:#fff;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+    background: gray;*/
 }
-/*#help{
-     top: 5px;
-     display: block;
-     width: 20px;
-     height: 20px;
-     border-radius:50px;
-     font-size:18px;
-     color:#fff;
-     line-height:20px;
-     text-align:center;
-     text-decoration:none;
-     background: gray;
-     } */
 #help:hover{color:#ccc;
-     text-decoration:none;
-     background:#333
+    text-decoration:none;
+    background:#333;
 }
 
 #myhelpbtn{
-     display: none;
-     position: fixed;
-     z-index: 100;
-     right: 10px;
-     top: 5%;
-     overflow: auto;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    right: 10px;
+    top: 5%;
+    overflow: auto;
 }
 
 .help-content{
    /*  display: none;*/
-     background-color: #fefefe;
-     margin: auto;
-     padding: 20px;
-     border: 1px solid #888;
-     width: 80%;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+}
+.help-content b {
+    color: purple;
 }
 
 .close{
-     color: #aaaaaa;
-     float: right;
-     font-size: 28px;
-     font-weight: bold;
+    float: right;
+    color: #111111;
+    font-weight: bold;
+    font-size: 28px;
 }
 .close:hover,
 .close:focus {
-     color: #000;
-     text-decoration: none;
-     cursor: pointer;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
 .date {
-	position: relative;
+    width: 100%;
+    position: relative;
     left: 0;
     top: 0%;
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
-	background-color: #80d4ff;
-    padding: 15px;
     border-radius: 25px;
-    font-size: 400%;
-    /* width: 80px;*/
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+	/*background-color: #80d4ff;*/
+    font-size: 350%;
 }
 .date p {
-     vertical-align: center;
-     color: #6e6e6e;
+    vertical-align: middle;
+    /*color: #6e6e6e;*/
+    color: #666666;
 }
 
 .theme {
-     position: relative;
-     left: 0;
-     /*top: 35%;*/
-     margin-top: 25px;
-     width: 100%;
-     text-align: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    /*top: 35%;*/
+    margin-top: 25px;
+    text-align: center;
 }
 
 .icon {
-     position: relative;
-     text-align: center;
-    /* margin-top: 50px;*/
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: auto;
-     margin-bottom: auto;
-     display: block;
-     width: 75px;
-     height: 75px;
-     border-radius:50px;
-     font-size:100px;
-     color:#fff;
-     line-height:20px;
-    /* text-align:center;*/
-     text-decoration:none;
-     background: purple;
+    position:relative;
+    text-align: center;
+    padding-top: 42px;
+    border-radius: 100px;
+    width: 125px;
+    height: 125px;
+    /*background-color: #4dc3ff; /* darker */
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    font-size:100px;
+    color:#fff;
+    line-height:20px;*/
+}
+.icon a {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+    font-size: 120%;
+}
+.icon a:hover {
+    color: white;
 }
 
 .day-description{
@@ -119,5 +130,5 @@
      /*top: 30px;*/
      width: 100%;
      text-align: center;
-     font-size: 130%;
+     font-size: 120%;
 }

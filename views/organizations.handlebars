@@ -27,43 +27,37 @@
 <body>
 	<!-- main content of the page goes here -->
 	<div class="main">
-		<!--The organization title-->
-		<div class="page-title">Organizations</div>
+		<!--Organization title-->
+		<div class="page-title" style="background-color: {{darkerColor}}">Organizations</div>
+		
 		<!--The list of organizations-->
 		<div class="list text-center">
 			{{#each orgs}}
 			<div class="well well-lg">
-				<div class="row">
-					<div class="col-xs-12">
-				<a href={{orgURL}}>{{orgName}}</a>
-			<p>{{orgSummary}}</p>
+				<a href={{orgURL}}><h4>{{orgName}}</h4></a>
+				<p>{{orgSummary}}</p>
 			</div>
-			<div class="col-xs-12">
-			<div class="btn btn-primary btn-primary-ghost btn-sm button"><a class="button-text" href="#">YOU</a></div>
-			</div>
-			</div>
-			</div>	
 			{{/each}}
 		</div>
 	</div><!--/main-->
 
 	<!-- top header: shows date and theme -->
 	<div class="top-header">
-		<div class="date-square">
+		<div class="date-square" style="background-color: {{darkerColor}}">
 			{{mon}}<br>{{date}}
 		</div>
-		<div class="heading-theme">
+		<div class="heading-theme" style="background-color: {{color}}">
 			{{theme}}
 		</div>
 	</div><!--/header-->
 
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
-		<div class="col-5 navbar-font"><a href="/">Home</a></div>
-		<div class="col-5 navbar-small-font"><a href="/challenge">Challenge</a></div>
-		<div class="col-5 navbar-small-font"><a href="/organizations">Organizations</a></div>
-		<div class="col-5 navbar-font"><a href="/news">News</a></div>
-		<div class="col-5 navbar-font"><a href="/trophies">Trophies</a></div>
+	<div class="col-5 navbar-font" style="background-color: {{color}}"><a href="/"><i class="fa fa-home fa-3x" aria-hidden="true"></i><br>Home</a></div>
+	<div class="col-5 navbar-small-font" style="background-color: {{color}}"><a href="/challenge"><i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i><br>Challenge</a></div>
+	<div class="col-5 navbar-small-font" style="background-color: {{darkerColor}}"><a href="/organizations"><i class="fa fa-heart fa-3x" aria-hidden="true"></i><br>Organizations</a></div>
+	<div class="col-5 navbar-font" style="background-color: {{color}}"><a href="/news"><i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i><br>News</a></div>
+	<div class="col-5 navbar-font" style="background-color: {{color}}"><a href="/trophies"><i class="fa fa-trophy fa-3x" aria-hidden="true"></i><br>Trophies</a></div>
 	</div><!--/navbar-->
 
 	<!--Firebase-->
@@ -83,5 +77,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<!--Custom JS-->
 	<script src="/js/introHCI.js"></script>
+	<!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/91c786b0d4.js"></script>
 </body>
 </html>
