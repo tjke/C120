@@ -29,8 +29,8 @@
 	<div class="main">
 		<div class="page-title">Challenge</div>
 		<div class="challenge">
-			<h2>Today's Challenge is </h2>
-			<h3 id="challenge"> {{challenge}}</h3>
+			<h2>Today's challenge is</h2>
+			<h3 id="challenge">{{challenge}}</h3>
 		</div>
 			<!--<div class="challenge-description" style="text-align:left">
 			<p> About this challenge: <p>
@@ -45,9 +45,13 @@
 			</div>
 	</div> -->
 		<div class="completed">
-			<button id="completedbtn"> Challenge Completed!</button>
+			<button id="completedbtn" onclick=updateCount()>Challenge Completed!</button>
 			<!--<p> participants<span id="displayCount"> 0 </span> times. </p>-->
-			<p id="displayCount"></p>
+			<div class="participants">
+				<p>Number of participants:</p>
+				<p id="displayCount"></p>
+				<p id="partUpdateMessage"></p>
+			</div>
 		</div>
 	</div><!--/main-->
 

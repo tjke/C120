@@ -1,10 +1,7 @@
 'use strict';
 
+// might use for firebase stuff
 var firebaseRef = firebase.database();
-
-// gathering HTML elements
-//var dateHTML = document.getElementById("date");
-//var themeHTML = document.getElementById("theme");
 
 // month arrays
 var months = ["January","February","March","April","May","June","July","August","October","November","December"];
@@ -39,33 +36,38 @@ function initializePage() {
 	//writeUserData("testUser","testPass","test@mail.com");
 }
 
+// does error checking when Sign Up button is clicked
 function signup() {
-	var loginMessageHTML = document.getElementById("loginMessage");
+	var signupMessageHTML = document.getElementById("signupMessage");
 	var user = document.getElementById("signupUser").value;
 	var pass = document.getElementById("signupPassword").value;
 	var mail = document.getElementById("signupEmail").value;
 	
+	// account created successfully
 	if(user != "" && pass != "" && mail != "") {
 		console.log(user + ": " + pass + "(" + mail + ")");
 		writeUserData(user,pass,mail);
-		alert("An account has been created for " + mail);
+		//alert("An account has been created for " + mail);
+		signupMessageHTML.innerHTML = "<font color=green>An account has been created for " + mail + "</font><br>";
 	}
 	// empty input fields errors
 	else {
 		var signupErrorMessage = "";
 		if( user == "" ) {
-			signupErrorMessage = "\nYou must provide a username!";
+			signupErrorMessage = "<br>You must provide a username!";
 		}
 		if( pass == "" ) {
-			signupErrorMessage += "\nYou must provide a password!";
+			signupErrorMessage += "<br>You must provide a password!";
 		}
 		if( mail == "" ) {
-			signupErrorMessage += "\nYou must provide an email!";
+			signupErrorMessage += "<br>You must provide an email!";
 		}
-		alert(signupErrorMessage);
+		//alert(signupErrorMessage);
+		signupMessageHTML.innerHTML = "<font color=red>" + signupErrorMessage + "</font><br><br>";
 	}	
 }
 
+// add new account to the firebase database
 function writeUserData(user, pass, mail) {
 	console.log("writeUserData();");
 	firebase.database().ref('accounts/' + user).set({
@@ -75,18 +77,20 @@ function writeUserData(user, pass, mail) {
 	});
 }
 
+// does error checking when Login button is clicked
 function login() {
 	var loginMessageHTML = document.getElementById("loginMessage");
 	var user = document.getElementById("loginUser").value;
 	var pass = document.getElementById("loginPassword").value;
 	
+	// login fields are all filled
 	if(user != "" && pass != "") {
 		var accountRef = firebase.database().ref('accounts/' + user);
 			accountRef.on('value', function(snapshot) {
 				var out = snapshot.val();
 				//console.log(out);
 				if( out == null) {
-					loginMessageHTML.innerHTML = "<br>This username is not registered!";
+					loginMessageHTML.innerHTML = "<br><font color=red>This username is not registered!</font>";
 				}
 				else {
 					var passRef = firebase.database().ref('accounts/' + user + '/password');
@@ -94,11 +98,11 @@ function login() {
 						var checkPass = snapshot.val();
 						// passwords don't match in database
 						if( pass != checkPass ) {
-							loginMessageHTML.innerHTML = "<br>Incorrect password!";
+							loginMessageHTML.innerHTML = "<br><font color=red>Incorrect password!</font>";
 						}
 						else {
 							console.log("Credentials are correct.");
-							loginMessageHTML.innerHTML = "<br>You are now logged in!";
+							loginMessageHTML.innerHTML = "<br><font color=green>You are now logged in!</font>";
 						}
 					});
 				}
@@ -113,10 +117,25 @@ function login() {
 		if( pass == "" ) {
 			loginErrorMessage += "<br>You must provide a password!";
 		}
-		loginMessageHTML.innerHTML = loginErrorMessage;
+		loginMessageHTML.innerHTML = "<font color=red>" + loginErrorMessage + "</font>";
 	}	
 }
 
+// displays the Help documentation
+function displayHelp(){
+	var modal = document.getElementById("myhelpbtn");
+	var helpbth = document.getElementById("help");
+	var span = document.getElementsByClassName("close")[0];
+	console.log(modal.style.display);
+	if (modal.style.display !== "block"){
+		modal.style.display = "block";
+	}
+	else if (modal.style.display === "block"){
+		modal.style.display = "none";
+	}
+}
+
+// set today's date
 function setDayData() {
 	var d = new Date();
 
@@ -140,17 +159,36 @@ function setDayData() {
 	
 }
 
+// display the number of participants for Challenges page
 function displayParticipants() {
 	var participantsHTML = document.getElementById("displayCount");
 	var partNum = 0;
-	var participantsRef = firebase.database().ref('challenges/' + data);
+	var participantsRef = firebase.database().ref('challenges/' + data + '/count');
 	participantsRef.on('value', function(snapshot) {
 		partNum = snapshot.val();
-		//console.log(participants);
-		participantsHTML.innerHTML = partNum;
+		//console.log(partNum);
+		if( partNum == null ) {
+			participantsHTML.innerHTML = "0";
+		}
+		else {
+			participantsHTML.innerHTML = partNum;
+		}
 	});
 }
 
 function updateCount() {
-	console.log("updating count");
+	var partMessageHTML = document.getElementById("partUpdateMessage");
+	var newCount = 0;
+	// get old count
+	var countRef = firebase.database().ref('challenges/' + data + '/count');
+	countRef.on('value', function(snapshot) {
+		newCount = snapshot.val();
+	});
+	// update with new count
+	newCount = newCount + 1;
+	firebase.database().ref('challenges/' + data).set({
+		count: newCount
+	});
+	console.log("Updating count for " + data + " to " + newCount);
+	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Come again tomorrow to see another challenge.";
 }

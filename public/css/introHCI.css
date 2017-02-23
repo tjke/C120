@@ -24,6 +24,7 @@ body {
      border-width: 1px;
      border-color: white;
      background-color: #4dc3ff; /* darker */
+     color: #333333;
      font-size: 220%;
 }
 /* shows the theme of the day at the top */
@@ -37,12 +38,13 @@ body {
      border-width: 1px;
      border-color: white;
      background-color: #80d4ff;
+     color: #333333;
      font-size: 200%;
 }
 
 /* the bottom navigation bar */
 .bottom-navbar {
-     height: 75px;
+     height: 70px;
      width: 100%;
      position: fixed;
      bottom: 0;
@@ -58,7 +60,7 @@ body {
 }
 /* container for 5 buttons for the bottom-navbar */
 .col-5 {
-     height: 75px;
+     height: 70px;
      width: 20%;
      display: table-cell;
      text-align: center;
@@ -83,7 +85,7 @@ body {
 /* the main container where content will be held */
 .main {
      margin-top: 100px;
-     margin-bottom: 75px;
+     margin-bottom: 70px;
      padding: 20px;
 }
 

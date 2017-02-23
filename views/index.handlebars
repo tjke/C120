@@ -29,12 +29,12 @@
 	<div class="home">
 		<div class="header">
 			<a style="float:top" href="/login">Login</a>
-			<div class="button">
-				<button id="help">?</button>
-				<div id="myhelpbtn">
+			<div class="help-button">
+				<button id="help"onclick=displayHelp()>?</button>
+				<div id="myhelpbtn" >
 				<!--Content in help button-->
-					<div class="help-content">
-						<span class="close"> &times; </span>
+					<div class="help-content" >
+						<span class="close" onclick=displayHelp()> &times; </span>
 						<p> Welcome to Aware&middot;A&middot;Day! <br> <br>Aware&middot;A&middot;Day provides you with a daily theme and a daily challenge. Challenges are tangible ways for you to address issues that affect you and/or community. You are able to win trophy rewards as you complete the daily challenges. Aware&middot;A&middot;Day also allows you to browse different news articles and organizations relating to the theme of the day. </p>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 			<p id="date">{{month}} {{date}}</p>
 		</div>
 		<div class="theme">
-			<p style="font-size: 350%">Today is </p>
+			<p style="font-size: 300%">Today is </p>
 				<p style="font-size: 250%" id="theme">{{theme}}!</p>
 				<!--<p class="themecolor"> in center </p>-->
 		</div>
@@ -54,12 +54,15 @@
 		<div class="icon">
 			<a href="/challenge" style="font-size: 14px; color:black; font-weight: bold"> Challenge </a>
 		</div> -->
-		<div class="icon"><a href="/challenge" style="font-size: 14px; color:black; font-weight:bold; text-decoration:none"> Challenge </a></div>
+		
 
 		<div class="day-description">
 			<p>{{summary}}</p>
 		</div>
-	</div><!--/home-->
+		<div class="icon"><a href="/challenge">See Today's<br>Challenge</a></div>
+	</div>
+
+	<!--/home-->
 
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">

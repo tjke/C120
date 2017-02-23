@@ -1,19 +1,19 @@
 /* HOME gets a special container for content */
 .home {
-     margin-bottom: 75px;
+     margin-bottom: 70px;
      padding: 20px;
 }
 
-.button{
+.help-button{
      position: absolute;
-     right: 10px;
-     top: 5px;
+     right: 15px;
+     top: 15px;
 }
 
 #help{
      width: 25px;
      height: 25px;
-     background: gray;
+     background: #bbbbbb;
      border-color: #000;
      border-radius: 4em;
      outline: 0;
@@ -55,7 +55,7 @@
 }
 
 .close{
-     color: #aaaaaa;
+     color: #111111;
      float: right;
      font-size: 28px;
      font-weight: bold;
@@ -77,12 +77,13 @@
 	background-color: #80d4ff;
     padding: 15px;
     border-radius: 25px;
-    font-size: 400%;
+    font-size: 350%;
     /* width: 80px;*/
 }
 .date p {
-     vertical-align: center;
-     color: #6e6e6e;
+     vertical-align: middle;
+     /*color: #6e6e6e;*/
+     color: #666666;
 }
 
 .theme {
@@ -95,23 +96,36 @@
 }
 
 .icon {
-     position: relative;
+    position:relative;
+    text-align: center;
+    padding-top: 42px;
+    border-radius: 100px;
+    width: 125px;
+    height: 125px;
+    background-color: #4dc3ff; /* darker */
+    margin-left: auto;
+    margin-right: auto;
+     /*position: relative;
      text-align: center;
-    /* margin-top: 50px;*/
-     margin-left: auto;
-     margin-right: auto;
+    /margin-top: 50px;
      margin-top: auto;
      margin-bottom: auto;
      display: block;
-     width: 75px;
-     height: 75px;
      border-radius:50px;
      font-size:100px;
      color:#fff;
-     line-height:20px;
-    /* text-align:center;*/
-     text-decoration:none;
-     background: purple;
+     line-height:20px;*/
+}
+.icon a {
+    font-size: 120%;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+.icon a:hover {
+    color: white;
 }
 
 .day-description{
@@ -119,5 +133,5 @@
      /*top: 30px;*/
      width: 100%;
      text-align: center;
-     font-size: 130%;
+     font-size: 120%;
 }

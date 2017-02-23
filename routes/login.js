@@ -51,7 +51,7 @@ function setDayData() {
         summary = days[i].summary;
         category = days[i].category;
         day = days[i]; // getting the theme day data
-        console.log("   Found a match: " + days[i].month + " " + date);
+        console.log("   Found a match: " + days[i].month + " " + days[i].date);
         break;
       }
     }
