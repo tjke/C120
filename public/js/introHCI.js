@@ -30,10 +30,6 @@ $(document).ready(function() {
  */
 function initializePage() {
 	setDayData();
-	/*database.on('value', function(datasnapshot) {
-		console.log(datasnapshot);
-	});*/
-	//writeUserData("testUser","testPass","test@mail.com");
 }
 
 // does error checking when Sign Up button is clicked
@@ -45,7 +41,7 @@ function signup() {
 	
 	// account created successfully
 	if(user != "" && pass != "" && mail != "") {
-		console.log(user + ": " + pass + "(" + mail + ")");
+		console.log(user + ": " + pass + " (" + mail + ")");
 		writeUserData(user,pass,mail);
 		//alert("An account has been created for " + mail);
 		signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";
@@ -69,7 +65,7 @@ function signup() {
 
 // add new account to the firebase database
 function writeUserData(user, pass, mail) {
-	console.log("writeUserData();");
+	console.log("writeUserData(): sending new account to firebase");
 	firebase.database().ref('accounts/' + user).set({
 		email: mail,
 		name: user,
@@ -101,7 +97,7 @@ function login() {
 							loginMessageHTML.innerHTML = "<br><font color=red>Incorrect password!</font>";
 						}
 						else {
-							console.log("Credentials are correct.");
+							console.log("Login credentials are correct.");
 							loginMessageHTML.innerHTML = "<br><font color=green>You are now logged in!</font>";
 						}
 					});
@@ -147,16 +143,20 @@ function setDayData() {
 	date = n;
 	data = month + " " + date;
 	var dayOfWeek = d.getDay();
-	var newDate = 0;
-	console.log(data + " " + dayOfWeek);
+	var newDate = date;
+	console.log(data + " dayOfWeek=" + dayOfWeek);
 	
-	if( dayOfWeek < 5) {
+	if( dayOfWeek == 0 ) {
+		newDate = date - 2;
+	}
+	else if( dayOfWeek < 5) {
 		newDate = date + (5-dayOfWeek);
 	}
 	else if( dayOfWeek > 5) {
 		newDate = date - (dayOfWeek - 5);
 	}
 	data = month + " " + newDate;
+	console.log("Getting theme from date " + data);
 	
 }
 
