@@ -48,7 +48,7 @@ function signup() {
 		console.log(user + ": " + pass + "(" + mail + ")");
 		writeUserData(user,pass,mail);
 		//alert("An account has been created for " + mail);
-		signupMessageHTML.innerHTML = "<font color=green>An account has been created for " + mail + "</font><br>";
+		signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";
 	}
 	// empty input fields errors
 	else {
@@ -90,7 +90,7 @@ function login() {
 				var out = snapshot.val();
 				//console.log(out);
 				if( out == null) {
-					loginMessageHTML.innerHTML = "<br><font color=red>This username is not registered!</font>";
+					loginMessageHTML.innerHTML = "<br><font color=red>The username</font> " + user + " <font color=red>is not registered!</font>";
 				}
 				else {
 					var passRef = firebase.database().ref('accounts/' + user + '/password');
@@ -149,6 +149,7 @@ function setDayData() {
 	var dayOfWeek = d.getDay();
 	var newDate = 0;
 	console.log(data + " " + dayOfWeek);
+	
 	if( dayOfWeek < 5) {
 		newDate = date + (5-dayOfWeek);
 	}
@@ -176,8 +177,8 @@ function displayParticipants() {
 	});
 }
 
+// updates the participants count number for the server and for display
 function updateCount() {
-	var partMessageHTML = document.getElementById("partUpdateMessage");
 	var newCount = 0;
 	// get old count
 	var countRef = firebase.database().ref('challenges/' + data + '/count');
@@ -190,5 +191,6 @@ function updateCount() {
 		count: newCount
 	});
 	console.log("Updating count for " + data + " to " + newCount);
+	var partMessageHTML = document.getElementById("partUpdateMessage");
 	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Come again tomorrow to see another challenge.";
 }

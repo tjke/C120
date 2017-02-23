@@ -54,6 +54,10 @@
      width: 80%;
 }
 
+.help-content b {
+    color: purple;
+}
+
 .close{
      color: #111111;
      float: right;
