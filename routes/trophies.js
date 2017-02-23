@@ -14,7 +14,6 @@ var summary = "Let's be aware of a cause.";
 var category = "other";
 var color = "#80d4ff";
 var darkerColor = "#4dc3ff";
-//var trophies = [];
 var day = days[0]; // default data
 
 

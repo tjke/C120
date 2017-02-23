@@ -17,17 +17,14 @@ var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
 var data; // array of data
-//var day = days[0]; // default data
-//var orgs = days[0].orgs; // default orgs data
+
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
 });
 
-/*
- * Function that is called when the document is ready.
- */
+//Function that is called when the document is ready.
 function initializePage() {
 	setDayData();
 
@@ -40,6 +37,7 @@ function initializePage() {
 	$("#completedbtn").click(updateCount);
 }
 
+
 // does error checking when Sign Up button is clicked
 function signup(e) {
 	var signupMessageHTML = document.getElementById("signupMessage");
@@ -51,7 +49,6 @@ function signup(e) {
 	if(user != "" && pass != "" && mail != "") {
 		console.log(user + ": " + pass + " (" + mail + ")");
 		writeUserData(user,pass,mail);
-		//alert("An account has been created for " + mail);
 		signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";
 	}
 	// empty input fields errors
@@ -66,7 +63,6 @@ function signup(e) {
 		if( mail == "" ) {
 			signupErrorMessage += "<br>You must provide an email!";
 		}
-		//alert(signupErrorMessage);
 		signupMessageHTML.innerHTML = "<font color=red>" + signupErrorMessage + "</font><br><br>";
 	}	
 }
@@ -125,6 +121,7 @@ function login(e) {
 	}	
 }
 
+
 // displays the Help documentation
 function displayHelp(e){
 	var modal = document.getElementById("myhelpbtn");
@@ -165,7 +162,6 @@ function setDayData() {
 	}
 	data = month + " " + newDate;
 	console.log("Getting theme from date " + data);
-	
 }
 
 // greys out the Challenge Completed button
