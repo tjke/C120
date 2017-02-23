@@ -24,7 +24,7 @@
     <![endif]-->        
 </head>
 
-<body>
+<body onload=displayParticipants()>
 	<!-- main content of the page goes here -->
 	<div class="main">
 		<div class="page-title">Challenge</div>
@@ -47,6 +47,7 @@
 		<div class="completed">
 			<button id="completedbtn"> Challenge Completed!</button>
 			<!--<p> participants<span id="displayCount"> 0 </span> times. </p>-->
+			<p id="displayCount"></p>
 		</div>
 	</div><!--/main-->
 

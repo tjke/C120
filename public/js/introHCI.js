@@ -32,7 +32,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	//setDayData();
+	setDayData();
 	/*database.on('value', function(datasnapshot) {
 		console.log(datasnapshot);
 	});*/
@@ -117,7 +117,7 @@ function login() {
 	}	
 }
 
-/*function setDayData() {
+function setDayData() {
 	var d = new Date();
 
 	// get the current Month and Date
@@ -126,6 +126,31 @@ function login() {
 	mon = mons[d.getMonth()];
 	var n = d.getDate();
 	date = n;
-	console.log(m + " " + n);
-	dateHTML.innerText = m + " " + n;
-}*/
+	data = month + " " + date;
+	var dayOfWeek = d.getDay();
+	var newDate = 0;
+	console.log(data + " " + dayOfWeek);
+	if( dayOfWeek < 5) {
+		newDate = date + (5-dayOfWeek);
+	}
+	else if( dayOfWeek > 5) {
+		newDate = date - (dayOfWeek - 5);
+	}
+	data = month + " " + newDate;
+	
+}
+
+function displayParticipants() {
+	var participantsHTML = document.getElementById("displayCount");
+	var partNum = 0;
+	var participantsRef = firebase.database().ref('challenges/' + data);
+	participantsRef.on('value', function(snapshot) {
+		partNum = snapshot.val();
+		//console.log(participants);
+		participantsHTML.innerHTML = partNum;
+	});
+}
+
+function updateCount() {
+	console.log("updating count");
+}
