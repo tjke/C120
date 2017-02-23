@@ -12,6 +12,8 @@ var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var category = "other";
+var color = "#80d4ff";
+var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
 
 
@@ -24,7 +26,9 @@ exports.view = function(req, res){
   		"date": date,
   		"theme": theme,
   		"category": category,
-  		"news": news
+  		"news": news,
+  		"color": color,
+  		"darkerColor": darkerColor
   	};
   	res.render('news', passData);
 };
@@ -53,6 +57,8 @@ function setDayData() {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				category = days[i].category;
+				color = days[i].color;
+				darkerColor = days[i].darkerColor;
 				day = days[i]; // getting the theme day data
 				console.log("   Found a match: " + days[i].month + " " + days[i].date);
 				break;

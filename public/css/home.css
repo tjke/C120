@@ -78,7 +78,7 @@
     width: 100%;
     text-align: center;
     margin-top: 15px;
-	background-color: #80d4ff;
+	/*background-color: #80d4ff;*/
     padding: 15px;
     border-radius: 25px;
     font-size: 350%;
@@ -106,7 +106,7 @@
     border-radius: 100px;
     width: 125px;
     height: 125px;
-    background-color: #4dc3ff; /* darker */
+    /*background-color: #4dc3ff; /* darker */
     margin-left: auto;
     margin-right: auto;
      /*position: relative;

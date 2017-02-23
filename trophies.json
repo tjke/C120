@@ -3,31 +3,59 @@
 	[
 		{
 			"id": 0,
-			"trophy_title": "Trophy A",
+			"trophy_title": "Trophy1",
 			"trophy_description": "Complete 10 challenges",
 			"trophy_image": "#",
 			"progress": 80
 		},
 		{
 			"id": 1,
-			"trophy_title": "Trophy B",
+			"trophy_title": "Trophy2",
 			"trophy_description": "Donate to 10 organizations",
 			"trophy_image": "#",
 			"progress": 40
 		},
 		{
 			"id": 2,
-			"trophy_title": "Trophy C",
-			"trophy_description": "Open the app for 10 days continuously",
+			"trophy_title": "Trophy3",
+			"trophy_description": "Login the app for 10 days",
 			"trophy_image": "#",
 			"progress": 20
 		},
 		{
 			"id": 3,
-			"trophy_title": "Trophy D",
-			"trophy_description": "Share challenges to 10 friends",
+			"trophy_title": "Trophy4",
+			"trophy_description": "Complete 10 Animal challenges",
 			"trophy_image": "#",
-			"progress": 60
+			"progress": 10
+		},
+		{
+			"id": 4,
+			"trophy_title": "Trophy5",
+			"trophy_description": "Complete 10 Environment challenges",
+			"trophy_image": "#",
+			"progress": 20
+		},
+		{
+			"id": 5,
+			"trophy_title": "Trophy6",
+			"trophy_description": "Complete 10 Health challenges",
+			"trophy_image": "#",
+			"progress": 30
+		},
+		{
+			"id": 6,
+			"trophy_title": "Trophy7",
+			"trophy_description": "Complete 10 Kindness challenges",
+			"trophy_image": "#",
+			"progress": 40
+		},
+		{
+			"id": 7,
+			"trophy_title": "Trophy8",
+			"trophy_description": "Complete 10 LGBT challenges",
+			"trophy_image": "#",
+			"progress": 50
 		}
 	]
 }
