@@ -32,8 +32,17 @@
 		<!--The list of organizations-->
 		<div class="list text-center">
 			{{#each orgs}}
-			<div class="well well-lg"><a href={{orgURL}}>{{orgName}}</a>
-			<p>{{orgSummary}}</p></div>
+			<div class="well well-lg">
+				<div class="row">
+					<div class="col-xs-12">
+				<a href={{orgURL}}>{{orgName}}</a>
+			<p>{{orgSummary}}</p>
+			</div>
+			<div class="col-xs-12">
+			<div class="btn btn-primary btn-primary-ghost btn-sm button"><a class="button-text" href="#">YOU</a></div>
+			</div>
+			</div>
+			</div>	
 			{{/each}}
 		</div>
 	</div><!--/main-->
