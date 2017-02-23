@@ -74,6 +74,8 @@ body {
 .col-5:hover {
      /*background-color: #4dc3ff; /* darker */
 }
+
+/* may need to adjust the font size of the navbar link text */
 .navbar-font {
      font-size: 100%;
 }
@@ -91,7 +93,7 @@ body {
 /* for page titles */
 .page-title{
      text-align: center;
-     margin-bottom: 10px;
+     margin-bottom: 15px;
      padding: 10px;
      /*background-color: #4dc3ff; /* darker */
      color: white;

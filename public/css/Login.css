@@ -1,27 +1,4 @@
-.App-Name {
-	text-align: center;
-	background-color: pink;
-	color: snow;
-	margin: 0px;
-	padding: 0px;
-}
-
-.heading {
-	text-align: center;
-	display: block;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-h3 {
-	color: lightgray;
-}
-
-.buttons {
-	padding-left: 0px;
-	margin-left: 0px;
-	position: left;
-}
-
+/* for the Sign Up modal */
 .form2 {
-	margin: 10px;
+	margin: 15px;
 }

@@ -4,13 +4,16 @@
     padding: 20px;
 }
 
-.help-button{
+
+/*** HELP section ***/
+.help {
     position: absolute;
     right: 15px;
     top: 15px;
 }
 
-#help{
+/* for displaying the circular "?" button */
+#help-btn {
     width: 25px;
     height: 25px;
     background: #bbbbbb;
@@ -29,12 +32,14 @@
     text-decoration:none;
     background: gray;*/
 }
-#help:hover{color:#ccc;
-    text-decoration:none;
-    background:#333;
+#help-btn:hover {
+    text-decoration: none;
+    background: #333;
+    color: #ccc;
 }
 
-#myhelpbtn{
+/* help container properties */
+#myhelp {
     display: none;
     position: fixed;
     z-index: 100;
@@ -43,7 +48,8 @@
     overflow: auto;
 }
 
-.help-content{
+/* for displaying Help documentation */
+.help-content {
    /*  display: none;*/
     width: 80%;
     margin: auto;
@@ -55,6 +61,7 @@
     color: purple;
 }
 
+/* for closing out of Help documentation */
 .close{
     float: right;
     color: #111111;
@@ -68,17 +75,20 @@
     color: #000;
 }
 
+
+/* displaying the full date */
 .date {
     width: 100%;
-    position: relative;
+    /*position: relative;*/
     left: 0;
     top: 0%;
     border-radius: 25px;
     margin-top: 15px;
     padding: 15px;
     text-align: center;
+    vertical-align: middle;
 	/*background-color: #80d4ff;*/
-    font-size: 350%;
+    font-size: 330%;
 }
 .date p {
     vertical-align: middle;
@@ -86,18 +96,30 @@
     color: #666666;
 }
 
+/* displaying the daily theme */
 .theme {
     width: 100%;
-    position: relative;
+    /*position: relative;*/
     left: 0;
     /*top: 35%;*/
     margin-top: 25px;
     text-align: center;
 }
 
+/* displaying the day description */
+.day-description {
+     position: relative;
+     /*top: 30px;*/
+     width: 100%;
+     text-align: center;
+     font-size: 120%;
+}
+
+/* circular icon */
 .icon {
     position:relative;
     text-align: center;
+    vertical-align: middle;
     padding-top: 42px;
     border-radius: 100px;
     width: 125px;
@@ -123,12 +145,4 @@
 }
 .icon a:hover {
     color: white;
-}
-
-.day-description{
-     position: relative;
-     /*top: 30px;*/
-     width: 100%;
-     text-align: center;
-     font-size: 120%;
 }
