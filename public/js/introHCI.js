@@ -14,7 +14,6 @@ var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
-var participants = 0;
 var category = "other";
 var data; // array of data
 var newsJson;
@@ -58,10 +57,9 @@ function signup(e) {
 	// sign up fields are all filled
 	if(user != "" && pass != "" && mail != "") {
 		console.log("Reading from Sign Up " + user + ": " + pass + " (" + mail + ")");
-		var accountRef = firebase.database().ref('accounts/' + user);
+		var accountRef = firebaseRef.ref('accounts/' + user);
 		accountRef.on('value', function(snapshot) {
 			var out = snapshot.val();
-			//console.log(out);
 			// check if username has been taken
 			if( out != null) {
 				signupMessageHTML.innerHTML = "<font color=red>The username</font> " + user + " <font color=red>has been taken!</font>";
@@ -71,7 +69,8 @@ function signup(e) {
 				if( /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail) ) {
 					// account created successfully	
 					writeUserData(user,pass,mail);
-					signupMessageHTML.innerHTML = "<font color=green>An account has been registered for</font> " + user + " <font color=green>at</font> " + mail + "<br>";
+					signupMessageHTML.innerHTML = "<font color=green>An account has been registered for</font> "
+						+ user + " <font color=green>at</font> " + mail + "<br>";
 				}
 				else {
 					// invalid email
@@ -99,7 +98,7 @@ function signup(e) {
 // add new account to the firebase database
 function writeUserData(user, pass, mail) {
 	console.log("writeUserData(): sending new account to firebase");
-	firebase.database().ref('accounts/' + user).set({
+	firebaseRef.ref('accounts/' + user).set({
 		email: mail,
 		name: user,
 		password: pass
@@ -114,16 +113,16 @@ function login(e) {
 	
 	// login fields are all filled
 	if(user != "" && pass != "") {
-		var accountRef = firebase.database().ref('accounts/' + user);
+		var accountRef = firebaseRef.ref('accounts/' + user);
 			accountRef.on('value', function(snapshot) {
 				var out = snapshot.val();
-				//console.log(out);
 				// check if username is in the database
 				if( out == null) {
-					loginMessageHTML.innerHTML = "<br><font color=red>The username</font> " + user + " <font color=red>is not registered!</font>";
+					loginMessageHTML.innerHTML = "<br><font color=red>The username</font> "
+						+ user + " <font color=red>is not registered!</font>";
 				}
 				else {
-					var passRef = firebase.database().ref('accounts/' + user + '/password');
+					var passRef = firebaseRef.ref('accounts/' + user + '/password');
 					passRef.on('value', function(snapshot) {
 						var checkPass = snapshot.val();
 						// passwords don't match in database
@@ -225,12 +224,15 @@ function greyButton(e){
 
 // display the number of participants for Challenge page
 function displayParticipants() {
+	// get category of the theme
+	category = $("#partUpdateMessage").text();
+	$("#partUpdateMessage").hide();
+
 	var participantsHTML = document.getElementById("displayCount");
 	var partNum = 0;
-	var participantsRef = firebase.database().ref('challenges/' + data + '/count');
+	var participantsRef = firebaseRef.ref('challenges/' + data + '/count');
 	participantsRef.on('value', function(snapshot) {
 		partNum = snapshot.val();
-		//console.log(partNum);
 		if( partNum == null ) {
 			participantsHTML.innerHTML = "0";
 		}
@@ -245,27 +247,58 @@ function updateCount(e) {
 	var newCount = 0;
 	console.log("clickedIn="+clickedIn);
 	if( clickedIn == false ) {
-		var countRef = firebase.database().ref('challenges/' + data + '/count');
+		var countRef = firebaseRef.ref('challenges/' + data + '/count');
 		countRef.transaction(function(count) {
 			newCount = (count || 0) + 1;
 			return newCount;
 		});
 		// get old count
-		/*var countRef = firebase.database().ref('challenges/' + data + '/count');
+		/*var countRef = firebaseRef.ref('challenges/' + data + '/count');
 		countRef.on('value', function(snapshot) {
 			newCount = snapshot.val();
 		});
 		// update with new count
 		/*newCount = newCount + 1;
-		firebase.database().ref('challenges/' + data).set({
+		firebaseRef.ref('challenges/' + data).set({
 			count: newCount
 		});*/
 		console.log("Updating count for " + data + " to " + newCount);
+		var extraTrophy = categoryCheck(category);
 		var partMessageHTML = document.getElementById("partUpdateMessage");
-		partMessageHTML.innerHTML = "You have completed today's challenge!<br>Check tomorrow to see another challenge.";
+		partMessageHTML.innerHTML = "You have completed today's challenge!"
+			+ extraTrophy 
+			+ "<br>Check tomorrow to see another challenge.";
+		$("#partUpdateMessage").show();
 		updateTrophy(0); // challenges10
 	}
 	clickedIn = true;
+}
+
+// check theme category and update corresponding trophy
+function categoryCheck(cat) {
+	var retString = "";
+	var extraString = "<br>You have completed a";
+	if( cat == "Animal" ) {
+		updateTrophy(3);
+		retString = extraString + "n " + category + " challenge!";
+	}
+	else if( cat == "Environment") {
+		updateTrophy(4);
+		retString = extraString + "n " + category + " challenge!";
+	}
+	else if( cat == "Health") {
+		updateTrophy(5);
+		retString = extraString + " " + category + " challenge!";
+	}
+	else if( cat == "Kindness" ) {
+		updateTrophy(6);
+		retString = extraString + " " + category + " challenge!";
+	}
+	else if( cat == "LGBT") {
+		updateTrophy(7);
+		retString = extraString + " " + category + " challenge!";
+	}
+	return retString;
 }
 
 // click listener for when Donate button is clicked
@@ -276,7 +309,7 @@ function donateClick(e) {
 
 // load Trophies progress data
 function getProgress(result) {
-	var trophiesRef = firebase.database().ref('trophies');
+	var trophiesRef = firebaseRef.ref('trophies');
 	trophiesRef.on('value', function(snapshot) {
 		console.log("numTrophies=" + snapshot.numChildren());
 
@@ -290,19 +323,19 @@ function getProgress(result) {
 			var description = "Description";
 			var progress = 0;
 
-			var titleRef = firebase.database().ref('trophies/' + i + '/title');
+			var titleRef = firebaseRef.ref('trophies/' + i + '/title');
 			titleRef.once('value', function(titleSnapshot) {
 				title = titleSnapshot.val();
 			});
-			var descriptionRef = firebase.database().ref('trophies/' + i + '/description');
+			var descriptionRef = firebaseRef.ref('trophies/' + i + '/description');
 			descriptionRef.once('value', function(descripSnapshot) {
 				description = descripSnapshot.val();
 			});
-			var progressRef = firebase.database().ref('trophies/' + i + '/progress');
+			var progressRef = firebaseRef.ref('trophies/' + i + '/progress');
 			progressRef.once('value', function(progSnapshot) {
 				progress = progSnapshot.val();
 			});
-			/*var progressRef = firebase.database().ref('progress/' + i + '/prog');
+			/*var progressRef = firebaseRef.ref('progress/' + i + '/prog');
 			progressRef.on('value', function(progSnapshot) {
 				progress = progSnapshot.val();
 				//console.log("progressSnapshot=" + progress);
@@ -316,13 +349,12 @@ function getProgress(result) {
 			}
 			
 			// append for each trophy entry
-			$(".media").append("<br><a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>"
-				+ "<div class='media-body'>"
+			$(".media").append("<a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>"
 				+ "<p class='media-heading medium-font'><b>" + title + "</b></p>" // trophy title
 				+ "<p>" + description + "</p>" // trophy description
 				+ "<div class='progress progress-striped'>"
 				+ "<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:" + prog10 + "%'>"
-				+ progress + "/10</div></div></div>"
+				+ progress + "/10</div></div><hr>"
 			);
 		}
 	});
@@ -335,7 +367,7 @@ function updateTrophy(trophy) {
 	var newProgress = 0;
 
 	// get old info
-	var progressRef = firebase.database().ref('trophies/' + trophy + '/progress');
+	var progressRef = firebaseRef.ref('trophies/' + trophy + '/progress');
 	progressRef.transaction(function(progress) {
 		newProgress = (progress || 0) + 1;
 		return newProgress;
@@ -345,7 +377,7 @@ function updateTrophy(trophy) {
 	});
 	// update with new progress
 	newProgress = newProgress + 1;
-	firebase.database().ref('trophies/').child(trophy).update({
+	firebaseRef.ref('trophies/').child(trophy).update({
 		progress: newProgress});*/
 	console.log("Updating progress of trophy" + trophy + " to " + newProgress);
 }
@@ -394,10 +426,6 @@ function getNews() {
             console.log("News error");
         });
 
-        // print out news JSON result to console
-        var jOut = newsJson;
-        //console.log(jOut);
-
         // display search results message
         $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:");
 
@@ -409,8 +437,6 @@ function getNews() {
         	newsSource = newsSource[0].name;
         	var newsDescrip = newsJson[i].description;
         	var newsImage = "";
-
-        	console.log(newsSource);
 
         	// check if there is a news image
         	if( newsJson[i].image != null ) {
