@@ -14,3 +14,11 @@
 .donate-btn{
 	float:right;
 }
+
+/* show white text over a blue button */
+.button-text {
+	color: white;
+}
+.button-text:hover {
+	color: white;
+}
