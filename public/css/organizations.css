@@ -22,3 +22,9 @@
 .button-text:hover {
 	color: white;
 }
+.button-text:active {
+	color: white;
+}
+.button-text:visited {
+	color: white;
+}
