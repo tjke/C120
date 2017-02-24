@@ -17,7 +17,7 @@ var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
 var data; // array of data
-
+//var trophies = [];
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -27,12 +27,15 @@ $(document).ready(function() {
 //Function that is called when the document is ready.
 function initializePage() {
 	setDayData();
+	$.get("trophies/", getProgress);
+	//getProgress();
 
 	// defining click listeners
 	$("#signup-btn").click(signup);
 	$("#login-btn").click(login);
 	$("#help-btn").click(displayHelp);
 	$(".close").click(displayHelp);
+	$(".donate-btn").click(donateClick);
 	$("#completedbtn").click(greyButton);
 	$("#completedbtn").click(updateCount);
 }
@@ -45,11 +48,23 @@ function signup(e) {
 	var pass = document.getElementById("signupPassword").value;
 	var mail = document.getElementById("signupEmail").value;
 	
-	// account created successfully
+	// sign up fields are all filled
 	if(user != "" && pass != "" && mail != "") {
 		console.log(user + ": " + pass + " (" + mail + ")");
-		writeUserData(user,pass,mail);
-		signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";
+		var accountRef = firebase.database().ref('accounts/' + user);
+		accountRef.on('value', function(snapshot) {
+			var out = snapshot.val();
+			//console.log(out);
+			// check if username has been taken
+			if( out != null) {
+				signupMessageHTML.innerHTML = "<font color=red>The username</font> " + user + " <font color=red>has been taken!</font>";
+			}
+			// account created successfully
+			else {
+				writeUserData(user,pass,mail);
+				signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";	
+			}
+		});	
 	}
 	// empty input fields errors
 	else {
@@ -89,6 +104,7 @@ function login(e) {
 			accountRef.on('value', function(snapshot) {
 				var out = snapshot.val();
 				//console.log(out);
+				// check if username is in the database
 				if( out == null) {
 					loginMessageHTML.innerHTML = "<br><font color=red>The username</font> " + user + " <font color=red>is not registered!</font>";
 				}
@@ -100,9 +116,11 @@ function login(e) {
 						if( pass != checkPass ) {
 							loginMessageHTML.innerHTML = "<br><font color=red>Incorrect password!</font>";
 						}
+						// login success
 						else {
 							console.log("Login credentials are correct.");
 							loginMessageHTML.innerHTML = "<br><font color=green>You are now logged in!</font>";
+							updateTrophy(3); // login10
 						}
 					});
 				}
@@ -164,6 +182,7 @@ function setDayData() {
 	console.log("Getting theme from date " + data);
 }
 
+
 // greys out the Challenge Completed button
 function greyButton(e){
 	e.preventDefault();
@@ -203,4 +222,93 @@ function updateCount(e) {
 	console.log("Updating count for " + data + " to " + newCount);
 	var partMessageHTML = document.getElementById("partUpdateMessage");
 	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Come again tomorrow to see another challenge.";
+	updateTrophy(0); // challenges10
+}
+
+// click listener for when Donate button is clicked
+function donateClick(e) {
+	updateTrophy(1); // donate10
+}
+
+
+// load Trophies progress data
+function getProgress(result) {
+	var trophiesRef = firebase.database().ref('trophies');
+	trophiesRef.on('value', function(snapshot) {
+		console.log("numChildren=" + snapshot.numChildren());
+
+		// iterate by the number of children in the trophies list
+		for( var i = 0; i < snapshot.numChildren(); i++ ) {
+			// defaults
+			var title = "Trophy";
+			var description = "Description";
+			var progress = 0;
+
+			var titleRef = firebase.database().ref('trophies/' + i + '/title');
+			titleRef.on('value', function(childSnapshot) {
+				title = childSnapshot.val();
+			});
+			var descriptionRef = firebase.database().ref('trophies/' + i + '/description');
+			descriptionRef.on('value', function(childSnapshot) {
+				description = childSnapshot.val();
+			});
+			var progressRef = firebase.database().ref('trophies/' + i + '/progress');
+			progressRef.on('value', function(childSnapshot) {
+				progress = childSnapshot.val();
+			});
+			/*var progressRef = firebase.database().ref('progress/' + i + '/prog');
+			progressRef.on('value', function(childSnapshot) {
+				progress = childSnapshot.val();
+				console.log("progressSnapshot=" + progress);
+			});*/
+
+			// scale progress to percentage and out of 10
+			var prog10 = progress*10;
+			if( prog10 > 100 ) {
+				prog10 = 100;
+				progress = 10;
+			}
+			
+			// append for each trophy entry
+			$(".media").append("<a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>" +
+			"<div class='media-body'>" +
+			"<h4 class='media-heading'>" + title + "</h4>" +
+			"<p>" + description + "</p>" +
+			"<div class='progress progress-striped'>" +
+			"<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:" + prog10 + "%'>" +
+			progress + "/10</div></div></div>");
+		}
+	});
+}
+
+// updates the progress bar of a trophy
+function updateTrophy(trophy) {
+	var trophy_title = "Trophy";
+	var trophy_description = "Description";
+	var newProgress = 0;
+
+	// get old info
+	var progressRef = firebase.database().ref('progress/' + trophy + '/prog');
+	progressRef.on('value', function(snapshot) {
+		newProgress = snapshot.val();
+	});
+	/*var titleRef = firebase.database().ref('trophies/' + trophy + '/title');
+			titleRef.on('value', function(snapshot) {
+				trophy_title = snapshot.val();
+			});
+	var descriptionRef = firebase.database().ref('trophies/' + trophy + '/description');
+		descriptionRef.on('value', function(snapshot) {
+			trophy_description = snapshot.val();
+	});
+	var progressRef = firebase.database().ref('trophies/' + trophy + '/progress');
+	progressRef.on('value', function(snapshot) {
+		newProgress = snapshot.val();
+	});*/
+
+	// update with new progress
+	newProgress = newProgress + 1;
+	firebase.database().ref('progress/' + trophy).set({
+		prog: newProgress
+	});
+	console.log("Updating progress of trophy " + trophy + " to " + newProgress);
 }

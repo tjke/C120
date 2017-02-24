@@ -21,7 +21,7 @@ var count = 0;
 
 exports.view = function(req, res){
 	setDayData();
-	console.log(day);
+	//console.log(day);
 	var passData = {
   		"mon": mon,
   		"date": date,

@@ -19,8 +19,8 @@ var day = days[0]; // default data
 
 exports.view = function(req, res){
 	setDayData();
-	console.log(day);
-	console.log(trophies);
+	//console.log(day);
+	//console.log(trophies);
 	var passData = {
   		"mon": mon,
   		"date": date,

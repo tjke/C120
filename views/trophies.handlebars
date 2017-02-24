@@ -30,24 +30,23 @@
 		<!--Trophies title-->
 		<div class="page-title" style="background-color: {{darkerColor}}">Trophies</div>
 		
-		{{#each trophies}}
 		<div class="media">
-			<!--trophy image-->
+			<!--moved to introHCI.js-->
+			<!--{{#each trophies}}
 			<a class="pull-left">
 				<img class="media-object" src="/images/trophy.png" alt="...">
 			</a>
 			<div class="media-body">
 				<h4 class="media-heading">{{trophy_title}}</h4>
 				<p>{{trophy_description}}</p>
-				<!--progress bar-->
 				<div class="progress progress-striped">
 					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%">
 						{{progress}}%
 					</div>
 				</div>
 			</div>
+			{{/each}}-->
 		</div>
-		{{/each}}
 
 			<!--<div class="media">
 			  <a class="pull-left">
