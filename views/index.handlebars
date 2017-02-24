@@ -40,7 +40,7 @@
 				<!--Content in Help-->
 					<div class="help-content" >
 						<!--X button-->
-						<span class="close"> &times; </span>
+						<span class="close large-font"> &times; </span>
 						<p><center>Welcome to <b>Aware&middot;A&middot;Day</b>!</center><br>
 						Aware&middot;A&middot;Day presents you with a daily theme and a daily challenge.
 						<br><br>
@@ -55,21 +55,20 @@
 		</div>
 
 		<!--show date-->
-		<div class="date" style="background-color: {{color}}">
-			<p id="date">{{month}} {{date}}</p>
+		<div class="date large-font" style="background-color: {{color}}">
+			<div class='center-container'><p id="date">{{month}} {{date}}</p></div>
 		</div>
 		<!--show theme-->
 		<div class="theme">
-			<p style="font-size: 300%">Today is </p>
-			<p style="font-size: 250%" id="theme">{{theme}}!</p>
+			<p class="large-font" id="theme">Today is<br>{{theme}}!</p>
 		</div>
 		<!--day description-->
-		<div class="day-description">
+		<div class="day-description medium-font">
 			<p>{{summary}}</p>
 		</div>
 		<!--icon-->
-		<div class="icon navbar-btn-challenge" style="background-color: {{darkerColor}}">
-			<a href="/challenge">See Today's<br>Challenge</a>
+		<div class="icon navbar-btn-challenge medium-font" style="background-color: {{darkerColor}}">
+			<div class="center-container"><a href="/challenge">See Today's<br>Challenge</a></div>
 		</div>
 	</div><!--/home-->
 

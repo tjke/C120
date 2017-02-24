@@ -18,20 +18,13 @@
     height: 25px;
     background: #bbbbbb;
     border-color: #000;
-    border-radius: 25px;
+    border-radius: 100px;
     outline: 0;
     text-align: center;
     /*top: 5px;
     display: block;
-    width: 20px;
-    height: 20px;
-    border-radius:50px;
-    font-size:18px;
-    color:#fff;
-    line-height:20px;
-    text-align:center;
-    text-decoration:none;
-    background: gray;*/
+    color: #fff;
+    line-height:20px;*/
 }
 #help-btn:hover {
     text-decoration: none;
@@ -63,11 +56,10 @@
 }
 
 /* for closing out of Help documentation */
-.close{
+.close {
     float: right;
     color: #111111;
     font-weight: bold;
-    font-size: 28px;
 }
 .close:hover,
 .close:focus {
@@ -83,66 +75,51 @@
     /*position: relative;*/
     left: 0;
     top: 0%;
-    border-radius: 25px;
+    display: table;
+    border-radius: 20px;
     margin-top: 15px;
     padding: 15px;
     text-align: center;
     vertical-align: middle;
 	/*background-color: #80d4ff;*/
-    font-size: 330%;
-}
-.date p {
-    vertical-align: middle;
-    /*color: #6e6e6e;*/
     color: #666666;
 }
 
 /* displaying the daily theme */
 .theme {
+    position: relative;
     width: 100%;
-    /*position: relative;*/
     left: 0;
-    /*top: 35%;*/
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: center;
 }
 
 /* displaying the day description */
 .day-description {
-     position: relative;
-     /*top: 30px;*/
-     width: 100%;
-     text-align: center;
-     font-size: 120%;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
 }
 
 /* circular icon */
 .icon {
-    position:relative;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 42px;
+    position: relative;
     border-radius: 100px;
     width: 125px;
     height: 125px;
-    /*background-color: #4dc3ff; /* darker */
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    /*margin-top: 50px;
-    margin-top: auto;
-    margin-bottom: auto;
-    display: block;
-    font-size:100px;
-    color:#fff;
+    display: table;
+    /*background-color: #4dc3ff; /* darker */
+    /*color:#fff;
     line-height:20px;*/
 }
 .icon a {
-    text-align: center;
-    vertical-align: middle;
     font-weight: bold;
     text-decoration: none;
     color: #333333;
-    font-size: 120%;
 }
 .icon a:hover {
     color: white;

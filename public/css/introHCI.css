@@ -3,6 +3,19 @@ body {
       font: 13px Montserrat, sans-serif;
 }
 
+.large-font {
+     font-size: 300%;
+}
+.big-font {
+     font-size: 180%;
+}
+.medium-font {
+     font-size: 125%;
+}
+.small-font {
+     font-size: 90%;
+}
+
 /* top-header will contain the date-square and heading-theme divs */
 .top-header {
      height: 100px;
@@ -25,7 +38,7 @@ body {
      border-color: white;
      /*background-color: #4dc3ff; /* darker */
      color: #333333;
-     font-size: 220%;
+     font-size: 200%;
 }
 /* shows the theme of the day at the top */
 .heading-theme {
@@ -41,6 +54,7 @@ body {
      color: #333333;
      font-size: 200%;
 }
+
 
 /* the bottom navigation bar */
 .bottom-navbar {
@@ -83,6 +97,7 @@ body {
      font-size: 100%;
 }
 
+
 /* the main container where content will be held */
 .main {
      margin-top: 100px;
@@ -91,11 +106,20 @@ body {
 }
 
 /* for page titles */
-.page-title{
+.page-title {
      text-align: center;
      margin-bottom: 15px;
      padding: 10px;
+     border-radius: 15px 15px 5px 5px;
      /*background-color: #4dc3ff; /* darker */
      color: white;
      font-size: 300%;
+}
+
+/* to center containing text horizontally and vertically */
+/* outer container must have "display: table" */
+.center-container {
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
 }

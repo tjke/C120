@@ -17,23 +17,19 @@
 	padding: 15px;
 	outline: 0;
 	/*background: white;*/
-	font-size: 120%;
 }
 
 /* Participants container */
 .participants {
 	margin-top: 15px;
-	font-size: 150%;
 }
 
 /* displaying the number of participants */
 #displayCount {
-	font-size: 180%;
 	color: #003380; /* dark blue */
 }
 
 /* extra message that will appear */
 #partUpdateMessage {
-	font-size: 75%;
 	color: green;
 }

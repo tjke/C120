@@ -318,7 +318,7 @@ function getProgress(result) {
 			// append for each trophy entry
 			$(".media").append("<br><a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>"
 				+ "<div class='media-body'>"
-				+ "<h4 class='media-heading'>" + title + "</h4>" // trophy title
+				+ "<p class='media-heading medium-font'><b>" + title + "</b></p>" // trophy title
 				+ "<p>" + description + "</p>" // trophy description
 				+ "<div class='progress progress-striped'>"
 				+ "<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:" + prog10 + "%'>"
@@ -355,10 +355,13 @@ function updateTrophy(trophy) {
 function getNews() {
 	// query properties
 	var apiKey = "a07871d6e0834d1686b1971a820607dc";
+	var query = "awareness day";
 	var seeString = $("#newsSearchResults").text();
-	var query = "";
 	query = seeString;
 	var limit = 5;
+
+	// clear to prevent extra appending
+	$(".getNews").html("");
 
 	$(function() {
         var params = {
@@ -396,14 +399,18 @@ function getNews() {
         //console.log(jOut);
 
         // display search results message
-        $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:<hr>");
+        $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:");
 
         // iterate over each News object
         for( var i = 0; i < newsJson.length; i++) {
         	var newsTitle = newsJson[i].name;
         	var newsURL = newsJson[i].url;
+        	var newsSource = newsJson[i].provider;
+        	newsSource = newsSource[0].name;
         	var newsDescrip = newsJson[i].description;
-        	var newsImage = ""
+        	var newsImage = "";
+
+        	console.log(newsSource);
 
         	// check if there is a news image
         	if( newsJson[i].image != null ) {
@@ -421,10 +428,10 @@ function getNews() {
 			newsJson[i].datePublished = newsTime;
 
 			// append each news item
-        	$(".getNews").append("<div><div class='image-float'>" + "<img src='" + newsImage + "''></div>"
-        		+ "<h3><a href='" + newsURL + "'>" + newsTitle + "</a></h3>" // news title
-        		+ "<i>" + newsTime + "</i><br>" // date published
-        		+ newsDescrip + "</div></div><hr>"
+        	$(".getNews").append("<div><hr><div class='image-float'>" + "<img src='" + newsImage + "''></div>"
+        		+ "<a href='" + newsURL + "' class='medium-font'><b>" + newsTitle + "</b></a><br>" // news title
+        		+ "<p class='small-font'><i>" + newsSource + "</i> - " + newsTime + "<br></p>" // date published
+        		+ newsDescrip + "</div></div>"
         	);
         }
     });
