@@ -224,7 +224,7 @@ function updateCount(e) {
 	});*/
 	console.log("Updating count for " + data + " to " + newCount);
 	var partMessageHTML = document.getElementById("partUpdateMessage");
-	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Come again tomorrow to see another challenge.";
+	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Check tomorrow to see another challenge.";
 	updateTrophy(0); // challenges10
 }
 
