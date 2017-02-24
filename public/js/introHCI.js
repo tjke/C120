@@ -17,7 +17,6 @@ var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
 var data; // array of data
-//var trophies = [];
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -28,7 +27,6 @@ $(document).ready(function() {
 function initializePage() {
 	setDayData();
 	$.get("trophies/", getProgress);
-	//getProgress();
 
 	// defining click listeners
 	$("#signup-btn").click(signup);
@@ -120,7 +118,7 @@ function login(e) {
 						else {
 							console.log("Login credentials are correct.");
 							loginMessageHTML.innerHTML = "<br><font color=green>You are now logged in!</font>";
-							updateTrophy(3); // login10
+							updateTrophy(2); // login10
 						}
 					});
 				}
@@ -209,16 +207,21 @@ function displayParticipants() {
 // updates the participants count number for the server and for display
 function updateCount(e) {
 	var newCount = 0;
-	// get old count
 	var countRef = firebase.database().ref('challenges/' + data + '/count');
+	countRef.transaction(function(count) {
+		newCount = (count || 0) + 1;
+		return newCount;
+	});
+	// get old count
+	/*var countRef = firebase.database().ref('challenges/' + data + '/count');
 	countRef.on('value', function(snapshot) {
 		newCount = snapshot.val();
 	});
 	// update with new count
-	newCount = newCount + 1;
+	/*newCount = newCount + 1;
 	firebase.database().ref('challenges/' + data).set({
 		count: newCount
-	});
+	});*/
 	console.log("Updating count for " + data + " to " + newCount);
 	var partMessageHTML = document.getElementById("partUpdateMessage");
 	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Come again tomorrow to see another challenge.";
@@ -237,6 +240,9 @@ function getProgress(result) {
 	trophiesRef.on('value', function(snapshot) {
 		console.log("numChildren=" + snapshot.numChildren());
 
+		// clear to prevent extra appending
+		$(".media").html("");
+
 		// iterate by the number of children in the trophies list
 		for( var i = 0; i < snapshot.numChildren(); i++ ) {
 			// defaults
@@ -245,21 +251,21 @@ function getProgress(result) {
 			var progress = 0;
 
 			var titleRef = firebase.database().ref('trophies/' + i + '/title');
-			titleRef.on('value', function(childSnapshot) {
-				title = childSnapshot.val();
+			titleRef.once('value', function(titleSnapshot) {
+				title = titleSnapshot.val();
 			});
 			var descriptionRef = firebase.database().ref('trophies/' + i + '/description');
-			descriptionRef.on('value', function(childSnapshot) {
-				description = childSnapshot.val();
+			descriptionRef.once('value', function(descripSnapshot) {
+				description = descripSnapshot.val();
 			});
 			var progressRef = firebase.database().ref('trophies/' + i + '/progress');
-			progressRef.on('value', function(childSnapshot) {
-				progress = childSnapshot.val();
+			progressRef.once('value', function(progSnapshot) {
+				progress = progSnapshot.val();
 			});
 			/*var progressRef = firebase.database().ref('progress/' + i + '/prog');
-			progressRef.on('value', function(childSnapshot) {
-				progress = childSnapshot.val();
-				console.log("progressSnapshot=" + progress);
+			progressRef.on('value', function(progSnapshot) {
+				progress = progSnapshot.val();
+				//console.log("progressSnapshot=" + progress);
 			});*/
 
 			// scale progress to percentage and out of 10
@@ -288,27 +294,17 @@ function updateTrophy(trophy) {
 	var newProgress = 0;
 
 	// get old info
-	var progressRef = firebase.database().ref('progress/' + trophy + '/prog');
-	progressRef.on('value', function(snapshot) {
-		newProgress = snapshot.val();
-	});
-	/*var titleRef = firebase.database().ref('trophies/' + trophy + '/title');
-			titleRef.on('value', function(snapshot) {
-				trophy_title = snapshot.val();
-			});
-	var descriptionRef = firebase.database().ref('trophies/' + trophy + '/description');
-		descriptionRef.on('value', function(snapshot) {
-			trophy_description = snapshot.val();
-	});
 	var progressRef = firebase.database().ref('trophies/' + trophy + '/progress');
-	progressRef.on('value', function(snapshot) {
+	progressRef.transaction(function(progress) {
+		newProgress = (progress || 0) + 1;
+		return newProgress;
+	});
+	/*progressRef.on('value', function(snapshot) {
 		newProgress = snapshot.val();
-	});*/
-
+	});
 	// update with new progress
 	newProgress = newProgress + 1;
-	firebase.database().ref('progress/' + trophy).set({
-		prog: newProgress
-	});
+	firebase.database().ref('trophies/').child(trophy).update({
+		progress: newProgress});*/
 	console.log("Updating progress of trophy " + trophy + " to " + newProgress);
 }

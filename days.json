@@ -164,49 +164,49 @@
 				"orgName": "The Ocean Cleanup",
 				"orgURL": "https://www.theoceancleanup.com/",
 				"orgSummary": "The Ocean Cleanup develops advanced technologies to rid the world’s oceans of plastic.",
-				"donateURL": "#"
+				"donateURL": "https://www.theoceancleanup.com/fund/"
 			},
 			{	
 				"orgName": "The Ocean Agency",
 				"orgURL": "http://www.theoceanagency.org/",
 				"orgSummary": "The Ocean Agency (formerly known as Underwater Earth) is a not-for-profit organisation founded in 2010, whose mission is to protect ocean.",
-				"donateURL": "#"
+				"donateURL": "http://www.theoceanagency.org/take-action-1/"
 			},
 			{	
 				"orgName": "Oceana",
 				"orgURL": "http://oceana.org/",
 				"orgSummary": "Oceana, founded in 2001, is the largest international advocacy organization focused solely on ocean conservation.",
-				"donateURL": "#"
+				"donateURL": "https://act.oceana.org/ea-action/action?ea.client.id=1997&ea.campaign.id=61286&ea.tracking.id=website&utm_source=navigation&utm_medium=website&prefill=1&amount_other=25"
 			},
 			{	
 				"orgName": "5 Gyres",
 				"orgURL": "https://www.5gyres.org/",
 				"orgSummary": "5 Gyres is a non-profit organization dedicated to researching plastic pollution in the world’s oceans, and actively promoting solutions.",
-				"donateURL": "#"
+				"donateURL": "https://5gyres.kindful.com/"
 			},
 			{	
 				"orgName": "Ocean Conservancy",
 				"orgURL": "http://www.oceanconservancy.org/",
 				"orgSummary": "We use the best in science-based solutions to tackle the biggest threats to our ocean.",
-				"donateURL": "#"
+				"donateURL": "https://donate.oceanconservancy.org/ea-action/action?ea.client.id=1991&ea.campaign.id=55960&utm_campaign=Fundraising&utm_source=Luminate%20Online&utm_medium=Referral&ea.tracking.id=16WAXAWXXX&utm_content=redirect"
 			},
 			{	
 				"orgName": "Plastic Pollution Coalition",
 				"orgURL": "http://www.plasticpollutioncoalition.org/",
 				"orgSummary": "Plastic Pollution Coalition is a global alliance of individuals, organizations and businesses working together to stop plastic pollution and its toxic impacts on humans, animals and the environment.",
-				"donateURL": "#"
+				"donateURL": "http://www.plasticpollutioncoalition.org/take-action-1#donate"
 			},
 			{	
 				"orgName": "The Ocean Project",
 				"orgURL": "http://theoceanproject.org/",
 				"orgSummary": "The Ocean Project mission is to inspire action to protect our world’s ocean.",
-				"donateURL": "#"
+				"donateURL": "http://theoceanproject.org/donate/"
 			},
 			{	
 				"orgName": "Mission Blue",
 				"orgURL": "https://www.mission-blue.org/",
 				"orgSummary": "Under the banner “Mission Blue,” this multi-year, global partnership initiative is aimed at restoring health and productivity to the ocean by inspiring people to care and act, reducing the impact of fishing, and promoting the creation of marine protected areas (MPAs).",
-				"donateURL": "#"
+				"donateURL": "https://mission-blue.networkforgood.com/projects/22523-donate"
 			}]
 		}
 	]
