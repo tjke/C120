@@ -18,6 +18,7 @@ var participants = 0;
 var category = "other";
 var data; // array of data
 var newsJson;
+var clickedIn = false; // resetted every time Challenges page has been loaded
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -46,7 +47,7 @@ function signup(e) {
 	var user = document.getElementById("signupUser").value;
 	var pass = document.getElementById("signupPassword").value;
 	var mail = document.getElementById("signupEmail").value;
-	
+
 	// sign up fields are all filled
 	if(user != "" && pass != "" && mail != "") {
 		console.log("Reading from Sign Up " + user + ": " + pass + " (" + mail + ")");
@@ -58,10 +59,17 @@ function signup(e) {
 			if( out != null) {
 				signupMessageHTML.innerHTML = "<font color=red>The username</font> " + user + " <font color=red>has been taken!</font>";
 			}
-			// account created successfully
 			else {
-				writeUserData(user,pass,mail);
-				signupMessageHTML.innerHTML = "<font color=green>An account has been created for</font> <b>" + mail + "</b><br>";	
+				// check if valid email
+				if( /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail) ) {
+					// account created successfully	
+					writeUserData(user,pass,mail);
+					signupMessageHTML.innerHTML = "<font color=green>An account has been registered for</font> " + user + " <font color=green>at</font> " + mail + "<br>";
+				}
+				else {
+					// invalid email
+					signupMessageHTML.innerHTML = "<font color=red>Please enter a valid email of the format</font> name@email.com";
+				}
 			}
 		});	
 	}
@@ -69,13 +77,13 @@ function signup(e) {
 	else {
 		var signupErrorMessage = "";
 		if( user == "" ) {
-			signupErrorMessage = "<br>You must provide a username!";
+			signupErrorMessage = "<br>You must enter a username!";
 		}
 		if( pass == "" ) {
-			signupErrorMessage += "<br>You must provide a password!";
+			signupErrorMessage += "<br>You must enter a password!";
 		}
 		if( mail == "" ) {
-			signupErrorMessage += "<br>You must provide an email!";
+			signupErrorMessage += "<br>You must enter an email!";
 		}
 		signupMessageHTML.innerHTML = "<font color=red>" + signupErrorMessage + "</font><br><br>";
 	}	
@@ -120,6 +128,8 @@ function login(e) {
 							console.log("Login credentials are correct.");
 							loginMessageHTML.innerHTML = "<br><font color=green>You are now logged in!</font>";
 							updateTrophy(2); // login10
+							// redirect to Home
+							window.location.href = "/";
 						}
 					});
 				}
@@ -129,10 +139,10 @@ function login(e) {
 	else {
 		var loginErrorMessage = "";
 		if( user == "" ) {
-			loginErrorMessage = "<br>You must provide a username!";
+			loginErrorMessage = "<br>You must enter a username!";
 		}
 		if( pass == "" ) {
-			loginErrorMessage += "<br>You must provide a password!";
+			loginErrorMessage += "<br>You must enter a password!";
 		}
 		loginMessageHTML.innerHTML = "<font color=red>" + loginErrorMessage + "</font>";
 	}	
@@ -200,7 +210,7 @@ function displayParticipants() {
 			participantsHTML.innerHTML = "0";
 		}
 		else {
-			participantsHTML.innerHTML = partNum;
+			participantsHTML.innerHTML = partNum.toLocaleString();
 		}
 	});
 }
@@ -208,25 +218,29 @@ function displayParticipants() {
 // updates the participants count number for the server and for display
 function updateCount(e) {
 	var newCount = 0;
-	var countRef = firebase.database().ref('challenges/' + data + '/count');
-	countRef.transaction(function(count) {
-		newCount = (count || 0) + 1;
-		return newCount;
-	});
-	// get old count
-	/*var countRef = firebase.database().ref('challenges/' + data + '/count');
-	countRef.on('value', function(snapshot) {
-		newCount = snapshot.val();
-	});
-	// update with new count
-	/*newCount = newCount + 1;
-	firebase.database().ref('challenges/' + data).set({
-		count: newCount
-	});*/
-	console.log("Updating count for " + data + " to " + newCount);
-	var partMessageHTML = document.getElementById("partUpdateMessage");
-	partMessageHTML.innerHTML = "You have completed today's challenge!<br>Check tomorrow to see another challenge.";
-	updateTrophy(0); // challenges10
+	console.log("clickedIn="+clickedIn);
+	if( clickedIn == false ) {
+		var countRef = firebase.database().ref('challenges/' + data + '/count');
+		countRef.transaction(function(count) {
+			newCount = (count || 0) + 1;
+			return newCount;
+		});
+		// get old count
+		/*var countRef = firebase.database().ref('challenges/' + data + '/count');
+		countRef.on('value', function(snapshot) {
+			newCount = snapshot.val();
+		});
+		// update with new count
+		/*newCount = newCount + 1;
+		firebase.database().ref('challenges/' + data).set({
+			count: newCount
+		});*/
+		console.log("Updating count for " + data + " to " + newCount);
+		var partMessageHTML = document.getElementById("partUpdateMessage");
+		partMessageHTML.innerHTML = "You have completed today's challenge!<br>Check tomorrow to see another challenge.";
+		updateTrophy(0); // challenges10
+	}
+	clickedIn = true;
 }
 
 // click listener for when Donate button is clicked
@@ -315,6 +329,7 @@ function updateTrophy(trophy) {
 // loading news
 function getNews() {
 	// query properties
+	var apiKey = "a07871d6e0834d1686b1971a820607dc";
 	var seeString = $("#newsSearchResults").text();
 	var query = "";
 	query = seeString;
@@ -334,7 +349,7 @@ function getNews() {
             url: "https://api.cognitive.microsoft.com/bing/v5.0/news/search?" + $.param(params),
             beforeSend: function(xhrObj){
                 // Request headers
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","a07871d6e0834d1686b1971a820607dc");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key",apiKey);
             },
             type: "GET",
             // Request body
@@ -356,7 +371,7 @@ function getNews() {
         //console.log(jOut);
 
         // display search results message
-        $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:");
+        $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:<hr>");
 
         // iterate over each News object
         for( var i = 0; i < newsJson.length; i++) {

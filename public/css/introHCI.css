@@ -44,7 +44,7 @@ body {
 
 /* the bottom navigation bar */
 .bottom-navbar {
-     height: 70px;
+     height: 15%;
      width: 100%;
      position: fixed;
      bottom: 0;
@@ -60,7 +60,7 @@ body {
 }
 /* container for 5 buttons for the bottom-navbar */
 .col-5 {
-     height: 70px;
+     height: 15%;
      width: 20%;
      display: table-cell;
      text-align: center;
@@ -86,7 +86,7 @@ body {
 /* the main container where content will be held */
 .main {
      margin-top: 100px;
-     margin-bottom: 70px;
+     margin-bottom: 20%;
      padding: 20px;
 }
 
