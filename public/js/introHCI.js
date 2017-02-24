@@ -18,7 +18,7 @@ var participants = 0;
 var category = "other";
 var data; // array of data
 var newsJson;
-var clickedIn = false; // resetted every time Challenges page has been loaded
+var clickedIn = false; // resetted every time Challenge page has been loaded
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -30,14 +30,21 @@ function initializePage() {
 	setDayData();
 	$.get("trophies/", getProgress);
 
+	// linking whole div buttons
+	$(".navbar-btn-home").click(redirectHome);
+	$(".navbar-btn-challenge").click(redirectChallenge);
+	$(".navbar-btn-organizations").click(redirectOrganizations);
+	$(".navbar-btn-news").click(redirectNews);
+	$(".navbar-btn-trophies").click(redirectTrophies);
+
 	// defining click listeners
 	$("#signup-btn").click(signup);
 	$("#login-btn").click(login);
 	$("#help-btn").click(displayHelp);
 	$(".close").click(displayHelp);
 	$(".donate-btn").click(donateClick);
-	$("#completedbtn").click(greyButton);
-	$("#completedbtn").click(updateCount);
+	$("#completed-btn").click(greyButton);
+	$("#completed-btn").click(updateCount);
 }
 
 
@@ -163,6 +170,23 @@ function displayHelp(e){
 	}
 }
 
+// makes whole divs linkable
+function redirectHome(e) {
+	window.location.href = "/"; 
+}
+function redirectChallenge(e) {
+	window.location.href = "/challenge"; 
+}
+function redirectOrganizations(e) {
+	window.location.href = "/organizations"; 
+}
+function redirectNews(e) {
+	window.location.href = "/news"; 
+}
+function redirectTrophies(e) {
+	window.location.href = "/trophies"; 
+}
+
 // set today's date
 function setDayData() {
 	var d = new Date();
@@ -195,10 +219,11 @@ function setDayData() {
 // greys out the Challenge Completed button
 function greyButton(e){
 	e.preventDefault();
-	$(this).css("background-color", "grey");
+	//$(this).css("background-color", "grey");
+	document.getElementById("completed-btn").disabled = true;
 }
 
-// display the number of participants for Challenges page
+// display the number of participants for Challenge page
 function displayParticipants() {
 	var participantsHTML = document.getElementById("displayCount");
 	var partNum = 0;
