@@ -17,6 +17,7 @@ var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "other";
 var data; // array of data
+var newsJson;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -48,7 +49,7 @@ function signup(e) {
 	
 	// sign up fields are all filled
 	if(user != "" && pass != "" && mail != "") {
-		console.log(user + ": " + pass + " (" + mail + ")");
+		console.log("Reading from Sign Up " + user + ": " + pass + " (" + mail + ")");
 		var accountRef = firebase.database().ref('accounts/' + user);
 		accountRef.on('value', function(snapshot) {
 			var out = snapshot.val();
@@ -143,7 +144,7 @@ function displayHelp(e){
 	var modal = document.getElementById("myhelp");
 	var helpbtn = document.getElementById("help-btn");
 	var span = document.getElementsByClassName("close")[0];
-	console.log(modal.style.display);
+	//console.log(modal.style.display);
 	if (modal.style.display !== "block"){
 		modal.style.display = "block";
 	}
@@ -165,7 +166,7 @@ function setDayData() {
 	data = month + " " + date;
 	var dayOfWeek = d.getDay();
 	var newDate = date;
-	console.log(data + " dayOfWeek=" + dayOfWeek);
+	console.log(data + ", dayOfWeek=" + dayOfWeek);
 	
 	if( dayOfWeek == 0 ) {
 		newDate = date - 2;
@@ -238,7 +239,7 @@ function donateClick(e) {
 function getProgress(result) {
 	var trophiesRef = firebase.database().ref('trophies');
 	trophiesRef.on('value', function(snapshot) {
-		console.log("numChildren=" + snapshot.numChildren());
+		console.log("numTrophies=" + snapshot.numChildren());
 
 		// clear to prevent extra appending
 		$(".media").html("");
@@ -276,13 +277,14 @@ function getProgress(result) {
 			}
 			
 			// append for each trophy entry
-			$(".media").append("<br><a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>" +
-			"<div class='media-body'>" +
-			"<h4 class='media-heading'>" + title + "</h4>" +
-			"<p>" + description + "</p>" +
-			"<div class='progress progress-striped'>" +
-			"<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:" + prog10 + "%'>" +
-			progress + "/10</div></div></div>");
+			$(".media").append("<br><a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>"
+				+ "<div class='media-body'>"
+				+ "<h4 class='media-heading'>" + title + "</h4>" // trophy title
+				+ "<p>" + description + "</p>" // trophy description
+				+ "<div class='progress progress-striped'>"
+				+ "<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:" + prog10 + "%'>"
+				+ progress + "/10</div></div></div>"
+			);
 		}
 	});
 }
@@ -306,5 +308,84 @@ function updateTrophy(trophy) {
 	newProgress = newProgress + 1;
 	firebase.database().ref('trophies/').child(trophy).update({
 		progress: newProgress});*/
-	console.log("Updating progress of trophy " + trophy + " to " + newProgress);
+	console.log("Updating progress of trophy" + trophy + " to " + newProgress);
+}
+
+
+// loading news
+function getNews() {
+	// query properties
+	var seeString = $("#newsSearchResults").text();
+	var query = "";
+	query = seeString;
+	var limit = 5;
+
+	$(function() {
+        var params = {
+            // Request parameters
+            "q": query,
+            "count": limit,
+            "offset": "0",
+            "mkt": "en-us",
+            "safeSearch": "Moderate",
+        };
+      
+        $.ajax({
+            url: "https://api.cognitive.microsoft.com/bing/v5.0/news/search?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","a07871d6e0834d1686b1971a820607dc");
+            },
+            type: "GET",
+            // Request body
+            data: "{body}",
+            async: false,
+            dataType: 'json'
+        })
+        .done(function(data) {
+            // set news JSON data to be used
+            newsJson = data.value;
+            console.log("News success");
+        })
+        .fail(function() {
+            console.log("News error");
+        });
+
+        // print out news JSON result to console
+        var jOut = newsJson;
+        //console.log(jOut);
+
+        // display search results message
+        $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:");
+
+        // iterate over each News object
+        for( var i = 0; i < newsJson.length; i++) {
+        	var newsTitle = newsJson[i].name;
+        	var newsURL = newsJson[i].url;
+        	var newsDescrip = newsJson[i].description;
+        	var newsImage = ""
+
+        	// check if there is a news image
+        	if( newsJson[i].image != null ) {
+        		//console.log("There is a news image");
+        		newsImage = newsJson[i].image.thumbnail.contentUrl;
+        	}
+        	/*else {
+        		console.log("No news image");
+        	}*/
+
+        	// converting newsTime
+        	var newsTime = newsJson[i].datePublished;
+        	var d = new Date(newsTime);
+			newsTime = d.toLocaleString();
+			newsJson[i].datePublished = newsTime;
+
+			// append each news item
+        	$(".getNews").append("<div><div class='image-float'>" + "<img src='" + newsImage + "''></div>"
+        		+ "<h3><a href='" + newsURL + "'>" + newsTitle + "</a></h3>" // news title
+        		+ "<i>" + newsTime + "</i><br>" // date published
+        		+ newsDescrip + "</div></div><hr>"
+        	);
+        }
+    });
 }

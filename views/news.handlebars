@@ -60,15 +60,20 @@
     <![endif]-->        
 </head>
 
-<body>
+<body onload=getNews()>
 	<!-- main content of the page goes here -->
 	<div class="main">
 		<!-- News title-->
 		<div class="page-title" style="background-color: {{darkerColor}}">News</div>
 
-		<center>Showing {{newsLength}} results for <b>"{{query}}"</b>:</center>
+		<center>
+			<!--Showing {{newsLength}} results for <b>"{{query}}"</b>:-->
+			<p id="newsSearchResults">{{query}}</p>
+		</center>
 
-		{{#each news}}
+		<div class="getNews"></div>
+
+		<!--{{#each news}}
 		<div>
 			<div class="image-float"><img src={{image.thumbnail.contentUrl}}></div>
 			<div>
@@ -78,10 +83,10 @@
 			</div>
 		</div>
 		<hr>
-		{{/each}}
+		{{/each}}-->
 
 		<!--News API credit-->
-		<p align="right">News search is powered by <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api">Bing News Search API</a>.</p>
+		<p id="credit">News search is powered by <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api">Bing News Search API</a>.</p>
 	</div><!--/main-->
 
 	<!-- top header: shows date and theme -->
