@@ -61,9 +61,11 @@
 		<!-- News title-->
 		<div class="page-title" style="background-color: {{darkerColor}}">News</div>
 
+		<center>Showing {{newsLength}} results for <b>"{{query}}"</b>:</center>
+
 		{{#each news}}
 		<div>
-			<div class="left-image"><img src={{image.thumbnail.contentUrl}}></div>
+			<div class="image-float"><img src={{image.thumbnail.contentUrl}}></div>
 			<div>
 				<h3><a href={{url}}>{{name}}</a></h3>
 				<i>{{datePublished}}</i><br>
@@ -72,6 +74,9 @@
 		</div>
 		<hr>
 		{{/each}}
+
+		<!--News API credit-->
+		<p align="right">News search is powered by <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api">Bing News Search API</a>.</p>
 	</div><!--/main-->
 
 	<!-- top header: shows date and theme -->

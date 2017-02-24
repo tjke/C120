@@ -276,7 +276,7 @@ function getProgress(result) {
 			}
 			
 			// append for each trophy entry
-			$(".media").append("<a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>" +
+			$(".media").append("<br><a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>" +
 			"<div class='media-body'>" +
 			"<h4 class='media-heading'>" + title + "</h4>" +
 			"<p>" + description + "</p>" +

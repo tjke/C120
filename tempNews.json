@@ -1,381 +1,163 @@
 {
   "_type": "News",
-  "readLink": "https://api.cognitive.microsoft.com/api/v5/news/search?q=random+acts+of+kindness",
-  "totalEstimatedMatches": 102000,
+  "readLink": "https://api.cognitive.microsoft.com/api/v5/news/search?q=skip+the+straw+day",
+  "totalEstimatedMatches": 306000,
   "value": [
     {
-      "name": "Love Takes Action: Random Acts Of Kindness",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=C400to28-dKyQN4IDq4VHlF8Fi7G0pnIhRo7mopze2A&v=1&r=http%3a%2f%2fwww.huffingtonpost.com%2fentry%2flove-takes-action_us_58a33ca4e4b080bf74f0411b&p=DevEx,5008.1",
-      "image": {
-        "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.2E4A4B9A5882E3848DF57840B3BE4D8D&pid=News",
-          "width": 700,
-          "height": 350
-        }
-      },
-      "description": "No matter which side of which debate you’re on, every day is historic right now. People are charged up, clenching both their fists and/or their picket signs to voice their opinions in an attempt to cut through the airwaves of doubt and be heard.",
+      "name": "Decatur County Events Calendar",
+      "url": "http://www.bing.com/cr?IG=8A99B3C5C8654373BFCD624174A0491F&CID=2A29D517F23D6F7A1D77DF24F30C6E26&rd=1&h=w70zZtrE3SjwfmbFoEFyN2NTMONN3f-AlCsTjXkfano&v=1&r=http%3a%2f%2fwww.greensburgdailynews.com%2fcommunity%2fdecatur-county-events-calendar%2farticle_b4010b46-7111-5b45-b93f-f14e58832b43.html&p=DevEx,5021.1",
+      "description": "Registration required. Friday, Feb. 24 National Skip the Straw Day, National Tortilla Chip Day 11 a.m. to 1 p.m. – Chili cook-off at Greensburg Adult Center. Free will offering. 1:30 p.m. – Bridge lessons at Greensburg Adult Center. 6:30 p.m ...",
       "about": [
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/97403b81-54b4-f83d-0592-1f1f6d4d42a3",
-          "name": "Action"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/1283e186-6b8b-a90c-8664-d966a4b39417",
+          "name": "Decatur County"
         },
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/0b0144fd-8c5b-dda6-d5b1-0f644677c7c5",
-          "name": "Love"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/316631a4-ccc4-75f1-60c6-759a07349cb3",
+          "name": "Calendar"
+        },
+        {
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/08395004-52c8-7e92-072d-e7eb99cbb793",
+          "name": "Community"
         }
       ],
       "provider": [
         {
           "_type": "Organization",
-          "name": "The Huffington Post"
+          "name": "Greensburg Daily News"
         }
       ],
-      "datePublished": "2017-02-14T12:35:00",
+      "datePublished": "2017-02-21T12:15:00"
+    },
+    {
+      "name": "10 plastic items you can give up right now",
+      "url": "http://www.bing.com/cr?IG=8A99B3C5C8654373BFCD624174A0491F&CID=2A29D517F23D6F7A1D77DF24F30C6E26&rd=1&h=H6J-7Xi-ykUjXk5-rw29DeCvqTn3QtZ-zt9W0kGNoWw&v=1&r=http%3a%2f%2fwww.treehugger.com%2fgreen-home%2f10-plastic-items-you-can-give-right-now.html&p=DevEx,5023.1",
+      "image": {
+        "thumbnail": {
+          "contentUrl": "https://www.bing.com/th?id=ON.265C55B697E4FF3243D951C95EC9DCE5&pid=News",
+          "width": 640,
+          "height": 411
+        }
+      },
+      "description": "Over 500,000,000 plastic straws are used each day in the United States. Why? Are we too lazy or uncoordinated to lift a drink to our mouth and tilt our head back? Some people may have physical issues that require the use of a straw, that’s fine ...",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "Tree Hugger"
+        }
+      ],
+      "datePublished": "2017-02-23T15:48:00"
+    },
+    {
+      "name": "It's Presidents' Day! Hang the decorations, belt out the songs!",
+      "url": "http://www.bing.com/cr?IG=8A99B3C5C8654373BFCD624174A0491F&CID=2A29D517F23D6F7A1D77DF24F30C6E26&rd=1&h=CHc1sXKewivgSxeR7Fi-ypbfF9irL1DUAkOBoqo53gs&v=1&r=http%3a%2f%2fwww.startribune.com%2fit-s-presidents-day-hang-the-decorations-belt-out-the-songs%2f414113083%2f&p=DevEx,5025.1",
+      "description": "It's Presidents' Day, and you didn't get your partner anything ... pausing between each to shout \"Huzzah!\" and throw a straw boater in the air. But you are allowed to skip two presidents if the person reading the names has given you a Grumble Card.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "Minneapolis Star Tribune"
+        }
+      ],
+      "datePublished": "2017-02-19T14:00:00",
       "video": {
-        "name": "Love Takes Action: Random Acts Of Kindness",
-        "thumbnailUrl": "https://www.bing.com/th?id=ON.2E4A4B9A5882E3848DF57840B3BE4D8D&pid=News",
+        "name": "It's Presidents' Day! Hang the decorations, belt out the songs!",
+        "thumbnailUrl": "https://www.bing.com/th?id=ON.923A019A6F14373941C7CC02304E96B9&pid=News",
         "allowHttpsEmbed": true,
         "thumbnail": {
           "width": 480,
-          "height": 240
+          "height": 250
         }
       }
     },
     {
-      "name": "Turtles and Random Acts of Kindness",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=fxwHP4iimr4GjAcs-rveuKtXUkNvIIHZcBvGbJPpoW0&v=1&r=http%3a%2f%2fscooterinthesticks.com%2f2017%2f02%2fturtles-and-random-acts-of-kindness%2f&p=DevEx,5010.1",
-      "image": {
-        "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.EC2CAC2CCB4E47946502160E2BFEEF39&pid=News",
-          "width": 700,
-          "height": 525
-        }
-      },
-      "description": "I’ve rescued a number of turtles crossing the road during my years of Vespa scooter riding. Small, random acts of kindness. Aside from a snapping turtle that was moved by having him clamp down on the end of a long stick, these little guys are docile ...",
+      "name": "Productivity and the Importance of Sleep",
+      "url": "https://www.bing.com/cr?IG=8A99B3C5C8654373BFCD624174A0491F&CID=2A29D517F23D6F7A1D77DF24F30C6E26&rd=1&h=QMmd5GdE9VW2Sw8zbLPRQ0rUEoytvbdcYqITOr4SEZg&v=1&r=https%3a%2f%2fsoftwaredevelopersindia.com%2fblog%2fproductivity-importance-sleep%2f&p=DevEx,5027.1",
+      "description": "The impetus behind this desire to be productive every second of every day comes from several sources ... But let’s return to our earlier straw man: are people who skip the recommended amount of sleep more productive than those who don’t.",
       "about": [
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/f9a4cb98-6c2b-399f-fcd7-77124e478e7d",
-          "name": "Turtle"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/239d615c-e2d4-f4cc-2515-e824a031af9c",
+          "name": "Sleep"
         },
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-          "name": "Random act of kindness"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/9049c786-2dd4-fd5e-9435-19cca5e44da6",
+          "name": "Productivity"
         }
       ],
       "provider": [
         {
           "_type": "Organization",
-          "name": "scooterinthesticks.com"
+          "name": "softwaredevelopersindia.com"
         }
       ],
-      "datePublished": "2017-02-15T22:27:00"
+      "datePublished": "2017-02-22T06:27:00",
+      "category": "Health"
     },
     {
-      "name": "Today Is Random Acts of Kindness Day",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=XCbuiTvyRmusQ6ie16B27kvrfqi2kE_EJWYjmDI-n-g&v=1&r=http%3a%2f%2f947thewave.cbslocal.com%2f2017%2f02%2f15%2ftoday-is-random-acts-of-kindness-day%2f&p=DevEx,5028.1",
+      "name": "A 10-Step Guide to Self-Care in 2017",
+      "url": "http://www.bing.com/cr?IG=8A99B3C5C8654373BFCD624174A0491F&CID=2A29D517F23D6F7A1D77DF24F30C6E26&rd=1&h=87xe1_KkefCYfRF-cjeYX_aCHdQfatIbeDzNHf0nmUg&v=1&r=http%3a%2f%2fwww.out.com%2fentertainment%2f2017%2f2%2f16%2f10-step-guide-self-care-2017&p=DevEx,5029.1",
       "image": {
         "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.D6C35132E0880118981242DB5A47A339&pid=News",
-          "width": 700,
-          "height": 518
+          "contentUrl": "https://www.bing.com/th?id=ON.5C3299B93A83D914EE162C24FBC0BE6D&pid=News",
+          "width": 598,
+          "height": 396
         }
       },
-      "description": "Today is Random Acts of Kindness Day, a celebration that has grown in popularity every year since it started basically because everybody wins when we are kind – the receiver and the giver. It’s actually part of Random Acts Of Kindness Week so we can ...",
+      "description": "It’s unequivocal that we’re living in a time when a CNN alert makes our heart skip a beat. We’ve stopped ... chamomile tea in your bathwater and get a straw so you can sip, sip, sip while soaking the day away. 2. Light a scented candle Aromatherapy ...",
       "about": [
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/cb6b591b-afa8-12af-3d2f-f7dc33ace416",
-          "name": "Random Acts of Kindness Day"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/0c0e3582-3833-4f2d-f78a-3722a0ee486b",
+          "name": "Out"
+        },
+        {
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/3bf1d41d-53bc-433f-b7b0-f1afdaa3deb2",
+          "name": "Guide"
+        },
+        {
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/fa49fa32-a5fd-275e-50d1-528344a5efce",
+          "name": "Step"
         }
       ],
       "provider": [
         {
           "_type": "Organization",
-          "name": "cbslocal.com"
+          "name": "out.com"
         }
       ],
-      "datePublished": "2017-02-16T01:52:00",
-      "clusteredArticles": [
-        {
-          "name": "Hairston Middle Wants Random Act Of Kindness Week To ‘Stick' With Students",
-          "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=oNzW7dw19tpI4oDcFRTyiSaSgzlgZAFTDD16EXa3PPE&v=1&r=http%3a%2f%2fwww.wfmynews2.com%2fnews%2feducation%2fhairston-middle-wants-random-act-of-kindness-week-to-stick-with-students%2f408627228&p=DevEx,5029.1",
-          "description": "GREENSBORO, NC - Random Act of Kindness week is a chance to reach out and do something nice, and Triad middle school students are taking note... literally. When you walk into Hairston Middle School, the first thing you see are hundred sticky notes filled ...",
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "WFMY News 2"
-            }
-          ],
-          "datePublished": "2017-02-15T16:48:00"
-        },
-        {
-          "name": "10 Kindness Quotes for Random Acts of Kindness Week",
-          "url": "https://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=07dyOtkOVN_FKn8oPnUlwHyfTQ0awZmzIIn7lrBfEKA&v=1&r=https%3a%2f%2fparade.com%2f547224%2fsamanthacoley%2f10-kindness-quotes-for-random-acts-of-kindness-week%2f&p=DevEx,5030.1",
-          "description": "It seems as though these days, bad news is everywhere—on our phones, tablets and TVs. And the very act of constantly checking those phones, tablets and TVs has become an exhausting task that often ends up making us feel drained and helpless. What if ...",
-          "about": [
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/00608b5f-1a8e-f001-0250-23b19ac75484",
-              "name": "Kindness"
-            },
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-              "name": "Random act of kindness"
-            }
-          ],
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "Parade"
-            }
-          ],
-          "datePublished": "2017-02-15T14:25:00"
-        }
-      ]
+      "datePublished": "2017-02-16T11:30:00"
     },
     {
-      "name": "Bolingbrook Athletes Kick Off 'Random Acts of Kindness' Week",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=OrKbaUmHif-UrDkTHqCa6zKoIksYPr9dkBd3F6LqtKk&v=1&r=http%3a%2f%2fpatch.com%2fillinois%2fbolingbrook%2fbolingbrook-athletes-kick-random-acts-kindness-week&p=DevEx,5014.1",
+      "name": "The Crazy-Busy Person’s Guide to Weight Loss",
+      "url": "https://www.bing.com/cr?IG=8A99B3C5C8654373BFCD624174A0491F&CID=2A29D517F23D6F7A1D77DF24F30C6E26&rd=1&h=pOY2a5Q_EwQbaEQI1sJ-rrZuXtsIAkw0mMyklO8YCDU&v=1&r=https%3a%2f%2fwww.beachbody.com%2fbeachbodyblog%2fweight-loss%2fthe-crazy-busy-persons-guide-to-weight-loss&p=DevEx,5031.1",
       "image": {
         "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.5C3DAC733833E57B5C1D6A53EFE3E8E8&pid=News",
+          "contentUrl": "https://www.bing.com/th?id=ON.CC245BCC210DD6744F8234A8743347CA&pid=News",
           "width": 600,
-          "height": 450
+          "height": 400
         }
       },
-      "description": "Photo: Bolingbrook High School students Bianca Herrera (left), Rachel Perez and Salma Ramos bring flowers to Meadowbrook Manor. Credit: Andrew Block/Buddy's HELPERS On Sunday, members of girls soccer teams at Plainfield, Romeoville and Bolingbrook high ...",
+      "description": "The key is learning to plan ahead and organize your day in a smart, efficient way ... If you have a phone call with a client or an in-person meeting with co-workers, skip the conference room and talk as you walk. And don’t limit this sort of creative ...",
       "about": [
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/a06f7017-265f-1646-e5a7-32a20dd5d459",
-          "name": "Bolingbrook"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/25a4b814-ad94-04aa-025e-3c6a08e81a5b",
+          "name": "Guide"
         },
         {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/1d69e67c-8de6-550e-3508-0a3a46ac2b2e",
-          "name": "Athletes"
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/0b40695d-5bb1-5759-5ff7-f782c8de75df",
+          "name": "Crazy"
+        },
+        {
+          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/3bfaee67-5bfc-e7ff-5e56-d1a04fee7aef",
+          "name": "Weight loss"
         }
       ],
       "provider": [
         {
           "_type": "Organization",
-          "name": "Patch"
+          "name": "www.beachbody.com"
         }
       ],
-      "datePublished": "2017-02-15T10:44:00"
-    },
-    {
-      "name": "North Stratfield School’s Random Acts of Kindness Week",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=UJG4yU327pZhSgEhxoIiNhEnDqpoH0sQUpPeYqI_DnI&v=1&r=http%3a%2f%2fwww.fairfield-sun.com%2f55761%2fnorth-stratfield-schools-random-acts-of-kindness-week%2f&p=DevEx,5033.1",
-      "image": {
-        "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.C4D513265F3FA4074CD7846E6DD32B3D&pid=News",
-          "width": 300,
-          "height": 188
-        }
-      },
-      "description": "International Random Acts of Kindness Week is February 12-18. Kindness Matters, a local Fairfield movement, led by Veronica Mollica, emphasizes how kindness creates a collective power that positively influences our families, schools, workplaces, and ...",
-      "about": [
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/9e2bf053-dd80-4646-8f26-65075e7085c0",
-          "name": "North Carolina"
-        },
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/ce04a593-f9af-6da1-e878-c22f5a6bef58",
-          "name": "School"
-        },
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-          "name": "Random act of kindness"
-        }
-      ],
-      "provider": [
-        {
-          "_type": "Organization",
-          "name": "Fairfield Sun"
-        }
-      ],
-      "datePublished": "2017-02-15T22:25:00",
-      "clusteredArticles": [
-        {
-          "name": "Celebrate Random Acts of Kindness Week",
-          "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=JCmlvmh6JuS9M83jKkjkMHjxyxg1jeJZgUTulEoZlRE&v=1&r=http%3a%2f%2fwww.edmontonexaminer.com%2f2017%2f02%2f15%2fvolunteer-edmonton-celebrate-random-acts-of-kindness-week&p=DevEx,5034.1",
-          "description": "When was the last time you did something to make someone smile? If you have been waiting for the right moment to volunteer, this week is your chance. Feb. 12-18 is Random Acts of Kindness (RAK) Week. RAK week is a celebration meant to unite the world ...",
-          "about": [
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/cdbd2c0f-d425-d6df-76e9-e304f01710fd",
-              "name": "Edmonton"
-            },
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-              "name": "Random act of kindness"
-            }
-          ],
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "Edmonton Examiner Child Welfare Linked To Community"
-            }
-          ],
-          "datePublished": "2017-02-15T17:20:00"
-        },
-        {
-          "name": "Adams Elementary School practices random acts of kindess",
-          "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=YiKqTauVwl_A6Heoi7_lrsyF-5Y8dyqP5FrSMfB8-kU&v=1&r=http%3a%2f%2fwww.gazettextra.com%2f20170215%2fshell_adams_elementary_school_practices_random_acts_of_kindess&p=DevEx,5035.1",
-          "description": "Or call it paying it forward. We all know kindness breeds kindness at school, at home and in the community. From Feb. 13 to 17, Adams Elementary School is celebrating Random Acts of Kindness Week. Kindness is one of many character-building themes Adams ...",
-          "about": [
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/3f67d1b8-7a08-abac-a3d4-126447a5d3e9",
-              "name": "Adams County"
-            }
-          ],
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "Gazette Xtra"
-            }
-          ],
-          "datePublished": "2017-02-15T23:36:00"
-        }
-      ]
-    },
-    {
-      "name": "Random Acts of Kindness? Make it a Habit",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=Mn0AcrrT7RhP1cMhszD_rZ3l2Iny_U22EeK-gX4E2jg&v=1&r=http%3a%2f%2fjwcdaily.com%2f2017%2f02%2f15%2frandom-acts-of-kindness-make-it-a-habit%2f&p=DevEx,5018.1",
-      "image": {
-        "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.447C984390D5D658CCACDE8BDEC2C2EC&pid=News",
-          "width": 700,
-          "height": 464
-        }
-      },
-      "description": "One day, out of the blue, the teacher of a seventh-grader with special needs called the student’s mother. What Mr. West told the mother was simple. What the mother heard was stunning in a good way — and heartfelt. How the phone conversation unfolded ...",
-      "about": [
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-          "name": "Random act of kindness"
-        }
-      ],
-      "provider": [
-        {
-          "_type": "Organization",
-          "name": "jwcdaily.com"
-        }
-      ],
-      "datePublished": "2017-02-15T21:50:00"
-    },
-    {
-      "name": "The healing power of kindness",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=TNcnsKcLGnR06bgwtSvVfY6gZKrJbvTd1sOLrsTSmDc&v=1&r=http%3a%2f%2fwww.cnn.com%2f2017%2f02%2f13%2fhealth%2fiyw-healing-power-kindness-trnd%2findex.html&p=DevEx,5038.1",
-      "image": {
-        "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.11C703CF86A64D73912F2DC3D7A31EBA&pid=News",
-          "width": 460,
-          "height": 259
-        }
-      },
-      "description": "It's a ripple effect. February 12-18 marks Random Acts of Kindness Week, an annual occasion to unite humanity through altruism. In honor of the seven-day celebration, CNN reached out to three people who make the world a finer place one generous act at a time.",
-      "about": [
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/c4c637e5-f9cc-a3ed-3380-7152515e062e",
-          "name": "CNN"
-        }
-      ],
-      "provider": [
-        {
-          "_type": "Organization",
-          "name": "CNN"
-        }
-      ],
-      "datePublished": "2017-02-13T21:26:00",
-      "clusteredArticles": [
-        {
-          "name": "Random Acts of Kindness Week: The healing power of kindness",
-          "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=xkwGR94UOzKTcH-alyc4xcCzefad4rX7F0jxLN__MCg&v=1&r=http%3a%2f%2ffox43.com%2f2017%2f02%2f13%2frandom-acts-of-kindness-week-the-healing-power-of-kindness%2f&p=DevEx,5039.1",
-          "description": "Science tells us we are more likely to perform a thoughtful deed when someone does one for us. Take for instance the stranger who smiles at you in the elevator. Almost always, you’ll return the gesture — and you’ll be more prone to smile at the next ...",
-          "about": [
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-              "name": "Random act of kindness"
-            }
-          ],
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "Fox43"
-            }
-          ],
-          "datePublished": "2017-02-13T15:20:00"
-        }
-      ]
-    },
-    {
-      "name": "TMS celebrates Random Acts of Kindness week",
-      "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=HkP_MoQn0lS5jF9cb0VT-djsyUOAtAubNxsW-cQlD4E&v=1&r=http%3a%2f%2fwww.kswo.com%2fstory%2f34503364%2ftms-celebrates-random-acts-of-kindness-week&p=DevEx,5041.1",
-      "image": {
-        "thumbnail": {
-          "contentUrl": "https://www.bing.com/th?id=ON.828397C9593F93F580A067EBFBA48868&pid=News",
-          "width": 700,
-          "height": 393
-        }
-      },
-      "description": "LAWTON, OK (KSWO)- Tomlinson Middle School celebrates Random Acts of Kindness this week. The festivities kicked off today. Throughout the week students and teachers will participate in a variety of activities including bringing personal hygiene items ...",
-      "about": [
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/3a0cee5d-18f8-0dd3-0b46-88d64213d0be",
-          "name": "American Broadcasting Company"
-        },
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/28755b5c-6a3b-4188-ad51-bef9547f1882",
-          "name": "Lawton"
-        },
-        {
-          "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/7ff4c78e-acd8-c1e2-0dfb-b4fedc03f6f8",
-          "name": "Wichita Falls"
-        }
-      ],
-      "provider": [
-        {
-          "_type": "Organization",
-          "name": "KSWO 7 News"
-        }
-      ],
-      "datePublished": "2017-02-14T21:25:00",
-      "category": "Politics",
-      "clusteredArticles": [
-        {
-          "name": "Random Acts of Kindness Week encourages people to complete challenges, break records",
-          "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=_MWR4VpCwFuxugBdii57B4axZTKy6MKqIpiQgKOWoyQ&v=1&r=http%3a%2f%2fwww.oudaily.com%2fa_and_e%2frandom-acts-of-kindness-week-encourages-people-to-complete-challenges%2farticle_8600688c-f21d-11e6-9b85-0725f437fa70.html&p=DevEx,5042.1",
-          "description": "Random Acts of Kindness Week, a global movement that encourages individuals to get involved with daily kindness challenges, begins this week. Every year since 1995, the Random Acts of Kindness Foundation challenges people to practice kindness in words and ...",
-          "about": [
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-              "name": "Random act of kindness"
-            }
-          ],
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "The Oklahoma Daily"
-            }
-          ],
-          "datePublished": "2017-02-14T02:58:00"
-        },
-        {
-          "name": "Here's the perfect way to participate in Random Acts of Kindness Week",
-          "url": "http://www.bing.com/cr?IG=6D713337F9CA43D7969F2C76EE5576C6&CID=21E9E647141A6B27038FEC6C152B6AC0&rd=1&h=4FssRr37DbXw5q4dHuNMGICx3qU1SQn1XjDQsMImwiA&v=1&r=http%3a%2f%2fmashable.com%2f2017%2f02%2f14%2frandom-acts-of-kindness-week-generator%2f&p=DevEx,5043.1",
-          "description": "What the world needs now, quite simply, is more kindness. In a difficult time of inequality, political division and a slew of other serious global issues, Random Acts of Kindness (RAK) Week is here to inspire us to come together and make a positive ...",
-          "about": [
-            {
-              "readLink": "https://api.cognitive.microsoft.com/api/v5/entities/04886dcf-1b56-b94f-6e08-9f02c67593cf",
-              "name": "Random act of kindness"
-            }
-          ],
-          "provider": [
-            {
-              "_type": "Organization",
-              "name": "Mashable"
-            }
-          ],
-          "datePublished": "2017-02-14T18:45:00"
-        }
-      ]
+      "datePublished": "2017-02-17T12:19:00",
+      "category": "Health"
     }
   ]
 }

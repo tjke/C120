@@ -1,5 +1,6 @@
 /* positioning images to the left */
-.left-image {
+.image-float {
     float: left;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
 }

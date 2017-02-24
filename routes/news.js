@@ -11,6 +11,7 @@ var mon = "Mon";
 var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
+var query = "awareness day";
 var category = "other";
 var color = "#80d4ff";
 var darkerColor = "#4dc3ff";
@@ -19,14 +20,17 @@ var day = days[0]; // default data
 
 exports.view = function(req, res){
 	setDayData();
-	console.log(day);
-	console.log(news);
+	convertNewsTime();
+	//console.log(day);
+	//console.log(news);
 	var passData = {
   		"mon": mon,
   		"date": date,
   		"theme": theme,
+  		"query": query,
   		"category": category,
   		"news": news,
+  		"newsLength": news.length,
   		"color": color,
   		"darkerColor": darkerColor
   	};
@@ -56,6 +60,7 @@ function setDayData() {
 			if( days[i].date-4 <= n && n <= days[i].date+2) {
 				theme = days[i].theme;
 				summary = days[i].summary;
+				query = days[i].query;
 				category = days[i].category;
 				color = days[i].color;
 				darkerColor = days[i].darkerColor;
@@ -64,5 +69,15 @@ function setDayData() {
 				break;
 			}
 		}
+	}
+}
+
+function convertNewsTime() {
+	for(var i = 0; i < news.length; i++ ) {
+		var newsTime = news[i].datePublished;
+		var d = new Date(newsTime);
+		newsTime = d.toLocaleString();
+		//console.log(newsTime);
+		news[i].datePublished = newsTime;
 	}
 }
