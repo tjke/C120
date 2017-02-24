@@ -84,15 +84,15 @@ function signup(e) {
 	else {
 		var signupErrorMessage = "";
 		if( user == "" ) {
-			signupErrorMessage = "<br>You must enter a username!";
+			signupErrorMessage = "You must enter a username!<br>";
 		}
 		if( pass == "" ) {
-			signupErrorMessage += "<br>You must enter a password!";
+			signupErrorMessage += "You must enter a password!<br>";
 		}
 		if( mail == "" ) {
-			signupErrorMessage += "<br>You must enter an email!";
+			signupErrorMessage += "You must enter an email!<br>";
 		}
-		signupMessageHTML.innerHTML = "<font color=red>" + signupErrorMessage + "</font><br><br>";
+		signupMessageHTML.innerHTML = "<font color=red>" + signupErrorMessage + "</font>";
 	}	
 }
 
