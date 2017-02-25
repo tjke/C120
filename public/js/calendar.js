@@ -315,6 +315,7 @@ function clndrStuff() {
             	}
             	else {
             		console.log('No event');
+                    modal.style.display = 'none';
             	}
             }
         },
