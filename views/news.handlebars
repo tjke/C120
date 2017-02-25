@@ -35,11 +35,11 @@
 
 		<center>
 			<!--Showing {{newsLength}} results for <b>"{{query}}"</b>:-->
-			<p id="newsSearchResults">{{query}}</p>
+			<span id="loadingNews">Loading news results for<br></span>
+			<b>"<span id="newsSearchResults">{{query}}</span>"</b>
 		</center>
 
 		<div class="getNews"></div>
-
 		<!--{{#each news}}
 		<div>
 			<div class="image-float"><img src={{image.thumbnail.contentUrl}}></div>

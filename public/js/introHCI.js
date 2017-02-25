@@ -428,9 +428,10 @@ function getChallengeHistory() {
 			catRef.once('value', function(catSnapshot) {
 				cat = catSnapshot.val();
 			});
-			var histString = "<p><span class='medium-font'><b>" + childSnap.key + ":</b> <i>" + cTheme + "</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+			var histString = "<p><span class='medium-font'><b>" + childSnap.key + ":</b> <i>" + cTheme
+				+ "</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fa fa-flag' aria-hidden='true'></i> "
 				+ chal + "</p>";
-			$(".histLog").append(histString);
+			$(".histLog").prepend(histString);
 		});
 	});
 	//console.log(comChal);
@@ -447,6 +448,7 @@ function getNews() {
 	var limit = 5;
 
 	// clear to prevent extra appending
+	//$("#loadingNews").html("<span id='newsSearchResults'></span>");
 	$(".getNews").html("");
 
 	$(function() {
@@ -481,7 +483,8 @@ function getNews() {
         });
 
         // display search results message
-        $("#newsSearchResults").html('Showing ' + newsJson.length + ' results for <b>"' + query +'"</b>:');
+       	$("#loadingNews").html('Showing ' + newsJson.length + ' news results for<br>');
+        //$("#newsSearchResults").html('Showing ' + newsJson.length + ' news results for<br><b>"' + query +'"</b>');
 
         // iterate over each News object
         for( var i = 0; i < newsJson.length; i++) {
