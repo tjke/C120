@@ -10,11 +10,12 @@ var mons = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","D
 // some defaults
 var month = "Month";
 var mon = "Mon";
+var m = 0;
 var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
-var category = "other";
+var category = "Other";
 var data; // array of data
 var newsJson;
 var clickedIn = false; // resetted every time Challenge page has been loaded
@@ -28,6 +29,7 @@ $(document).ready(function() {
 function initializePage() {
 	setDayData();
 	$.get("trophies/", getProgress);
+	//$.get("trophies/", getChallengeHistory);
 
 	// linking whole div buttons
 	$(".navbar-btn-home").click(redirectHome);
@@ -194,8 +196,8 @@ function setDayData() {
 	var d = new Date();
 
 	// get the current Month and Date
-	var m = months[d.getMonth()];
-	month = m;
+	m = d.getMonth();
+	month = months[m];
 	mon = mons[d.getMonth()];
 	var n = d.getDate();
 	date = n;
@@ -221,7 +223,6 @@ function setDayData() {
 // greys out the Challenge Completed button
 function greyButton(e){
 	e.preventDefault();
-	//$(this).css("background-color", "grey");
 	document.getElementById("completed-btn").disabled = true;
 }
 
@@ -255,16 +256,7 @@ function updateCount(e) {
 			newCount = (count || 0) + 1;
 			return newCount;
 		});
-		// get old count
-		/*var countRef = firebaseRef.ref('challenges/' + data + '/count');
-		countRef.on('value', function(snapshot) {
-			newCount = snapshot.val();
-		});
-		// update with new count
-		/*newCount = newCount + 1;
-		firebaseRef.ref('challenges/' + data).set({
-			count: newCount
-		});*/
+
 		console.log("Updating count for " + data + " to " + newCount);
 		var extraTrophy = categoryCheck(category);
 		var partMessageHTML = document.getElementById("partUpdateMessage");
@@ -273,6 +265,7 @@ function updateCount(e) {
 			+ "<br>Check tomorrow to see another challenge.";
 		$("#partUpdateMessage").show();
 		updateTrophy(0); // challenges10
+		challengeToTrophy(0); //
 	}
 	clickedIn = true;
 }
@@ -283,22 +276,27 @@ function categoryCheck(cat) {
 	var extraString = "<br>You have completed a";
 	if( cat == "Animal" ) {
 		updateTrophy(3);
+		//challengeToTrophy(3);
 		retString = extraString + "n " + category + " challenge!";
 	}
 	else if( cat == "Environment") {
 		updateTrophy(4);
+		//challengeToTrophy(4);
 		retString = extraString + "n " + category + " challenge!";
 	}
 	else if( cat == "Health") {
 		updateTrophy(5);
+		//challengeToTrophy(4);
 		retString = extraString + " " + category + " challenge!";
 	}
 	else if( cat == "Kindness" ) {
 		updateTrophy(6);
+		//challengeToTrophy(6);
 		retString = extraString + " " + category + " challenge!";
 	}
 	else if( cat == "LGBT") {
 		updateTrophy(7);
+		//challengeToTrophy(7);
 		retString = extraString + " " + category + " challenge!";
 	}
 	return retString;
@@ -338,11 +336,6 @@ function getProgress(result) {
 			progressRef.once('value', function(progSnapshot) {
 				progress = progSnapshot.val();
 			});
-			/*var progressRef = firebaseRef.ref('progress/' + i + '/prog');
-			progressRef.on('value', function(progSnapshot) {
-				progress = progSnapshot.val();
-				//console.log("progressSnapshot=" + progress);
-			});*/
 
 			// scale progress to percentage and out of 10
 			var prog10 = progress*10;
@@ -375,14 +368,72 @@ function updateTrophy(trophy) {
 		newProgress = (progress || 0) + 1;
 		return newProgress;
 	});
-	/*progressRef.on('value', function(snapshot) {
-		newProgress = snapshot.val();
-	});
-	// update with new progress
-	newProgress = newProgress + 1;
-	firebaseRef.ref('trophies/').child(trophy).update({
-		progress: newProgress});*/
+
 	console.log("Updating progress of trophy" + trophy + " to " + newProgress);
+}
+
+// log a specific challenge to a specific trophy
+function challengeToTrophy(trophy) {
+	var trophy_title = "Trophy";
+	var trophy_description = "Description";
+	var numCom = 0;
+	
+	// key will be "monNum-Date"
+	var monNum = m + 1;
+	var tDate = monNum + "-" + date;
+
+	var chalT = $("#challenge").text();
+	var themT = $("#themeText").text();
+
+	// send challenge to the respective trophy
+	firebaseRef.ref('trophies/' + trophy + '/' + tDate).set({
+		cat: category,
+		chal: chalT,
+		theme: themT
+	});
+	
+	firebaseRef.ref('completed/' + tDate).set({
+		cat: category,
+		chal: chalT,
+		theme: themT
+	});
+	console.log("Adding chal " + tDate + " to trophy" + trophy);
+}
+
+// retrieve completed challenges from database
+function getChallengeHistory() {
+	//var comChal = 0;
+	var comRef = firebaseRef.ref('completed');
+	comRef.on('value', function(snapshot) {
+		// clear to prevent extra appending
+		$(".histLog").html("");
+
+		console.log("numCom=" + snapshot.numChildren());
+
+		// get chalDate and challenge from each children
+		snapshot.forEach(function(childSnap) {
+			var chal = "Challenge";
+			var cTheme = "A Day";
+			var cat = "Other";
+
+			var chalRef = firebaseRef.ref('completed/'+ childSnap.key + '/chal');
+			chalRef.once('value', function(chalSnapshot) {
+				chal = chalSnapshot.val();
+			});
+			var themeRef = firebaseRef.ref('completed/' + childSnap.key + '/theme');
+			themeRef.once('value', function(themeSnapshot) {
+				cTheme = themeSnapshot.val();
+			});
+			var catRef = firebaseRef.ref('completed/' + childSnap.key + '/cat');
+			catRef.once('value', function(catSnapshot) {
+				cat = catSnapshot.val();
+			});
+			var histString = "<p><span class='medium-font'><b>" + childSnap.key + ":</b> <i>" + cTheme + "</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+				+ chal + "</p>";
+			$(".histLog").append(histString);
+		});
+	});
+	//console.log(comChal);
 }
 
 

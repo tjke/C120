@@ -2,14 +2,13 @@
 
 <html>
 <head>
-	<title>News</title>	
+	<title>History</title>	
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
   	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   	<script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   	<!--Bootstrap-->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -17,7 +16,7 @@
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<!--Custom CSS-->
 	<link href="/css/introHCI.css" rel="stylesheet">
-	<link href="/css/other.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/other.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,34 +26,12 @@
     <![endif]-->        
 </head>
 
-<body onload=getNews()>
+<body onload=getChallengeHistory()>
 	<!-- main content of the page goes here -->
 	<div class="main">
-		<!-- News title-->
-		<div class="page-title" style="background-color: {{darkerColor}}">News</div>
-
-		<center>
-			<!--Showing {{newsLength}} results for <b>"{{query}}"</b>:-->
-			<p id="newsSearchResults">{{query}}</p>
-		</center>
-
-		<div class="getNews"></div>
-
-		<!--{{#each news}}
-		<div>
-			<div class="image-float"><img src={{image.thumbnail.contentUrl}}></div>
-			<div>
-				<h3><a href={{url}}>{{name}}</a></h3>
-				<i>{{datePublished}}</i><br>
-				{{description}}
-			</div>
-		</div>
-		<hr>
-		{{/each}}-->
-
-		<!--News API credit-->
-		<hr>
-		<p class="credit small-font">News search is powered by <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api">Bing News Search API</a></p>
+		<!--History title-->
+		<div class="page-title" style="background-color: {{darkerColor}}">History</div>
+		<div class="histLog"></div>
 	</div><!--/main-->
 
 	<!-- top header: shows date and theme -->
@@ -72,7 +49,7 @@
 		<div class="col-5 navbar-font navbar-btn-home" style="background-color: {{color}}"><a href="/"><i class="fa fa-home fa-3x" aria-hidden="true"></i><br>Home</a></div>
 		<div class="col-5 navbar-small-font navbar-btn-challenge" style="background-color: {{color}}"><a href="/challenge"><i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i><br>Challenge</a></div>
 		<div class="col-5 navbar-small-font navbar-btn-organizations" style="background-color: {{color}}"><a href="/organizations"><i class="fa fa-heart fa-3x" aria-hidden="true"></i><br>Organizations</a></div>
-		<div class="col-5 navbar-font" style="background-color: {{darkerColor}}"><i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i><br>News</div>
+		<div class="col-5 navbar-font navbar-btn-news" style="background-color: {{color}}"><a href="/news"><i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i><br>News</a></div>
 		<div class="col-5 navbar-font navbar-btn-trophies" style="background-color: {{color}}"><a href="/trophies"><i class="fa fa-trophy fa-3x" aria-hidden="true"></i><br>Trophies</a></div>
 	</div><!--/navbar-->
 

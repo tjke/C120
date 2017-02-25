@@ -1,0 +1,36 @@
+/* LOGIN: for the Sign Up modal */
+.form2 {
+	margin: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+/* ORGANIZATIONS: container for each organization item */
+.well {
+   padding: 15px;
+   text-align: left;
+   /*line-height: 0.3;*/
+   transition: box-shadow 1s;
+   color: black;
+}
+
+/* ORGANIZATIONS: Donate button */
+.donate-btn{
+	float:right;
+}
+
+
+/* NEWS: positioning images to the left */
+.image-float {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+
+/* TROPHIES: trophy image */
+.media-object{
+	width: 70px;
+	height: 70px;
+}
