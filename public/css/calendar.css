@@ -1,6 +1,7 @@
 /* CALENDAR gets a special container for content */
 .calendar-container {
-    margin-bottom: 18%;
+    /*margin-bottom: 18%;*/
+    margin-bottom: 75px;
     padding: 20px;
 }
 

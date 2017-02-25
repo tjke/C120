@@ -126,6 +126,11 @@ body {
      font-size: 300%;
 }
 
+/* credit source info */
+.credit {
+     text-align: center;
+}
+
 /* to center containing text horizontally and vertically */
 /* outer container must have "display: table" */
 .center-container {

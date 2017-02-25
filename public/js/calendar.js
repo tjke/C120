@@ -162,14 +162,136 @@ function clndrStuff() {
     // Events to load into calendar
     var eventArray = [
     	{
+    		title: "World Hijab Day",
+    		date: '2017-02-01' 
+    	},
+    	{
+    		title: "World Wetlands Day",
+    		date: '2017-02-02' 
+    	},
+    	{
+    		title: "National Wear Red Day",
+    		date: '2017-02-03' 
+    	},
+    	{
+    		title: "World Cancer Day",
+    		date: '2017-02-04' 
+    	},
+    	{
+    		title: "National Send a Card to a Friend Day",
+    		date: '2017-02-07' 
+    	},
+    	{
+    		title: "International Safer Internet Day",
+    		date: '2017-02-08' 
+    	},
+    	{
+    		title: "Stop Bullying Day",
+    		date: '2017-02-09' 
+    	},
+    	{
     		title: "National Umbrella Day",
     		date: '2017-02-10' 
-    	}, {
+    	},
+    	{
+    		title: "National Shut-In Visitation Day",
+    		date: '2017-02-11' 
+    	},
+    	{
+    		title: "Red Hand Day",
+    		date: '2017-02-12' 
+    	},
+    	{
+    		title: "International Natural Day",
+    		date: '2017-02-13' 
+    	},
+    	{
+    		title: "V-Day",
+    		date: '2017-02-14' 
+    	},
+    	{
     		title: "Random Acts of Kindness Day",
     		date: '2017-02-17'
-    	}, {
+    	}, 
+    	{
+    		title: "National Love Your Pet Day",
+    		date: '2017-02-20'
+    	}, 
+    	{
+    		title: "International Mother Language Day",
+    		date: '2017-02-21'
+    	},
+    	{
+    		title: "Walking the Dog Day",
+    		date: '2017-02-22'
+    	},  
+    	{
     		title: "National Skip the Straw Day",
     		date: '2017-02-24'
+    	},
+    	{
+    		title: "National Polar Bear Day",
+    		date: '2017-02-27'
+    	},
+    	{
+    		title: "Rare Disease Day",
+    		date: '2017-02-28'
+    	},
+    	{
+    		title: "Self-Injury Awareness Day",
+    		date: '2017-03-01'
+    	},
+    	{
+    		title: "World Wildlife Day",
+    		date: '2017-03-03'
+    	},
+    	{
+    		title: "International Women's Day",
+    		date: '2017-03-08'
+    	},
+    	{
+    		title: "National Plant a Flower Day",
+    		date: '2017-03-12'
+    	},
+    	{
+    		title: "National Good Samaritan Day",
+    		date: '2017-03-13'
+    	},
+    	{
+    		title: "Panda Day",
+    		date: '2017-03-16'
+    	},
+    	{
+    		title: "International Day Against Homophobia and Transphobia Day",
+    		date: '2017-03-17'
+    	},
+    	{
+    		title: "International Day of Forests",
+    		date: '2017-03-21'
+    	},
+    	{
+    		title: "World Water Day",
+    		date: '2017-03-22'
+    	},
+    	{
+    		title: "National Puppy Day",
+    		date: '2017-03-23'
+    	},
+    	{
+    		title: "World Tuberculosis Day",
+    		date: '2017-03-24'
+    	},
+    	{
+    		title: "Purple Day",
+    		date: '2017-03-26'
+    	},
+    	{
+    		title: "Manatee Appreciation Day",
+    		date: '2017-03-29'
+    	},
+    	{
+    		title: "National Doctors Day",
+    		date: '2017-03-30'
     	}
     ];
 
