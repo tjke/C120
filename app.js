@@ -17,6 +17,7 @@ var trophies = require('./routes/trophies');
 var login = require('./routes/login');
 var calendar = require('./routes/calendar');
 var history = require('./routes/history');
+var days = require('./routes/days');
 // Example route
 // var user = require('./routes/user');
 
@@ -52,6 +53,7 @@ app.get('/trophies', trophies.view);
 app.get('/login', login.view);
 app.get('/calendar', calendar.view);
 app.get('/history', history.view);
+app.get('/days.json', days.view)
 // Example route
 // app.get('/users', user.list);
 

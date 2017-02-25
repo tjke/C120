@@ -45,19 +45,19 @@ function setDayData() {
 	for(var i = 0; i < days.length; i++ ) {
 		// find a matching month
 		if(days[i].month == m) {
-			var weekBegin = days[i].date - 5;
-			var weekEnd = days[i].date + 1;
-			console.log("Found a matching month; days[i].date=" + days[i].date + "; Week " + weekBegin + "-" + weekEnd);
+			var weekBegin = days[i].da - 5;
+			var weekEnd = days[i].da + 1;
+			console.log("Found a matching month; days[i].da=" + days[i].da + "; Week " + weekBegin + "-" + weekEnd);
 			
 			// find a day within the same week
-			if( days[i].date-4 <= n && n <= days[i].date+2) {
+			if( days[i].da-4 <= n && n <= days[i].da+2) {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				category = days[i].category;
 				color = days[i].color;
 				darkerColor = days[i].darkerColor;
 				day = days[i]; // getting the theme day data
-				console.log("   Found a match: " + days[i].month + " " + days[i].date);
+				console.log("   Found a match: " + days[i].month + " " + days[i].da);
 				break;
 			}
 		}

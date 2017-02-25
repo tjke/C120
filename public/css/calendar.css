@@ -9,7 +9,7 @@
 #eventPopup {
 	position: absolute;
 	/*height: 200px;*/
-	width: 250px;
+	width: 50%;
 	top: 40%;
 	left: 0;
 	right: 0;

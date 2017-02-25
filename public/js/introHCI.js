@@ -345,12 +345,12 @@ function getProgress(result) {
 			}
 			
 			// append for each trophy entry
-			$(".media").append("<a class='pull-left'><img class='media-object' src='/images/trophy.png' alt='...''></a>"
-				+ "<p class='media-heading medium-font'><b>" + title + "</b></p>" // trophy title
-				+ "<p>" + description + "</p>" // trophy description
-				+ "<div class='progress progress-striped'>"
-				+ "<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:" + prog10 + "%'>"
-				+ progress + "/10</div></div><hr>"
+			$(".media").append('<a class="pull-left"><img class="media-object" src="/images/trophy.png" alt="...""></a>'
+				+ '<p class="media-heading medium-font"><b>' + title + '</b></p>' // trophy title
+				+ '<p>' + description + '</p>' // trophy description
+				+ '<div class="progress progress-striped">'
+				+ '<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:' + prog10 + '%">'
+				+ progress + '/10</div></div><hr>'
 			);
 		}
 	});
@@ -428,9 +428,9 @@ function getChallengeHistory() {
 			catRef.once('value', function(catSnapshot) {
 				cat = catSnapshot.val();
 			});
-			var histString = "<p><span class='medium-font'><b>" + childSnap.key + ":</b> <i>" + cTheme
-				+ "</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fa fa-flag' aria-hidden='true'></i> "
-				+ chal + "</p>";
+			var histString = '<p><span class="medium-font"><b>' + childSnap.key + ':</b> <i>' + cTheme
+				+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
+				+ chal + '"</p>';
 			$(".histLog").prepend(histString);
 		});
 	});

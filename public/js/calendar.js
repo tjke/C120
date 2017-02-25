@@ -5,6 +5,7 @@ var modal;
 
 var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
 var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var mons = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
 //  DECLARE VARIABLES
 var Calendar;
@@ -53,16 +54,118 @@ function initializePage() {
 
 
 // displaying Event popup
-function displayEvent(eMon,eDate,eText){
+function displayEvent(eDate,eTheme,eChal){
+    var showChal = "";
+    var currDate = new Date();
+    //console.log(eDate.toString());
+    //console.log(currDate.toString());
+    if( eDate <= currDate ) {
+        //console.log("it's earlier!");
+        showChal = '<b>Past Challenge:</b> "' + eChal + '"';
+    }
+    else {
+        //console.log("Challenge is a secret!");
+        showChal = 'Stay tuned for the next challenge!';
+    }
+    var eMonth = eDate.getMonth();
+    eMonth = eMonth+1;
+    var eD = eDate.getDate();
+
 	var eventText = document.getElementById("eventContent");
-	eventText.innerHTML = "<p class='big-font'>" + eMon + " " + eDate
-		+ "</p><center><p class='medium-font'>" + eText + "</p></center>";
+	eventText.innerHTML = '<p class="medium-font">' + eMonth + '/' + eD
+		+ '</p><center><p class="medium-font"><i>' + eTheme
+        + '</i></p></center>' + showChal;
 
 	modal.style.display = "block";
 }
 // hiding Event popup
 function hideEvent(e) {
 	modal.style.display = 'none';
+}
+
+
+/*** CLNDR ***/
+// Call this from the developer console and you can control both instances
+function clndrStuff() {
+    console.info(
+        'Welcome to the CLNDR demo. Click around on the calendars and' +
+        'the console will log different events that fire.');
+
+    // Assuming you've got the appropriate language files,
+    // clndr will respect whatever moment's language is set to.
+    // moment.locale('ru');
+
+    // Here's some magic to make sure the dates are happening this month.
+    var thisMonth = moment().format('YYYY-MM');
+
+    // Events to load into calendar
+    // loading local JSON data
+    var jsonData;
+    $.ajax({
+            url: "/days.json",
+            type: "GET",
+            // Request body
+            data: "{body}",
+            async: false,
+            dataType: 'json'
+        })
+        .done(function(data) {
+            // set JSON data to be used
+            jsonData = data;
+            //console.log(data);
+        })
+        .fail(function() {
+            console.log("News error");
+    });
+
+    //console.log(jsonData);
+    var eventArray = jsonData;
+    //console.log(eventArray);
+
+    // The order of the click handlers is predictable. Direct click action
+    // callbacks come first: click, nextMonth, previousMonth, nextYear,
+    // previousYear, nextInterval, previousInterval, or today. Then
+    // onMonthChange (if the month changed), inIntervalChange if the interval
+    // has changed, and finally onYearChange (if the year changed).
+    calendars.clndr1 = $('.cal1').clndr({
+        events: eventArray,
+        clickEvents: {
+            click: function (target) {
+                if( target.events.length > 0 ) {
+                    // event and date info to send
+                    var eDate = new Date(target.date._d);
+                    var eTitle = target.events[0].theme;
+                    var eChal = target.events[0].challenge;
+                    displayEvent(eDate, eTitle, eChal);
+                }
+                else {
+                    console.log('No event');
+                    modal.style.display = 'none';
+                }
+            }
+        },
+        multiDayEvents: {
+            singleDay: 'date',
+            endDate: 'endDate',
+            startDate: 'startDate'
+        },
+        showAdjacentMonths: true,
+        adjacentDaysChangeMonth: false
+    });
+
+    // Bind all clndrs to the left and right arrow keys
+    $(document).keydown( function(e) {
+        // Left arrow
+        if (e.keyCode == 37) {
+            calendars.clndr1.back();
+        }
+
+        // Right arrow
+        if (e.keyCode == 39) {
+            calendars.clndr1.forward();
+            calendars.clndr2.forward();
+        }
+    });
 }
 
 
@@ -143,202 +246,4 @@ function createCalendar() {
 	
 	/*var calHTML = document.getElementById("calendar");
 	calHTML.innerHTML = cal;*/
-}
-
-
-/*** CLNDR ***/
-// Call this from the developer console and you can control both instances
-function clndrStuff() {
-    console.info(
-        'Welcome to the CLNDR demo. Click around on the calendars and' +
-        'the console will log different events that fire.');
-
-    // Assuming you've got the appropriate language files,
-    // clndr will respect whatever moment's language is set to.
-    // moment.locale('ru');
-
-    // Here's some magic to make sure the dates are happening this month.
-    var thisMonth = moment().format('YYYY-MM');
-    // Events to load into calendar
-    var eventArray = [
-    	{
-    		title: "World Hijab Day",
-    		date: '2017-02-01' 
-    	},
-    	{
-    		title: "World Wetlands Day",
-    		date: '2017-02-02' 
-    	},
-    	{
-    		title: "National Wear Red Day",
-    		date: '2017-02-03' 
-    	},
-    	{
-    		title: "World Cancer Day",
-    		date: '2017-02-04' 
-    	},
-    	{
-    		title: "National Send a Card to a Friend Day",
-    		date: '2017-02-07' 
-    	},
-    	{
-    		title: "International Safer Internet Day",
-    		date: '2017-02-08' 
-    	},
-    	{
-    		title: "Stop Bullying Day",
-    		date: '2017-02-09' 
-    	},
-    	{
-    		title: "National Umbrella Day",
-    		date: '2017-02-10' 
-    	},
-    	{
-    		title: "National Shut-In Visitation Day",
-    		date: '2017-02-11' 
-    	},
-    	{
-    		title: "Red Hand Day",
-    		date: '2017-02-12' 
-    	},
-    	{
-    		title: "International Natural Day",
-    		date: '2017-02-13' 
-    	},
-    	{
-    		title: "V-Day",
-    		date: '2017-02-14' 
-    	},
-    	{
-    		title: "Random Acts of Kindness Day",
-    		date: '2017-02-17'
-    	}, 
-    	{
-    		title: "National Love Your Pet Day",
-    		date: '2017-02-20'
-    	}, 
-    	{
-    		title: "International Mother Language Day",
-    		date: '2017-02-21'
-    	},
-    	{
-    		title: "Walking the Dog Day",
-    		date: '2017-02-22'
-    	},  
-    	{
-    		title: "National Skip the Straw Day",
-    		date: '2017-02-24'
-    	},
-    	{
-    		title: "National Polar Bear Day",
-    		date: '2017-02-27'
-    	},
-    	{
-    		title: "Rare Disease Day",
-    		date: '2017-02-28'
-    	},
-    	{
-    		title: "Self-Injury Awareness Day",
-    		date: '2017-03-01'
-    	},
-    	{
-    		title: "World Wildlife Day",
-    		date: '2017-03-03'
-    	},
-    	{
-    		title: "International Women's Day",
-    		date: '2017-03-08'
-    	},
-    	{
-    		title: "National Plant a Flower Day",
-    		date: '2017-03-12'
-    	},
-    	{
-    		title: "National Good Samaritan Day",
-    		date: '2017-03-13'
-    	},
-    	{
-    		title: "Panda Day",
-    		date: '2017-03-16'
-    	},
-    	{
-    		title: "International Day Against Homophobia and Transphobia Day",
-    		date: '2017-03-17'
-    	},
-    	{
-    		title: "International Day of Forests",
-    		date: '2017-03-21'
-    	},
-    	{
-    		title: "World Water Day",
-    		date: '2017-03-22'
-    	},
-    	{
-    		title: "National Puppy Day",
-    		date: '2017-03-23'
-    	},
-    	{
-    		title: "World Tuberculosis Day",
-    		date: '2017-03-24'
-    	},
-    	{
-    		title: "Purple Day",
-    		date: '2017-03-26'
-    	},
-    	{
-    		title: "Manatee Appreciation Day",
-    		date: '2017-03-29'
-    	},
-    	{
-    		title: "National Doctors Day",
-    		date: '2017-03-30'
-    	}
-    ];
-
-    // The order of the click handlers is predictable. Direct click action
-    // callbacks come first: click, nextMonth, previousMonth, nextYear,
-    // previousYear, nextInterval, previousInterval, or today. Then
-    // onMonthChange (if the month changed), inIntervalChange if the interval
-    // has changed, and finally onYearChange (if the year changed).
-    calendars.clndr1 = $('.cal1').clndr({
-        events: eventArray,
-        clickEvents: {
-            click: function (target) {
-            	if( target.events.length > 0 ) {
-            		// event and date info to send
-            		var dateFormat = new Date(target.date._d);
-            		var eMonth = dateFormat.getMonth();
-            		eMonth = month_of_year[eMonth];
-            		var eDate = dateFormat.getDate();
-            		var eTitle = target.events[0].title;
-            		displayEvent(eMonth, eDate, eTitle);
-            	}
-            	else {
-            		console.log('No event');
-                    modal.style.display = 'none';
-            	}
-            }
-        },
-        multiDayEvents: {
-            singleDay: 'date',
-            endDate: 'endDate',
-            startDate: 'startDate'
-        },
-        showAdjacentMonths: true,
-        adjacentDaysChangeMonth: false
-    });
-
-    // Bind all clndrs to the left and right arrow keys
-    $(document).keydown( function(e) {
-        // Left arrow
-        if (e.keyCode == 37) {
-            calendars.clndr1.back();
-        }
-
-        // Right arrow
-        if (e.keyCode == 39) {
-            calendars.clndr1.forward();
-            calendars.clndr2.forward();
-        }
-    });
 }
