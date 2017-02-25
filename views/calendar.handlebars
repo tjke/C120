@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Trophies</title>	
+	<title>Calendar</title>	
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -16,7 +16,13 @@
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<!--Custom CSS-->
 	<link href="/css/introHCI.css" rel="stylesheet">
-	<link rel="stylesheet" href="/css/trophies.css" type="text/css">
+	<link href="/css/calendar.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/clndr.css">
+	<style>
+		.cal-cell {
+			padding: 15px;
+		}
+	</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,40 +32,13 @@
     <![endif]-->        
 </head>
 
-<body>
+<body onload=createCalendar()>
 	<!-- main content of the page goes here -->
-	<div class="main">
-		<!--Trophies title-->
-		<div class="page-title" style="background-color: {{darkerColor}}">Trophies</div>
-		
-		<div class="media">
-			<!--moved to introHCI.js-->
-			<!--{{#each trophies}}
-			<a class="pull-left">
-				<img class="media-object" src="/images/trophy.png" alt="...">
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">{{trophy_title}}</h4>
-				<p>{{trophy_description}}</p>
-				<div class="progress progress-striped">
-					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%">
-						{{progress}}%
-					</div>
-				</div>
-			</div>
-			{{/each}}-->
-		</div>
-	</div><!--/main-->
-
-	<!-- top header: shows date and theme -->
-	<div class="top-header">
-		<div class="date-square calendar-btn" style="background-color: {{darkerColor}}">
-			<a href="/calendar">{{mon}}<br>{{date}}</a>
-		</div>
-		<div class="heading-theme navbar-btn-home" style="background-color: {{color}}">
-			<a href="/">{{theme}}</a>
-		</div>
-	</div><!--/header-->
+	<div class="calendar-container">
+		<!--display Calendar-->
+		<!--<center><p id="calendar"></p></center>-->
+		<div class="cal1"></div>
+	</div><!--/calendar-container-->
 
 	<!-- bottom navbar -->
 	<div class="bottom-navbar">
@@ -67,7 +46,7 @@
 		<div class="col-5 navbar-small-font navbar-btn-challenge" style="background-color: {{color}}"><a href="/challenge"><i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i><br>Challenge</a></div>
 		<div class="col-5 navbar-small-font navbar-btn-organizations" style="background-color: {{color}}"><a href="/organizations"><i class="fa fa-heart fa-3x" aria-hidden="true"></i><br>Organizations</a></div>
 		<div class="col-5 navbar-font navbar-btn-news" style="background-color: {{color}}"><a href="/news"><i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i><br>News</a></div>
-		<div class="col-5 navbar-font" style="background-color: {{darkerColor}}"><i class="fa fa-trophy fa-3x" aria-hidden="true"></i><br>Trophies</div>
+		<div class="col-5 navbar-font navbar-btn-trophies" style="background-color: {{color}}"><a href="/trophies"><i class="fa fa-trophy fa-3x" aria-hidden="true"></i><br>Trophies</a></div>
 	</div><!--/navbar-->
 
 	<!--Firebase-->
@@ -85,7 +64,15 @@
 	</script><!--/Firebase-->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<!--CLNDR-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="/js/clndr.js"></script>
+    <script src="/js/demo.js"></script>
 	<!--Custom JS-->
 	<script src="/js/introHCI.js"></script>
+	<script src="/js/calendar.js"></script>
+
 </body>
 </html>

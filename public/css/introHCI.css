@@ -25,6 +25,13 @@ body {
      display: table;
      background-color: grey; 
 }
+.top-header a {
+     color: #333333;
+}
+.top-header a:hover {
+     text-decoration: none;
+}
+
 /* square box that shows a short version of the date */
 .date-square {
      height: 100px;

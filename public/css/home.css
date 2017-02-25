@@ -82,7 +82,13 @@
     text-align: center;
     vertical-align: middle;
 	/*background-color: #80d4ff;*/
-    color: #666666;
+    color: #333333;
+}
+.date a {
+     color: #333333;
+}
+.date a:hover {
+     text-decoration: none;
 }
 
 /* displaying the daily theme */

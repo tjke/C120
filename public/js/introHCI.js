@@ -35,6 +35,7 @@ function initializePage() {
 	$(".navbar-btn-organizations").click(redirectOrganizations);
 	$(".navbar-btn-news").click(redirectNews);
 	$(".navbar-btn-trophies").click(redirectTrophies);
+	$(".calendar-btn").click(redirectCalendar);
 
 	// defining click listeners
 	$("#signup-btn").click(signup);
@@ -185,7 +186,9 @@ function redirectNews(e) {
 function redirectTrophies(e) {
 	window.location.href = "/trophies"; 
 }
-
+function redirectCalendar(e) {
+	window.location.href = "/calendar";
+}
 // set today's date
 function setDayData() {
 	var d = new Date();
@@ -427,7 +430,7 @@ function getNews() {
         });
 
         // display search results message
-        $("#newsSearchResults").html("Showing " + newsJson.length + " results for <b>'"+ query +"'</b>:");
+        $("#newsSearchResults").html('Showing ' + newsJson.length + ' results for <b>"' + query +'"</b>:');
 
         // iterate over each News object
         for( var i = 0; i < newsJson.length; i++) {
