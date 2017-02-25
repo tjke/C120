@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/css/clndr.css">
 	<style>
 		.cal-cell {
-			padding: 15px;
+			/*padding: 15px;*/
 		}
 	</style>
 
@@ -32,12 +32,19 @@
     <![endif]-->        
 </head>
 
-<body onload=createCalendar()>
+<body onload="createCalendar();clndrStuff();"">
 	<!-- main content of the page goes here -->
 	<div class="calendar-container">
+		<!--Calendar title-->
+		<div class="page-title" style="background-color: {{darkerColor}}">Calendar</div>
+		<!--Event popup-->
+		<div id="eventPopup">
+			<span class="close large-font">&times;</span>
+			<p id="eventContent">hey</p>
+		</div>
 		<!--display Calendar-->
-		<!--<center><p id="calendar"></p></center>-->
 		<div class="cal1"></div>
+		<!--<center><p id="calendar"></p></center>-->
 	</div><!--/calendar-container-->
 
 	<!-- bottom navbar -->
@@ -69,7 +76,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="/js/clndr.js"></script>
-    <script src="/js/demo.js"></script>
 	<!--Custom JS-->
 	<script src="/js/introHCI.js"></script>
 	<script src="/js/calendar.js"></script>

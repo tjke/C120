@@ -1,5 +1,8 @@
 'use strict';
 
+var calendars = {}; // for CLNDR
+var modal;
+
 var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
 var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
 
@@ -40,8 +43,28 @@ function initializePage() {
 	Calendar.setDate(1);    // Start the calendar day at '1'
 	Calendar.setMonth(month);    // Start the calendar month at now
 
+	//clndrStuff();
 	//createCalendar();
+
+	modal = document.getElementById("eventPopup");
+	modal.style.display = 'none';
+	$(".close").click(hideEvent);
 }
+
+
+// displaying Event popup
+function displayEvent(eMon,eDate,eText){
+	var eventText = document.getElementById("eventContent");
+	eventText.innerHTML = "<p class='big-font'>" + eMon + " " + eDate
+		+ "</p><center><p class='medium-font'>" + eText + "</p></center>";
+
+	modal.style.display = "block";
+}
+// hiding Event popup
+function hideEvent(e) {
+	modal.style.display = 'none';
+}
+
 
 // code from: http://www.htmlbestcodes.com/Calendar.htm
 function createCalendar() {
@@ -117,6 +140,82 @@ function createCalendar() {
 	//console.log(cal);
 	//document.write(cal);
 	//$("#calendar").html = cal;
-	var calHTML = document.getElementById("calendar");
-	calHTML.innerHTML = cal;
+	
+	/*var calHTML = document.getElementById("calendar");
+	calHTML.innerHTML = cal;*/
+}
+
+
+/*** CLNDR ***/
+// Call this from the developer console and you can control both instances
+function clndrStuff() {
+    console.info(
+        'Welcome to the CLNDR demo. Click around on the calendars and' +
+        'the console will log different events that fire.');
+
+    // Assuming you've got the appropriate language files,
+    // clndr will respect whatever moment's language is set to.
+    // moment.locale('ru');
+
+    // Here's some magic to make sure the dates are happening this month.
+    var thisMonth = moment().format('YYYY-MM');
+    // Events to load into calendar
+    var eventArray = [
+    	{
+    		title: "National Umbrella Day",
+    		date: '2017-02-10' 
+    	}, {
+    		title: "Random Acts of Kindness Day",
+    		date: '2017-02-17'
+    	}, {
+    		title: "National Skip the Straw Day",
+    		date: '2017-02-24'
+    	}
+    ];
+
+    // The order of the click handlers is predictable. Direct click action
+    // callbacks come first: click, nextMonth, previousMonth, nextYear,
+    // previousYear, nextInterval, previousInterval, or today. Then
+    // onMonthChange (if the month changed), inIntervalChange if the interval
+    // has changed, and finally onYearChange (if the year changed).
+    calendars.clndr1 = $('.cal1').clndr({
+        events: eventArray,
+        clickEvents: {
+            click: function (target) {
+            	if( target.events.length > 0 ) {
+            		// event and date info to send
+            		var dateFormat = new Date(target.date._d);
+            		var eMonth = dateFormat.getMonth();
+            		eMonth = month_of_year[eMonth];
+            		var eDate = dateFormat.getDate();
+            		var eTitle = target.events[0].title;
+            		displayEvent(eMonth, eDate, eTitle);
+            	}
+            	else {
+            		console.log('No event');
+            	}
+            }
+        },
+        multiDayEvents: {
+            singleDay: 'date',
+            endDate: 'endDate',
+            startDate: 'startDate'
+        },
+        showAdjacentMonths: true,
+        adjacentDaysChangeMonth: false
+    });
+
+    // Bind all clndrs to the left and right arrow keys
+    $(document).keydown( function(e) {
+        // Left arrow
+        if (e.keyCode == 37) {
+            calendars.clndr1.back();
+        }
+
+        // Right arrow
+        if (e.keyCode == 39) {
+            calendars.clndr1.forward();
+            calendars.clndr2.forward();
+        }
+    });
 }

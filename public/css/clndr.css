@@ -27,7 +27,7 @@ html[xmlns] .clearfix {
 h4 {
   width: 75%;
   text-align: center;
-  font-family: 'Droid Sans Mono';
+  /*font-family: 'Droid Sans Mono';*/
   font-weight: normal;
   color: white;
   font-size: 14px;
@@ -40,13 +40,13 @@ h5 {
   font-weight: bold;
 }
 p {
-  text-align: center;
-  font-family: 'Droid Sans Mono';
-  margin: 3em auto 1em auto;
+  /*text-align: center;*/
+  /*font-family: 'Droid Sans Mono';*/
+  /*margin: 3em auto 1em auto;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 2px solid #414141;
-  background: #f4f4f4;
+  background: #f4f4f4;*/
 }
 .left-align {
   text-align: left;
@@ -57,7 +57,7 @@ p {
 .cal1 {
   margin: 30px auto;
   max-width: 600px;
-  font-family: 'Droid Sans Mono';
+  /*font-family: 'Droid Sans Mono';*/
   font-size: 14px;
 }
 .cal1 .clndr .clndr-controls {
@@ -124,7 +124,7 @@ p {
 .cal1 .clndr .clndr-table .header-days {
   height: 30px;
   font-size: 10px;
-  background: #0D70A6;
+  background: #0D70A6; /* SMTWTFS HEADER BGCOLOR */
 }
 .cal1 .clndr .clndr-table .header-days .header-day {
   vertical-align: middle;
@@ -137,7 +137,7 @@ p {
   border-right: 1px solid #000000;
 }
 .cal1 .clndr .clndr-table tr {
-  height: 85px;
+  height: 65px; /* CELL HEIGHT */
 }
 .cal1 .clndr .clndr-table tr td {
   vertical-align: top;
@@ -153,11 +153,11 @@ p {
 }
 .cal1 .clndr .clndr-table tr .day.today,
 .cal1 .clndr .clndr-table tr .day.my-today {
-  background: #9AD6E3;
+  background: #9AD6E3; /* TODAY HIGHLIGHT */
 }
 .cal1 .clndr .clndr-table tr .day.today:hover,
 .cal1 .clndr .clndr-table tr .day.my-today:hover {
-  background: #72c6d8;
+  background: #72c6d8; /* TODAY HOVER */
 }
 .cal1 .clndr .clndr-table tr .day.today.event,
 .cal1 .clndr .clndr-table tr .day.my-today.event {
@@ -182,7 +182,7 @@ p {
   box-sizing: border-box;
   padding: 8px;
   font-size: 12px;
-  text-align: right;
+  text-align: left; /* TEXT ALIGNMENT OF DAYS CONTENT */
 }
 .cal1 .clndr .clndr-table tr .empty,
 .cal1 .clndr .clndr-table tr .adjacent-month,
@@ -217,7 +217,7 @@ p {
 .cal2 {
   max-width: 177px;
   margin: 30px auto;
-  font-family: 'Droid Sans Mono';
+  /*font-family: 'Droid Sans Mono';*/
 }
 .cal2 .clndr .clndr-controls {
   display: block;
@@ -317,7 +317,7 @@ p {
 .cal3 {
   max-width: 354px;
   margin: 0 auto;
-  font-family: 'Droid Sans Mono';
+  /*font-family: 'Droid Sans Mono';*/
 }
 .cal3 .cal {
   float: left;
