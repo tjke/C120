@@ -1,11 +1,3 @@
-/* HOME gets a special container for content */
-.home {
-    /*margin-bottom: 18%;*/
-    margin-bottom: 75px;
-    padding: 20px;
-}
-
-
 /*** HELP section ***/
 .help {
     position: absolute;

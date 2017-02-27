@@ -1,11 +1,4 @@
-/* CALENDAR gets a special container for content */
-.calendar-container {
-    /*margin-bottom: 18%;*/
-    margin-bottom: 75px;
-    padding: 20px;
-}
-
-/* popup box to show Event */
+/* CALENDAR: popup box to show Event */
 #eventPopup {
 	position: absolute;
 	/*height: 200px;*/

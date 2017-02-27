@@ -53,7 +53,9 @@ app.get('/trophies', trophies.view);
 app.get('/login', login.view);
 app.get('/calendar', calendar.view);
 app.get('/history', history.view);
-app.get('/days.json', days.view)
+app.get('/days.json', days.view);
+app.get('/past_A', calendar.view); // A testing
+app.get('/past_B', history.view); // B testing
 // Example route
 // app.get('/users', user.list);
 

@@ -114,6 +114,12 @@ body {
      margin-bottom: 75px;
      padding: 20px;
 }
+/* Special container for content */
+.main2 {
+    /*margin-bottom: 18%;*/
+    margin-bottom: 75px;
+    padding: 20px;
+}
 
 /* for page titles */
 .page-title {

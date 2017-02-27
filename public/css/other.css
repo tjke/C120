@@ -6,6 +6,22 @@
 }
 
 
+/* CALENDAR: popup box to show Event */
+#eventPopup {
+  position: absolute;
+  /*height: 200px;*/
+  width: 50%;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: white;
+}
+
+
 /* ORGANIZATIONS: container for each organization item */
 .well {
    padding: 15px;
