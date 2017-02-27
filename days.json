@@ -46,12 +46,69 @@
 		},
 		{
 			"month": "February",
+			"da": 1,
+			"date": "2017-02-01",
+			"theme": "World Hijab Day",
+			"summary": "Non-Muslim women are asked to wear a hijab to show solidarity with Muslim women.",
+			"query": "world hijab day",
+			"challenge": "Call your friends and sisters to get together to wear the hijab for today.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 2,
+			"date": "2017-02-02",
+			"theme": "World Wetlands Day",
+			"summary": "Celebrate how wetlands, which are lands saturated by water, help maintain biodiversity on Earth.",
+			"query": "world wetlands day",
+			"challenge": "Plan a trip to visit the wetland near you this weekend.",
+			"participants": 0,
+			"category": "Environment",
+			"color": "#71da71",
+			"darkerColor": "#34cb34",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
 			"da": 3,
 			"date": "2017-02-03",
 			"theme": "National Wear Red Day",
 			"summary": "National Wear Red Day raises public awareness of heart disease in women and ways to avoid and combat this problem.",
 			"query": "national wear red day",
 			"challenge": "Wear something red.",
+			"participants": 0,
+			"category": "Health",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 4,
+			"date": "2017-02-04",
+			"theme": "World Cancer Day",
+			"summary": "Raise awareness and education about cancer.",
+			"query": "world cancer day",
+			"challenge": "Join the 'Support through Sport' social media campaign.",
 			"participants": 0,
 			"category": "Health",
 			"color": "#ffcccc",
@@ -139,6 +196,25 @@
 		},
 		{
 			"month": "February",
+			"da": 11,
+			"date": "2017-02-11",
+			"theme": "National Shut-In Visitation Day",
+			"summary": "A shut-in is a person who, due to physical, mental, or emotional reasons, is not able to leave their home. We can make a difference by giving companionship.",
+			"query": "national shut in visitation day",
+			"challenge": "Deliver a meal to a shut-in person.",
+			"participants": 0,
+			"category": "Kindness",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
 			"da": 12,
 			"date": "2017-02-12",
 			"theme": "Red Hand Day",
@@ -168,6 +244,25 @@
 			"category": "Other",
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 14,
+			"date": "2017-02-14",
+			"theme": "National Donor Day",
+			"summary": "Increase awareness about organ donation and the lives that can be saved.",
+			"query": "national donor day",
+			"challenge": "Give others a heart shape chocolate and tell them 2/14 is more than Valentine's Day; it is also about organ donation.",
+			"participants": 0,
+			"category": "Health",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
 			"orgs": [ {
 				"orgName": "Charity Navigator",
 				"orgURL": "https://www.charitynavigator.org/",
@@ -234,8 +329,65 @@
 			"challenge": "Reach out to an organization that helps homeless pets.",
 			"participants": 0,
 			"category": "Animal",
+			"color": "#ffbf80",
+			"darkerColor": "#ffa64d",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 21,
+			"date": "2017-02-21",
+			"theme": "International Mother Language Day",
+			"summary": "International Mother Language Day celebrates cultural diversity.",
+			"query": "international mother language day",
+			"challenge": "Learn a sentence of a foreign language.",
+			"participants": 0,
+			"category": "Other",
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 22,
+			"date": "2017-02-22",
+			"theme": "Walking the Dog Day",
+			"summary": "Go out with your dog on this day, and encourage others to walk with their dogs too!",
+			"query": "walking the dog day",
+			"challenge": "Volunteer in a local animal shelter and walk dogs or play with them today.",
+			"participants": 0,
+			"category": "Animal",
+			"color": "#ffbf80",
+			"darkerColor": "#ffa64d",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 23,
+			"date": "2017-02-23",
+			"theme": "International Dog Biscuit Appreciation Day",
+			"summary": "International Dog Biscuit Appreciation Day is a day for the dogs. And, that's because there is no one else who can really appreciate the true value of a dog biscuit.",
+			"query": "dog biscuit appreciation day",
+			"challenge": "Visit a a local animal shelter and bring some dog biscuits.",
+			"participants": 0,
+			"category": "Animal",
+			"color": "#ffbf80",
+			"darkerColor": "#ffa64d",
 			"orgs": [ {
 				"orgName": "Charity Navigator",
 				"orgURL": "https://www.charitynavigator.org/",
@@ -305,13 +457,89 @@
 			}]
 		},
 		{
+			"month": "February",
+			"da": 27,
+			"date": "2017-02-27",
+			"theme": "National Polar Bear Day",
+			"summary": "Learn more about the polar bear and conservation efforts where the polar bear is concerned.",
+			"query": "polar bear day",
+			"challenge": "Replace a light buld with an LED bulb to conserve energy for the polar bears.",
+			"participants": 0,
+			"category": "Animal",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 28,
+			"date": "2017-02-28",
+			"theme": "Rare Disease Day",
+			"summary": "The main objective of Rare Disease Day is to raise awareness amongst the general public and decision-makers about rare diseases and their impact on patients' lives.",
+			"query": "rare disease day",
+			"challenge": "Learn about at least one rare disease and tell your friends about it.",
+			"participants": 0,
+			"category": "Health",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "March",
+			"da": 1,
+			"date": "2017-03-01",
+			"theme": "Self-Injury Awareness Day",
+			"summary": "This day is meant for learning about self-injury and providing resources to those who need help.",
+			"query": "self injury awareness day",
+			"challenge": "Wear an orange ribbon to show your support.",
+			"participants": 0,
+			"category": "Health",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "March",
+			"da": 2,
+			"date": "2017-03-02",
+			"theme": "National Read Across America Day",
+			"summary": "This day is a motivational and awareness day, calling all children and youth to celebrate reading.",
+			"query": "read across america day",
+			"challenge": "Donate books to charity or anyone who needs them.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
 			"month": "March",
 			"da": 3,
 			"date": "2017-03-03",
 			"theme": "World Wildlife Day",
-			"summary": "coolio.",
+			"summary": "World Wildlife Day is an opportunity to celebrate the many beautiful and varied forms of wild fauna and flora, and to raise awareness of the multitude of benefits that conservation provides to people.",
 			"query": "world wildlife day",
-			"challenge": "wildddd.",
+			"challenge": "Draw a picture of a wildlife animal with one viable way to help their livings, and post your picture on social media to show your support.",
 			"participants": 0,
 			"category": "Environment",
 			"color": "#71da71",

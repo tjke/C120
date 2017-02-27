@@ -412,8 +412,66 @@ function challengeToTrophy(trophy) {
 
 // retrieve completed challenges from database
 function getChallengeHistory() {
+	// clear to prevent extra appending
+	$(".histLog").html("");
+
+	// loading local JSON data
+    var jsonData;
+    $.ajax({
+            url: "/days.json",
+            type: "GET",
+            // Request body
+            data: "{body}",
+            async: false,
+            dataType: 'json'
+        })
+        .done(function(data) {
+            // set JSON data to be used
+            jsonData = data;
+            //console.log(data);
+        })
+        .fail(function() {
+            console.log("News error");
+    });
+
+    for( var i = 1; i < jsonData.length; i++ ) {
+    	var chal = "Challenge";
+		var cTheme = "A Day";
+		var cat = "Other";
+		var cDate = "01-01";
+		var cM = "1";
+		var cD = "1";
+		var fontColor = "black";
+
+		cDate = jsonData[i].date;
+		var cM = cDate.substring(5,7);
+		if( cM.substring(0,1) == "0") {
+			cM = cM.substring(1,2);
+		}
+		var cD = cDate.substring(8,10);
+		if( cD.substring(0,1) == "0") {
+			cD = cD.substring(1,2);
+		}
+		cDate = cM + "/" + cD;
+		chal = jsonData[i].challenge;
+		cTheme = jsonData[i].theme;
+		cat = jsonData[i].category;
+		fontColor = jsonData[i].darkerColor;
+
+		var d = new Date();
+		var n = d.getDate();
+
+		// show only themes/challenges up to the current date
+		if( jsonData[i].month == month && cD <= n) {
+        	var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+			+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
+			+ chal + '"</p>';
+			$(".histLog").prepend(histString);
+    	}    	
+    }
+    //console.log(jsonData[0].theme);
 	//var comChal = 0;
-	var comRef = firebaseRef.ref('completed');
+	/*var comRef = firebaseRef.ref('completed');
 	comRef.on('value', function(snapshot) {
 		// clear to prevent extra appending
 		$(".histLog").html("");
@@ -443,7 +501,7 @@ function getChallengeHistory() {
 				+ chal + '"</p>';
 			$(".histLog").prepend(histString);
 		});
-	});
+	});*/
 	//console.log(comChal);
 }
 
