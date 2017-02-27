@@ -2,8 +2,7 @@
 	"days": 
 	[
 		{
-			"id": 0,
-			"month": "Month",
+			"month": "January",
 			"da": 1,
 			"date": "2017-01-01",
 			"theme": "Awareness Day",
@@ -46,7 +45,44 @@
 			}]
 		},
 		{
-			"id": 1,
+			"month": "February",
+			"da": 3,
+			"date": "2017-02-03",
+			"theme": "National Wear Red Day",
+			"summary": "National Wear Red Day raises public awareness of heart disease in women and ways to avoid and combat this problem.",
+			"query": "national wear red day",
+			"challenge": "Wear something red.",
+			"participants": 0,
+			"category": "Health",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 7,
+			"date": "2017-02-07",
+			"theme": "National Send a Card to a Friend Day",
+			"summary": "This is a day to send our friends a card and let them know that we are thinking of them.",
+			"query": "national send a card to a friend day",
+			"challenge": "Make a card and give it to a friend.",
+			"participants": 0,
+			"category": "Kindness",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
 			"month": "February",
 			"da": 10,
 			"date": "2017-02-10",
@@ -102,7 +138,44 @@
 			}]
 		},
 		{
-			"id": 2,
+			"month": "February",
+			"da": 12,
+			"date": "2017-02-12",
+			"theme": "Red Hand Day",
+			"summary": "Red Hand Day is an annual commemoration drawing attention to the plight of children forced to serve as soldiers in wars and armed conflicts.",
+			"query": "red hand day",
+			"challenge": "Use red paint to make a handprint on a sheet of paper, and post it on social media.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 13,
+			"date": "2017-02-13",
+			"theme": "International Natural Day",
+			"summary": "Natural Day challenges individuals to let go of their insecurities, no matter what it may be. Love yourself!",
+			"query": "international natural day",
+			"challenge": "Take a selfie with a big smile and write something that you love about yourself.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
 			"month": "February",
 			"da": 17,
 			"date": "2017-02-17",
@@ -152,7 +225,25 @@
 			}]
 		},
 		{
-			"id": 3,
+			"month": "February",
+			"da": 20,
+			"date": "2017-02-20",
+			"theme": "National Love Your Pet Day",
+			"summary": "This holiday is a day set aside to pamper and give extra attention to your pets.",
+			"query": "love your pet day",
+			"challenge": "Reach out to an organization that helps homeless pets.",
+			"participants": 0,
+			"category": "Animal",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
 			"month": "February",
 			"da": 24,
 			"date": "2017-02-24",
@@ -214,7 +305,6 @@
 			}]
 		},
 		{
-			"id": 3,
 			"month": "March",
 			"da": 3,
 			"date": "2017-03-03",
@@ -227,16 +317,10 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "American Red Cross",
-				"orgURL": "http://www.redcross.org/",
-				"orgSummary": "Check out this organization!",
-				"donateURL": "#"
-			},
-			{	
-				"orgName": "Doctors Without Borders",
-				"orgURL": "http://www.doctorswithoutborders.org/",
-				"orgSummary": "Check out this organization!",
-				"donateURL": "#"
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
 			}]
 		}
 	]

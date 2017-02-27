@@ -266,7 +266,7 @@ function updateCount(e) {
 			+ "<br>Check tomorrow to see another challenge.";
 		$("#partUpdateMessage").show();
 		updateTrophy(0); // challenges10
-		challengeToTrophy(0); //
+		//challengeToTrophy(0);
 	}
 	clickedIn = true;
 }
@@ -386,7 +386,11 @@ function challengeToTrophy(trophy) {
 	
 	// key will be "monNum-Date"
 	var monNum = m + 1;
-	var tDate = monNum + "-" + date;
+	passDate = date;
+	if( passDate < 10 ) {
+		passDate = "0" + date;
+	}
+	var tDate = monNum + "-" + passDate;
 
 	var chalT = $("#challenge").text();
 	var themT = $("#themeText").text();
