@@ -191,6 +191,7 @@ function redirectTrophies(e) {
 function redirectCalendar(e) {
 	window.location.href = "/calendar";
 }
+
 // set today's date
 function setDayData() {
 	var d = new Date();
