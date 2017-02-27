@@ -323,6 +323,7 @@ function getProgress(result) {
 			var title = "Trophy";
 			var description = "Description";
 			var progress = 0;
+			var imageURL = "/images/trophy.png";
 
 			var titleRef = firebaseRef.ref('trophies/' + i + '/title');
 			titleRef.once('value', function(titleSnapshot) {
@@ -331,6 +332,10 @@ function getProgress(result) {
 			var descriptionRef = firebaseRef.ref('trophies/' + i + '/description');
 			descriptionRef.once('value', function(descripSnapshot) {
 				description = descripSnapshot.val();
+			});
+			var imageRef = firebaseRef.ref('trophies/' + i + '/image');
+			imageRef.once('value', function(imageSnapshot) {
+				imageURL = imageSnapshot.val();
 			});
 			var progressRef = firebaseRef.ref('trophies/' + i + '/progress');
 			progressRef.once('value', function(progSnapshot) {
@@ -345,7 +350,7 @@ function getProgress(result) {
 			}
 			
 			// append for each trophy entry
-			$(".media").append('<a class="pull-left"><img class="media-object" src="/images/trophy.png" alt="...""></a>'
+			$(".media").append('<a class="pull-left"><img class="media-object" src="/images/' + imageURL + '" alt="...""></a>'
 				+ '<p class="media-heading medium-font"><b>' + title + '</b></p>' // trophy title
 				+ '<p>' + description + '</p>' // trophy description
 				+ '<div class="progress progress-striped">'
