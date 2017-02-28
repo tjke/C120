@@ -1,4 +1,6 @@
 var days = require('../days.json')['days'];
+var news = require('../tempNews.json')['value'];
+var trophies = require('../trophies.json')['trophies'];
 
 // month arrays
 var months = ["January","February","March","April","May","June","July","August","October","November","December"];
@@ -11,7 +13,7 @@ var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
-var category = "other";
+var category = "Other";
 var color = "#80d4ff";
 var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
@@ -25,6 +27,8 @@ exports.view = function(req, res){
   		"theme": theme,
   		"summary": summary,
   		"category": category,
+  		"news": news,
+  		"trophies": trophies,
   		"color": color,
   		"darkerColor": darkerColor
   	};
@@ -50,7 +54,8 @@ function setDayData() {
 			console.log("Found a matching month; days[i].da=" + days[i].da + "; Week " + weekBegin + "-" + weekEnd);
 			
 			// find a day within the same week
-			if( days[i].da-4 <= n && n <= days[i].da+2) {
+			//if( days[i].da-4 <= n && n <= days[i].da+2) {
+			if( days[i].da == n || i == days.length-1) {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				category = days[i].category;
@@ -61,5 +66,15 @@ function setDayData() {
 				break;
 			}
 		}
+	}
+}
+
+function convertNewsTime() {
+	for(var i = 0; i < news.length; i++ ) {
+		var newsTime = news[i].datePublished;
+		var d = new Date(newsTime);
+		newsTime = d.toLocaleString();
+		//console.log(newsTime);
+		news[i].datePublished = newsTime;
 	}
 }

@@ -12,7 +12,7 @@ var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var query = "awareness day";
-var category = "other";
+var category = "Other";
 var color = "#80d4ff";
 var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
@@ -57,7 +57,8 @@ function setDayData() {
 			console.log("Found a matching month; days[i].da=" + days[i].da + "; Week " + weekBegin + "-" + weekEnd);
 			
 			// find a day within the same week
-			if( days[i].da-4 <= n && n <= days[i].da+2) {
+			//if( days[i].da-4 <= n && n <= days[i].da+2) {
+			if( days[i].da == n || i == days.length-1) {
 				theme = days[i].theme;
 				summary = days[i].summary;
 				query = days[i].query;

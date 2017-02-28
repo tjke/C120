@@ -207,7 +207,7 @@ function setDayData() {
 	var newDate = date;
 	console.log(data + ", dayOfWeek=" + dayOfWeek);
 	
-	if( dayOfWeek == 0 ) {
+	/*if( dayOfWeek == 0 ) {
 		newDate = date - 2;
 	}
 	else if( dayOfWeek < 5) {
@@ -216,7 +216,7 @@ function setDayData() {
 	else if( dayOfWeek > 5) {
 		newDate = date - (dayOfWeek - 5);
 	}
-	data = month + " " + newDate;
+	data = month + " " + newDate;*/
 	console.log("Getting theme from date " + data);
 }
 

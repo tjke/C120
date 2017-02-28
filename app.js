@@ -46,9 +46,9 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 //app.get('/project/:id', project.view);
-app.get('/news', news.view);
-app.get('/organizations', organizations.view);
 app.get('/challenge', challenge.view);
+app.get('/organizations', organizations.view);
+app.get('/news', news.view);
 app.get('/trophies', trophies.view);
 app.get('/login', login.view);
 app.get('/calendar', calendar.view);

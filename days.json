@@ -122,6 +122,44 @@
 		},
 		{
 			"month": "February",
+			"da": 5,
+			"date": "2017-02-05",
+			"theme": "National Weatherman's Day",
+			"summary": "It recognizes individuals in the fields of meteorology, weather forecasting, and broadcast meteorology, as well as volunteer storm spotters and observers.",
+			"query": "national weatherman day",
+			"challenge": "Give an umbrella to homeless people to prepare for a rainy day.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 6,
+			"date": "2017-02-06",
+			"theme": "International Day of Zero Tolerance to Female Genital Mutilation",
+			"summary": "FGM is internationally recognized as a human rights violation. UNFPA, jointly with UNICEF, leads the largest global programme to accelerate the abandonment of FGM.",
+			"query": "international day of zero tolerance to female genital mutilation",
+			"challenge": "Tell friends about this day and the issues related to female genital mutilation.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
 			"da": 7,
 			"date": "2017-02-07",
 			"theme": "National Send a Card to a Friend Day",
@@ -130,6 +168,44 @@
 			"challenge": "Make a card and give it to a friend.",
 			"participants": 0,
 			"category": "Kindness",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 8,
+			"date": "2017-02-08",
+			"theme": "National Kite Flying Day",
+			"summary": "National Kite Flying Day is marked by kite flying enthusiasts across the country.",
+			"query": "national kite flying day",
+			"challenge": "Make a kite with one inspiring quote on it.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 9,
+			"date": "2017-02-09",
+			"theme": "Stop Bullying Day",
+			"summary": "Stop Bullying Day encourages everyone to make an effort to eradicate bullying in their environment.",
+			"query": "stop bullying day",
+			"challenge": "Sit and chat with someone who's new or left out.",
+			"participants": 0,
+			"category": "Other",
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
@@ -207,10 +283,34 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "La Jolla Meals on Wheels",
+				"orgURL": "http://lajollamealsonwheels.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Jewish Family Service",
+				"orgURL": "http://www.jfssd.org/site/PageServer?pagename=programs_older_foodmobile",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Meals on Wheels San Diego County",
+				"orgURL": "http://www.meals-on-wheels.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Serving Seniors",
+				"orgURL": "http://www.servingseniors.org/programs-services/meals/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Catholic Charities Diocese of San Diego",
+				"orgURL": "https://www.ccdsd.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -226,10 +326,34 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Human Rights Watch",
+				"orgURL": "https://www.hrw.org/news/2010/01/29/red-hand-day-campaign",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Child Soldiers International",
+				"orgURL": "https://www.child-soldiers.org/red-hand-day-campaign",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "UNICEF",
+				"orgURL": "https://www.unicef.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "UNICEFusa",
+				"orgURL": "https://www.unicefusa.org/stories/red-hand-day-raising-awareness-children-armed-conflict/29938",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Invisible Children",
+				"orgURL": "http://invisiblechildren.com/blog/2014/02/12/february-12th-international-day-use-child-soldiers-aka-red-hand-day/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -245,10 +369,10 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "The Love Your Natural Self Foundation",
+				"orgURL": "http://www.internationalnaturalday.com/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -264,10 +388,114 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "U.S. Government Information on Organ Donation and Transplantation",
+				"orgURL": "https://www.organdonor.gov/index.html",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Donate Life",
+				"orgURL": "http://www.donatelifenw.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "DCI Donor Services Inc.",
+				"orgURL": "http://www.dcids.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Life Choice",
+				"orgURL": "http://lifechoiceopo.org/index.html",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "The Colby Foundation",
+				"orgURL": "https://www.colbyfoundation.org/news/february-14-national-donor-day",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 15,
+			"date": "2017-02-15",
+			"theme": "Susan B. Anthony Day",
+			"summary": "Today honors the birthday of Susan B. Anthony, a women's rights and civil rights activist and leader.",
+			"query": "susan b anthony day",
+			"challenge": "Tell Susan B. Anthony's story to a male friend.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "American Civil Liberties Union",
+				"orgURL": "https://www.aclu.org/issues/womens-rights",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "CARE",
+				"orgURL": "http://www.care.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Women for Women International",
+				"orgURL": "http://www.womenforwomen.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "National Organization for Women",
+				"orgURL": "http://now.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "League of Women Voters",
+				"orgURL": "http://lwv.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Association for Women's Rights in Development",
+				"orgURL": "https://www.awid.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "American Association of University Women",
+				"orgURL": "http://www.aauw.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 16,
+			"date": "2017-02-16",
+			"theme": "Do a Grouch a Favor Day",
+			"summary": "Today is a call to kindness in the name of a grouch.",
+			"query": "do a grouch a favor day",
+			"challenge": "Try to cheer up someone who is in a bad mood today.",
+			"participants": 0,
+			"category": "Kindness",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Spread Kindness Organization",
+				"orgURL": "http://www.spreadkindness.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Think Kindness",
+				"orgURL": "http://thinkkindness.org/",
+				"orgSummary": "Check out this organization!",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -321,6 +549,44 @@
 		},
 		{
 			"month": "February",
+			"da": 18,
+			"date": "2017-02-18",
+			"theme": "World Whale Day",
+			"summary": "Raise awareness and inspire action to protect humpback whales and their ocean habitat.",
+			"query": "world whale day",
+			"challenge": "Buy a reusable shopping bag today to save using plastic bags in the future, so you can protect the ocean for the whales.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 19,
+			"date": "2017-02-19",
+			"theme": "National Caregivers Day",
+			"summary": "This day honors dedicated health care professionals who serve those who require long term hospice care.",
+			"query": "national caregivers day",
+			"challenge": "Take the time to thank a caregiver for their dedication and care of our loved ones.",
+			"participants": 0,
+			"category": "Health",
+			"color": "#ffcccc",
+			"darkerColor": "#ffb3b3",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
 			"da": 20,
 			"date": "2017-02-20",
 			"theme": "National Love Your Pet Day",
@@ -332,10 +598,34 @@
 			"color": "#ffbf80",
 			"darkerColor": "#ffa64d",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Homeless Pets Foundation",
+				"orgURL": "https://homelesspets.com/",
+				"orgSummary": "The Homeless Pet Foundation is a 501(c)3 organization that saves the lives of homeless cats and dogs in Atlanta area animal shelters and promote the benefits of pet ownership.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Hope for Paws",
+				"orgURL": "http://www.hopeforpaws.org/",
+				"orgSummary": "Hope for Paws is a non-profit animal rescue organization, rescuing dogs and all other animals who are suffering on the streets and in the shelters.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Best Friends Animal Society",
+				"orgURL": "http://bestfriends.org/",
+				"orgSummary": "The mission of Best Friends Animal Society is to bring about a time when there are No More Homeless Pets. We do this by helping end the killing in America's animal shelters through building community programs and partnerships all across the nation.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Animal Rescue Foundation",
+				"orgURL": "https://www.arflife.org/",
+				"orgSummary": "To create a world where every loving dog and cat has a home, where every lonely person has a companion animal, and where children learn to care.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Blind Cat Rescue",
+				"orgURL": "https://blindcatrescue.com/",
+				"orgSummary": "Blind Cat Rescue was started in 2005 to serve as a safe place for blind cats that were deemed not adoptable by regular shelters.",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -351,10 +641,22 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Cultural Survival",
+				"orgURL": "https://www.culturalsurvival.org/",
+				"orgSummary": "Cultural Survival works toward a future that respects and honors Indigenous Peoples' inherent rights and dynamic cultures, deeply and richly interwoven in lands, languages, spiritual traditions, and artistic expression, rooted in self-determination and self-governance.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Humanity in Action",
+				"orgURL": "http://www.humanityinaction.org/",
+				"orgSummary": "Humanity in Action is an international educational organization. We educate, inspire and connect a global network of students, young professionals and established leaders committed to promoting human rights, diversity and active citizenship—in their own communities and around the world.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Amala Foundation",
+				"orgURL": "https://amalafoundation.org/",
+				"orgSummary": "The Amala Foundation unites people from all walks of life and inspires them to grow as individuals and as leaders in service to humanity.",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -370,10 +672,28 @@
 			"color": "#ffbf80",
 			"darkerColor": "#ffa64d",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Helen Woodward Animal Center",
+				"orgURL": "https://animalcenter.org/",
+				"orgSummary": "Helen Woodward Animal Center is a unique, private non-profit organization in San Diego County that has been committed to the philosophy of people helping animals and animals helping people for over 40 years.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "San Diego Animal Support Foundation",
+				"orgURL": "http://www.sdshelters.com/index.shtml",
+				"orgSummary": "The San Diego Animal Support Foundation is a private, volunteer dependent, nonprofit organization dedicated to improving the welfare of animals in overburdened, underfunded local shelters and rescues.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Animal Humane Society",
+				"orgURL": "https://www.animalhumanesociety.org/",
+				"orgSummary": "To engage the hearts, hands and minds of the community to help animals.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Society for the Prevention of Cruelty to Animals International",
+				"orgURL": "http://spcai.org/",
+				"orgSummary": "SPCA International works to stop the abuse and suffering of animals with innovative programs that serve both animals and their human caretakers.",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -389,10 +709,28 @@
 			"color": "#ffbf80",
 			"darkerColor": "#ffa64d",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "One of A Kind Pet Rescue",
+				"orgURL": "http://www.oneofakindpets.com/site/",
+				"orgSummary": "The organization is dedicated to saving animal lives, rescuing pets in imminent danger of euthanasia, spaying/neutering and adoption of homeless animals into appropriate, loving homes.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Second Chance Dog Rescue",
+				"orgURL": "http://secondchancedogrescue.org/",
+				"orgSummary": "Second Chance Dog Rescue is one of San Diego’s largest and most successful non-profit organizations dedicated to saving homeless dogs.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "We Care Animal Rescue",
+				"orgURL": "http://www.wecareanimalrescue.org/",
+				"orgSummary": "We Care Animal Rescue is a no-kill, free roaming refuge for cats and dogs in Napa Valley, California.",
+				"donateURL": "#"
+			},
+			{
+				"orgName": "Helen Woodward Animal Center",
+				"orgURL": "https://animalcenter.org/",
+				"orgSummary": "Helen Woodward Animal Center is a unique, private non-profit organization in San Diego County that has been committed to the philosophy of people helping animals and animals helping people for over 40 years.",
+				"donateURL": "#"
 			}]
 		},
 		{
@@ -458,6 +796,44 @@
 		},
 		{
 			"month": "February",
+			"da": 25,
+			"date": "2017-02-25",
+			"theme": "National Chocolate Covered Nuts Day",
+			"summary": "Celebrate a popular sweet treat. The first nuts covered in chocolate were sold commercially in America in 1925, with Goobers being the oldest brand",
+			"query": "national chocolate covered nuts day",
+			"challenge": "Give a bag of chocolate covered nuts to someone new or left out, and make friends with them.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
+			"da": 26,
+			"date": "2017-02-26",
+			"theme": "For Pete's Sake Day",
+			"summary": "For Pete's Sake Day celebrates one example of a 'minced oath', where an offensive word or phrase is substituted by something more acceptable in society.",
+			"query": "for pete's sake day",
+			"challenge": "Find a guy named Pete around you and make a cup of coffee for him.",
+			"participants": 0,
+			"category": "Other",
+			"color": "#80d4ff",
+			"darkerColor": "#4dc3ff",
+			"orgs": [ {
+				"orgName": "Charity Navigator",
+				"orgURL": "https://www.charitynavigator.org/",
+				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
+				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+			}]
+		},
+		{
+			"month": "February",
 			"da": 27,
 			"date": "2017-02-27",
 			"theme": "National Polar Bear Day",
@@ -469,10 +845,40 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Polar Bears International",
+				"orgURL": "http://polarbearsinternational.org/",
+				"orgSummary": "Made up of a small group of passionate conservationists, scientists, and volunteers­­, PBI exists to help secure a future for polar bears across the Arctic.",
+				"donateURL": "https://salsa4.salsalabs.com/o/51114/p/salsa/donation/common/public/?donate_page_KEY=11718"
+			},
+			{
+				"orgName": "Center for Biological Diversity",
+				"orgURL": "http://www.biologicaldiversity.org/",
+				"orgSummary": "Because diversity has intrinsic value, and because its loss impoverishes society, we work to secure a future for all species, great and small, hovering on the brink of extinction.",
+				"donateURL": "https://biologicaldiversity.salsalabs.com/o/2167/p/salsa/donation/common/public/?donate_page_KEY=12591&track=WEBHOME2017"
+			},
+			{
+				"orgName": "National Wildlife Federation",
+				"orgURL": "http://www.nwf.org/",
+				"orgSummary": "National Wildlife Federation is a voice for wildlife, dedicated to protecting wildlife and habitat and inspiring the future generation of conservationists.",
+				"donateURL": "https://online.nwf.org/site/Donation2?idb=1295756616&41770.donation=form1&df_id=41770&mfc_pref=T&amp;df_id=41770&amp;41770.donation=root&idb=[[S76:idb]]&amp;DONATION_LEVEL_ID_SELECTED=5441&amp;mfc_pref=T"
+			},
+			{
+				"orgName": "World Wildlife Fund",
+				"orgURL": "http://www.worldwildlife.org/species/polar-bear",
+				"orgSummary": "The world’s leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally",
+				"donateURL": "https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE1707OQ18299A01409RX&_ga=1.1931833.961322118.1488175796"
+			},
+			{
+				"orgName": "Alaska Wilderness League",
+				"orgURL": "http://www.alaskawild.org/",
+				"orgSummary": "Alaska Wilderness League’s mission is to lead the effort to preserve Alaska’s wild lands and waters by engaging citizens and decision makers with a courageous, constant, victorious voice for Alaska.",
+				"donateURL": "https://act.alaskawild.org/donate/main/"
+			},
+			{
+				"orgName": "Wildlife Media",
+				"orgURL": "http://wildlifemedia.org/index.html",
+				"orgSummary": "Wildlife Media's mission is to create a healthy planet for wildlife and people by promoting conservation through inspirational media, creative education, and innovative funding campaigns.",
+				"donateURL": "http://wildlifemedia.org/donate.html"
 			}]
 		},
 		{
@@ -488,10 +894,46 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Debra of America",
+				"orgURL": "http://www.debra.org/",
+				"orgSummary": "The Dystrophic Epidermolysis Bullosa Research Association of America (debra of America) is the only U.S. nonprofit providing all-inclusive support to the EB Community, through funding research for a cure and by providing free programs and services for those with EB.",
+				"donateURL": "http://www.debra.org/"
+			},
+			{
+				"orgName": "MPN Research Foundation",
+				"orgURL": "http://www.mpnresearchfoundation.org/",
+				"orgSummary": "To stimulate original research in pursuit of new treatments -- and eventually a cure -- for the blood cancers polycythemia vera, essential thrombocythemia and myelofibrosis, known collectively as myeloproliferative neoplasms (MPN).",
+				"donateURL": "https://www.mpnresearchfoundation.org/Donate-to-MPN-Research"
+			},
+			{
+				"orgName": "Global Genes",
+				"orgURL": "https://globalgenes.org/",
+				"orgSummary": "The non-profit organization promotes the needs of the rare disease community under a unifying symbol of hope – the Blue Denim Genes Ribbon®.",
+				"donateURL": "https://globalgenes.org/give/"
+			},
+			{
+				"orgName": "National Organization of Rare Disorders",
+				"orgURL": "https://rarediseases.org/",
+				"orgSummary": "NORD, a 501(c)(3) organization, is a patient advocacy organization dedicated to individuals with rare diseases and the organizations that serve them.",
+				"donateURL": "https://salsa3.salsalabs.com/o/51076/donate_page/donate-now"
+			},
+			{
+				"orgName": "Carion Fenn Foundation",
+				"orgURL": "http://www.carionfenn.org/",
+				"orgSummary": "Carion Fenn Foundation Educate, Support and help find solutions for those affected Rare Diseases such as Syringomyelia (SM), Chiari Malformation (CM), EDS, Arthritis, Epilepsy, Sarcoidosis, LAM, Familial Ataxia and other Diseases or Disorders.",
+				"donateURL": "https://www.paypal.com/ca/cgi-bin/webscr?cmd=_flow&SESSION=9vh9FqVH5qodTIYNsc5X6ShLRPR3NbarIl9uQFtrfmpEsFt2k9aQCDN1ycC&dispatch=5885d80a13c0db1f8e263663d3faee8d94717bd303200c3af9aadd01a5f55080"
+			},
+			{
+				"orgName": "EURORDIS",
+				"orgURL": "http://www.eurordis.org/",
+				"orgSummary": "EURORDIS is a non-governmental patient-driven alliance of patient organisations representing 738 rare disease patient organisations in 65 countries covering over 4000 diseases.",
+				"donateURL": "https://donation.eurordis.org/"
+			},
+			{
+				"orgName": "The Histiocytosis Association",
+				"orgURL": "https://www.histio.org/page.aspx?pid=291#.WLPguYWcFPY",
+				"orgSummary": "The Histiocytosis Association is a global nonprofit organization dedicated to addressing the unique needs of patients and families dealing with the effects of histiocytic disorders while leading the search for a cure.",
+				"donateURL": "https://www.histio.org/pages/donate-now---landing-page"
 			}]
 		},
 		{
@@ -507,10 +949,34 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Young Minds",
+				"orgURL": "http://www.youngminds.org.uk/",
+				"orgSummary": "YoungMinds is the UK’s leading charity committed to improving the emotional wellbeing and mental health of children and young people.",
+				"donateURL": "http://www.youngminds.org.uk/support_our_work/donate"
+			},
+			{
+				"orgName": "LifeSIGNS (Self-Injury Guidance & Network Support)",
+				"orgURL": "http://www.lifesigns.org.uk/",
+				"orgSummary": "LifeSIGNS (Self-Injury Guidance & Network Support) is an online, user-led voluntary organisation, founded in 2002 to create understanding about self-injury and provide information and support to people of all ages affected by self-injury.",
+				"donateURL": "http://www.lifesigns.org.uk/donate/"
+			},
+			{
+				"orgName": "TEEN LINE",
+				"orgURL": "https://teenlineonline.org/",
+				"orgSummary": "Established in 1980, TEEN LINE is a nonprofit, community-based organization helping troubled teenagers address their problems.",
+				"donateURL": "https://teenlineonline.org/donate/"
+			},
+			{
+				"orgName": "Youth Communication",
+				"orgURL": "http://youthcomm.org/",
+				"orgSummary": "Youth Communication equips and empowers educators and youth workers with real teen-written stories and a literacy-rich training model to engage struggling youth and build their social and emotional learning skills.",
+				"donateURL": "http://youthcomm.org/donate/"
+			},
+			{
+				"orgName": "Pieta House",
+				"orgURL": "http://www.pieta.ie/",
+				"orgSummary": "Pieta House provides a free, therapeutic approach to people who are in suicidal distress and those who engage in self-harm.",
+				"donateURL": "http://www.pieta.ie/donate"
 			}]
 		},
 		{
@@ -526,10 +992,46 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Reading Heart",
+				"orgURL": "https://www.readingheart.org/index.cfm",
+				"orgSummary": "Reading Heart is a nonprofit, 501(c)(3) book donation program dedicated to serving children in hospitals and children in areas with limited access to books.",
+				"donateURL": "https://www.readingheart.org/donation.cfm"
+			},
+			{
+				"orgName": "American Book Drive",
+				"orgURL": "http://www.americanbookdrive.com/",
+				"orgSummary": "American Book Drive raises funds for organizations, while finding new homes for used books, CDs & DVDs . We work with schools, religious groups, libraries and non-profit organizations across Southern California.",
+				"donateURL": "http://www.americanbookdrive.com/request-book-donation-pickup/index.asp"
+			},
+			{
+				"orgName": "Prison Book Program",
+				"orgURL": "http://prisonbookprogram.org/",
+				"orgSummary": "Prison Book Program mails books to people in prison to support their educational, vocational and personal development and to help them avoid returning to prison after their release.",
+				"donateURL": "https://www.razoo.com/story/Prison-Book-Program"
+			},
+			{
+				"orgName": "African Library Project",
+				"orgURL": "http://www.africanlibraryproject.org/",
+				"orgSummary": "The African Library Project changes lives book by book by starting libraries in rural Africa.",
+				"donateURL": "http://www.africanlibraryproject.org/about-us/donations"
+			},
+			{
+				"orgName": "Books for Africa",
+				"orgURL": "https://www.booksforafrica.org/index.html",
+				"orgSummary": "We collect, sort, ship, and distribute books to students of all ages in Africa. Our goal: to end the book famine in Africa.",
+				"donateURL": "https://www.booksforafrica.org/donate.html"
+			},
+			{
+				"orgName": "Textbooks for Change",
+				"orgURL": "https://textbooksforchange.com/",
+				"orgSummary": "Textbooks for Change provides affordable and accessible educational material to students both locally and across the globe.",
+				"donateURL": "https://textbooksforchange.com/donate-textbooks/"
+			},
+			{
+				"orgName": "Worldreader",
+				"orgURL": "https://www.worldreader.org/",
+				"orgSummary": "Worldreader is a non-profit on a mission to create a world where everyone is a reader.",
+				"donateURL": "https://www.worldreader.org/donate/"
 			}]
 		},
 		{
@@ -545,10 +1047,46 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "World Wildlife Fund",
+				"orgURL": "http://www.worldwildlife.org/",
+				"orgSummary": "The world’s leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally",
+				"donateURL": "https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE1707OQ18299A01409RX&_ga=1.1931833.961322118.1488175796"
+			},
+			{
+				"orgName": "International Elephant Foundation",
+				"orgURL": "https://elephantconservation.org/",
+				"orgSummary": "We are the catalyst for creating a sustainable future where elephants thrive by linking people and elephants for their mutual long-term benefit.",
+				"donateURL": "https://elephantconservation.org/donate/"
+			},
+			{
+				"orgName": "International Fund for Animal Welfare",
+				"orgURL": "http://www.ifaw.org/united-states",
+				"orgSummary": "IFAW’s mission is to rescue and protect animals around the world.",
+				"donateURL": "https://www.ifaw.org/united-states/secure/donate/support-ifaws-work"
+			},
+			{
+				"orgName": "Save Our Species",
+				"orgURL": "http://www.sospecies.org/",
+				"orgSummary": "To ensure the long-term survival of threatened species, their habitats and the people who depend on them.",
+				"donateURL": "http://www.sospecies.org/donate"
+			},
+			{
+				"orgName": "African Wildlife Foundation",
+				"orgURL": "http://www.awf.org/",
+				"orgSummary": "African Wildlife Foundation's mission is to ensure wildlife and wild lands thrive in modern Africa.",
+				"donateURL": "http://www.awf.org/donate"
+			},
+			{
+				"orgName": "Wildlife Conservation Society",
+				"orgURL": "http://www.wcs.org/",
+				"orgSummary": "WCS's goal is to conserve the world's largest wild places in 15 priority regions, home to more than 50% of the world's biodiversity.",
+				"donateURL": "https://secure3.convio.net/wcs/site/Donation2?__utma=1.1534041093.1488219791.1488219791.1488219791.1&__utmb=1.5.9.1488220106953&__utmc=1&__utmx=-&__utmz=1.1488219791.1.1.utmcsr%3Dwildlifeday.org%7Cutmccn%3D%28referral%29%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F&__utmv=-&__utmk=210845077&9342.donation=form1&df_id=9342&donation=form1"
+			},
+			{
+				"orgName": "Born Free Foundation",
+				"orgURL": "http://www.bornfree.org.uk/",
+				"orgSummary": "The Born Free Foundation is an international wildlife charity working throughout the world to stop individual wild animal suffering and protect threatened species in the wild.",
+				"donateURL": "https://give.bornfree.org.uk/donate"
 			}]
 		}
 	]
