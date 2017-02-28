@@ -462,7 +462,16 @@ function getChallengeHistory() {
 		var n = d.getDate();
 
 		// show only themes/challenges up to the current date
-		if( jsonData[i].month <= month && cD <= n) {
+		if( jsonData[i].month <= month) {
+        	var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+			+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
+			+ chal + '"</p>';
+			/*var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+			+ '</i></span><ul><li>"'
+			+ chal + '"</li></ul></p>';*/
+			$(".histLog").prepend(histString);
+    	}
+		else if( jsonData[i].month == month && cD <= n) {
         	var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
 			+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
 			+ chal + '"</p>';
