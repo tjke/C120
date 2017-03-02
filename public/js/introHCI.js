@@ -12,6 +12,7 @@ var month = "Month";
 var mon = "Mon";
 var m = 0;
 var date = 1;
+var n = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
@@ -202,7 +203,7 @@ function setDayData() {
 	m = d.getMonth();
 	month = months[m];
 	mon = mons[d.getMonth()];
-	var n = d.getDate();
+	n = d.getDate();
 	date = n;
 	data = month + " " + date;
 	var dayOfWeek = d.getDay();
@@ -436,51 +437,55 @@ function getChallengeHistory() {
             console.log("News error");
     });
 
+    console.log("Getting history up to " + (m+1) + " " + n);
+
     for( var i = 1; i < jsonData.length; i++ ) {
     	var chal = "Challenge";
-		var cTheme = "A Day";
-		var cat = "Other";
-		var cDate = "01-01";
-		var cM = "1";
-		var cD = "1";
-		var fontColor = "black";
+			var cTheme = "A Day";
+			var cat = "Other";
+			var cDate = "01-01";
+			var cM = "1";
+			var cD = "1";
+			var fontColor = "black";
 
-		cDate = jsonData[i].date;
-		var cM = cDate.substring(5,7);
-		if( cM.substring(0,1) == "0") {
-			cM = cM.substring(1,2);
-		}
-		var cD = cDate.substring(8,10);
-		if( cD.substring(0,1) == "0") {
-			cD = cD.substring(1,2);
-		}
-		cDate = cM + "/" + cD;
-		chal = jsonData[i].challenge;
-		cTheme = jsonData[i].theme;
-		cat = jsonData[i].category;
-		fontColor = jsonData[i].darkerColor;
+			cDate = jsonData[i].date;
+			var cM = cDate.substring(5,7);
+			if( cM.substring(0,1) == "0") {
+				cM = cM.substring(1,2);
+			}
+			var cD = cDate.substring(8,10);
+			if( cD.substring(0,1) == "0") {
+				cD = cD.substring(1,2);
+			}
+			cDate = cM + "/" + cD;
+			chal = jsonData[i].challenge;
+			cTheme = jsonData[i].theme;
+			cat = jsonData[i].category;
+			fontColor = jsonData[i].darkerColor;
 
-		var d = new Date();
-		var n = d.getDate();
+			//var d = new Date();
+			//var n = d.getDate();
 
-		// show only themes/challenges up to the current date
-		if( jsonData[i].month <= month) {
-        	var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
-			+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
-			+ chal + '"</p>';
-			/*var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
-			+ '</i></span><ul><li>"'
-			+ chal + '"</li></ul></p>';*/
-			$(".histLog").prepend(histString);
-    	}
-		else if( jsonData[i].month == month && cD <= n) {
-        	var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
-			+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
-			+ chal + '"</p>';
-			/*var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
-			+ '</i></span><ul><li>"'
-			+ chal + '"</li></ul></p>';*/
-			$(".histLog").prepend(histString);
+			// show only themes/challenges up to the current date
+			if( cM < m+1) {
+				//console.log("less than month");
+	      var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+					+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
+					+ chal + '"</p>';
+					/*var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+					+ '</i></span><ul><li>"'
+					+ chal + '"</li></ul></p>';*/
+				$(".histLog").prepend(histString);
+	    }
+			else if( cM == m+1 && cD <= n) {
+				console.log("less than day");
+	      var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+					+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
+					+ chal + '"</p>';
+					/*var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
+					+ '</i></span><ul><li>"'
+					+ chal + '"</li></ul></p>';*/
+				$(".histLog").prepend(histString);
     	}    	
     }
     //console.log(jsonData[0].theme);

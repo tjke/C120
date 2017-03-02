@@ -36,6 +36,8 @@ $(document).ready(function() {
 function initializePage() {
 	// initialize variables
 	Calendar = new Date();
+    Calendar.setUTCHours(Calendar.getUTCHours() - 8);
+    console.log(Calendar.toLocaleString());
 	year = Calendar.getFullYear();     // Returns year
 	month = Calendar.getMonth();    // Returns month (0-11)
 	today = Calendar.getDate();    // Returns day (1-31)
@@ -57,6 +59,8 @@ function initializePage() {
 function displayEvent(eDate,eTheme,eChal){
     var showChal = "";
     var currDate = new Date();
+    currDate.setUTCHours(currDate.getUTCHours() - 8);
+    console.log(currDate.toLocaleString());
     //console.log(eDate.toString());
     //console.log(currDate.toString());
     if( eDate <= currDate ) {
