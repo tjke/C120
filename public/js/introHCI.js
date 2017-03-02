@@ -195,6 +195,8 @@ function redirectCalendar(e) {
 // set today's date
 function setDayData() {
 	var d = new Date();
+	d.setUTCHours(d.getUTCHours() - 8);
+  console.log(d.toLocaleString());
 
 	// get the current Month and Date
 	m = d.getMonth();
