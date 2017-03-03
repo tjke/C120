@@ -265,7 +265,7 @@ function updateCount(e) {
 		var extraTrophy = categoryCheck(category);
 		var partMessageHTML = document.getElementById("partUpdateMessage");
 		partMessageHTML.innerHTML = "You have completed today's challenge!"
-			+ extraTrophy 
+			//+ extraTrophy 
 			+ "<br>Check tomorrow to see another challenge.";
 		$("#partUpdateMessage").show();
 		updateTrophy(0); // challenges10

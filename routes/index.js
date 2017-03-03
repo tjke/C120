@@ -23,6 +23,7 @@ exports.view = function(req, res){
 	//console.log(day);
 	var passData = {
   		"month": month,
+  		"mon": mon,
   		"date": date,
   		"theme": theme,
   		"summary": summary,
