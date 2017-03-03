@@ -9,10 +9,10 @@
 #help-btn {
     width: 25px;
     height: 25px;
-    background: #bbbbbb;
+    /*background: #bbbbbb;
     border-color: #000;
     border-radius: 100px;
-    outline: 0;
+    outline: 0;*/
     text-align: center;
     /*top: 5px;
     display: block;
@@ -20,9 +20,10 @@
     line-height:20px;*/
 }
 #help-btn:hover {
+    cursor: pointer;
     text-decoration: none;
-    background: #333;
-    color: #ccc;
+    /*background: #333;
+    color: #ccc;*/
 }
 
 /* help container properties */
