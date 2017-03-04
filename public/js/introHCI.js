@@ -191,6 +191,10 @@ function redirectTrophies(e) {
 }
 function redirectCalendar(e) {
 	window.location.href = "/calendar";
+
+	// Google Analytics
+	// 'send', 'event', <Category>, <Action>
+	ga('send', 'event', 'calendar', 'click');
 }
 
 // set today's date
@@ -208,7 +212,7 @@ function setDayData() {
 	data = month + " " + date;
 	var dayOfWeek = d.getDay();
 	var newDate = date;
-	console.log(data + ", dayOfWeek=" + dayOfWeek);
+	//console.log(data + ", dayOfWeek=" + dayOfWeek);
 	
 	/*if( dayOfWeek == 0 ) {
 		newDate = date - 2;
@@ -220,7 +224,7 @@ function setDayData() {
 		newDate = date - (dayOfWeek - 5);
 	}
 	data = month + " " + newDate;*/
-	console.log("Getting theme from date " + data);
+	//console.log("Getting theme from date " + data);
 }
 
 
@@ -253,7 +257,7 @@ function displayParticipants() {
 // updates the participants count number for the server and for display
 function updateCount(e) {
 	var newCount = 0;
-	console.log("clickedIn="+clickedIn);
+	//console.log("clickedIn="+clickedIn);
 	if( clickedIn == false ) {
 		var countRef = firebaseRef.ref('challenges/' + data + '/count');
 		countRef.transaction(function(count) {
@@ -316,7 +320,7 @@ function donateClick(e) {
 function getProgress(result) {
 	var trophiesRef = firebaseRef.ref('trophies');
 	trophiesRef.on('value', function(snapshot) {
-		console.log("numTrophies=" + snapshot.numChildren());
+		//console.log("numTrophies=" + snapshot.numChildren());
 
 		// clear to prevent extra appending
 		$(".media").html("");
@@ -437,7 +441,7 @@ function getChallengeHistory() {
             console.log("News error");
     });
 
-    console.log("Getting history up to " + (m+1) + " " + n);
+    console.log("Getting history up to " + (m+1) + "/" + n);
 
     for( var i = 1; i < jsonData.length; i++ ) {
     	var chal = "Challenge";
@@ -478,7 +482,7 @@ function getChallengeHistory() {
 				$(".histLog").prepend(histString);
 	    }
 			else if( cM == m+1 && cD <= n) {
-				console.log("less than day");
+				//console.log("less than day");
 	      var histString = '<p><span class="medium-font"><b>' + cDate + ':</b> <i>' + cTheme
 					+ '</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-flag" aria-hidden="true"></i> "'
 					+ chal + '"</p>';
