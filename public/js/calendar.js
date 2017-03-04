@@ -37,7 +37,7 @@ function initializePage() {
 	// initialize variables
 	Calendar = new Date();
     Calendar.setUTCHours(Calendar.getUTCHours() - 8);
-    console.log(Calendar.toLocaleString());
+    //console.log(Calendar.toLocaleString());
 	year = Calendar.getFullYear();     // Returns year
 	month = Calendar.getMonth();    // Returns month (0-11)
 	today = Calendar.getDate();    // Returns day (1-31)
@@ -60,7 +60,7 @@ function displayEvent(eDate,eTheme,eChal){
     var showChal = "";
     var currDate = new Date();
     currDate.setUTCHours(currDate.getUTCHours() - 8);
-    console.log(currDate.toLocaleString());
+    console.log(eDate.toLocaleString());
     //console.log(eDate.toString());
     //console.log(currDate.toString());
     if( eDate <= currDate ) {
@@ -174,7 +174,7 @@ function clndrStuff() {
 
 // code from: http://www.htmlbestcodes.com/Calendar.htm
 function createCalendar() {
-	console.log("creating Calendar...");
+	//console.log("creating Calendar...");
 	cal =  '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR><TD>';
 	cal += '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=10 BORDERCOLOR=BBBBBB>' + TR_start;
 	cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';

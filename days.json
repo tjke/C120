@@ -1191,10 +1191,40 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Direct Relief",
+				"orgURL": "https://www.directrelief.org/",
+				"orgSummary": "Direct Relief is a humanitarian aid organization, active in all 50 states and 70 countries, with a mission to improve the health and lives of people affected by poverty or emergencies.",
+				"donateURL": "https://secure2.convio.net/dri/site/Donation2?df_id=2105&2105.donation=form1&_ga=1.77956692.1160139576.1488655205"
+			},
+			{
+				"orgName": "MAP International",
+				"orgURL": "https://www.map.org/",
+				"orgSummary": "MAP International is a global Christian health and relief organization that partners with people living in conditions of poverty to save lives and develop healthier families and communities.",
+				"donateURL": "https://www.map.org/donate"
+			},
+			{
+				"orgName": "Samaritan's Purse",
+				"orgURL": "https://www.samaritanspurse.org/",
+				"orgSummary": "To follow the example of Christ by helping those in need and proclaiming the hope of the Gospel.",
+				"donateURL": "https://www.samaritanspurse.org/our-ministry/donate-online"
+			},
+			{
+				"orgName": "Americares",
+				"orgURL": "https://www.americares.org/",
+				"orgSummary": "Americares saves lives and improves health for people affected by poverty or disaster so they can reach their full potential.",
+				"donateURL": "https://secure.americares.org/site/Donation2?df_id=17060&17060.donation=form1&_ga=1.213912791.1788991762.1488655638"
+			},
+			{
+				"orgName": "The Rotary Foundation of Rotary International",
+				"orgURL": "https://www.rotary.org/en",
+				"orgSummary": "Rotary is a global network of 1.2 million neighbors, friends, leaders, and problem-solvers who come together to make positive, lasting change in communities at home and abroad.",
+				"donateURL": "https://www.rotary.org/en/donate"
+			},
+			{
+				"orgName": "Catholic Medical Mission Board",
+				"orgURL": "https://cmmb.org/",
+				"orgSummary": "Inspired by the example of Jesus, CMMB works in partnership globally to deliver locally sustainable, quality health solutions to women, children, and their communities.",
+				"donateURL": "https://cmmb.org/donate/"
 			}]
 		},
 		{
@@ -1209,10 +1239,46 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Helping Educate to Advance the Rights of the Deaf",
+				"orgURL": "http://www.behearddc.org/",
+				"orgSummary": "Identify and remove barriers that prevent the deaf from participating in and having equal access to the justice system.",
+				"donateURL": "http://www.behearddc.org/get-involved/get-involved.html"
+			},
+			{
+				"orgName": "American Society for Deaf Children",
+				"orgURL": "http://deafchildren.org/",
+				"orgSummary": "ASDC is the premier source of information for people who must make decisions about deaf children: providers, educators, legislators, and advocates.",
+				"donateURL": "http://deafchildren.org/donate/"
+			},
+			{
+				"orgName": "National Association of Deaf",
+				"orgURL": "https://www.nad.org/",
+				"orgSummary": "The NAD is the nation's premier civil rights organization of, by, and for deaf and hard-of-hearing individuals in the United States of America.",
+				"donateURL": "https://www.nad.org/donate/"
+			},
+			{
+				"orgName": "Hearing Health Foundation",
+				"orgURL": "http://hearinghealthfoundation.org/",
+				"orgSummary": "Hearing Health Foundation (HHF) is the largest private funder of hearing research, with a mission to prevent and cure hearing loss.",
+				"donateURL": "http://hearinghealthfoundation.org/join-our-family"
+			},
+			{
+				"orgName": "National Aphasia Association",
+				"orgURL": "https://www.aphasia.org/",
+				"orgSummary": "Our goal is to provide access to research, education, rehabilitation, therapeutic and advocacy services to individuals with aphasia and their caregivers.",
+				"donateURL": "https://www.aphasia.org/donate/"
+			},
+			{
+				"orgName": "Action on Hearing Loss",
+				"orgURL": "https://www.actiononhearingloss.org.uk/",
+				"orgSummary": "We're experts in providing support for people with hearing loss and tinnitus.",
+				"donateURL": "https://www.actiononhearingloss.org.uk/donate/donate-online.aspx"
+			},
+			{
+				"orgName": "Deaf Children Australia",
+				"orgURL": "https://deafchildrenaustralia.org.au/",
+				"orgSummary": "To inspire and empower deaf and hard of hearing children and young people to reach their full potential.",
+				"donateURL": "https://deafchildrenaustralia.org.au/donate/"
 			}]
 		},
 		{
@@ -1227,10 +1293,40 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Ms. Foundation for Women",
+				"orgURL": "https://forwomen.org/",
+				"orgSummary": "The mission of the Ms. Foundation for Women is to build women’s collective power to realize a nation of justice for all.",
+				"donateURL": "https://salsa4.salsalabs.com/o/51040/p/salsa/donation/common/public/?donate_page_KEY=9968&_ga=1.213165330.740973228.1488657879"
+			},
+			{
+				"orgName": "Live Your Dream",
+				"orgURL": "http://www.liveyourdream.org/",
+				"orgSummary": "LiveYourDream.org improves the lives of women and girls through grants and programs leading to social and economic empowerment.",
+				"donateURL": "http://www.liveyourdream.org/donate/index.html"
+			},
+			{
+				"orgName": "NOW Foundation",
+				"orgURL": "http://now.org/",
+				"orgSummary": "The NOW Foundation focuses on a broad range of women’s rights issues.",
+				"donateURL": "http://now.org/more-ways-to-give/"
+			},
+			{
+				"orgName": "Global Rights for Women",
+				"orgURL": "http://globalrightsforwomen.org/",
+				"orgSummary": "Global Rights for Women collaborates with partners around the world to promote women’s human rights to equality and freedom from violence through legal reform and systems change.",
+				"donateURL": "http://globalrightsforwomen.org/support/"
+			},
+			{
+				"orgName": "Global Fund for Women",
+				"orgURL": "https://www.globalfundforwomen.org/",
+				"orgSummary": "Support the tireless and courageous efforts of women’s groups who work every day to win rights for women and girls.",
+				"donateURL": "https://act.globalfundforwomen.org/donate"
+			},
+			{
+				"orgName": "Women for Women International",
+				"orgURL": "http://www.womenforwomen.org/",
+				"orgSummary": "Women for Women International supports the most marginalized women to earn and save money, improve health and well-being.",
+				"donateURL": "https://give.womenforwomen.org/donate/?src=WSTND1"
 			}]
 		},
 		{
@@ -1245,10 +1341,40 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "National Kidney Foundation",
+				"orgURL": "https://www.kidney.org/",
+				"orgSummary": "The National Kidney Foundation is the leading organization in the U.S. dedicated to the awareness, prevention and treatment of kidney disease.",
+				"donateURL": "https://www.kidney.org/support"
+			},
+			{
+				"orgName": "American Kidney Fund",
+				"orgURL": "http://www.kidneyfund.org/",
+				"orgSummary": "Our mission is to help people fight kidney disease and live healthier lives.",
+				"donateURL": "https://secure2.convio.net/akf/site/Donation2?idb=2079580026&df_id=4862&mfc_pref=T&4862.donation=form1&4401.donation=form1&_ga=1.259521545.2079686090.1488659081"
+			},
+			{
+				"orgName": "American Society of Nephrology",
+				"orgURL": "https://www.asn-online.org/",
+				"orgSummary": "ASN leads the fight to prevent, treat, and cure kidney diseases throughout the world by educating health professionals and scientists and advancing research and innovation.",
+				"donateURL": "https://www.asn-online.org/foundation/donate/"
+			},
+			{
+				"orgName": "Dialysis Patient Citizens",
+				"orgURL": "http://www.dialysispatients.org/",
+				"orgSummary": "Dialysis Patient Citizens is a non-profit organization in the United States that advocates for dialysis patients through public education and governmental lobbying.",
+				"donateURL": "https://dpcedcenter.thankyou4caring.org/"
+			},
+			{
+				"orgName": "United Network for Organ Sharing",
+				"orgURL": "https://www.unos.org/",
+				"orgSummary": "United Network for Organ Sharing (UNOS) is the private, non-profit organization that manages the nation’s organ transplant system under contract with the federal government.",
+				"donateURL": "https://www.unos.org/donation/"
+			},
+			{
+				"orgName": "Donate Life America",
+				"orgURL": "https://www.donatelife.net/",
+				"orgSummary": "Donate Life America is a 501(c)3 not-for-profit alliance of national organizations and state teams across the United States committed to increasing the number of donated organs, eyes and tissue available for transplant to save and heal lives.",
+				"donateURL": "https://www.donatelife.net/contribute/"
 			}]
 		},
 		{
@@ -1263,10 +1389,40 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "amfAR",
+				"orgURL": "http://www.amfar.org/",
+				"orgSummary": "Founded in 1985, amfAR is dedicated to ending the global AIDS epidemic through innovative research.",
+				"donateURL": "https://www.kintera.org/site/c.enKGINNpEoG/b.5110205/k.F15D/amfAR__Donate_Today/apps/ka/sd/donor.asp?c=enKGINNpEoG&b=5110205&en=8hIFLRNvF7JOL1OyH6LLKXOIIrKSIXOGKiJSK4NKJgKQK3OJJvF"
+			},
+			{
+				"orgName": "UNAIDS",
+				"orgURL": "http://www.unaids.org/",
+				"orgSummary": "The Joint United Nations Programme on HIV and AIDS is the main advocate for accelerated, comprehensive and coordinated global action on the HIV/AIDS epidemic.",
+				"donateURL": "https://donations.unaids.org/"
+			},
+			{
+				"orgName": "EJAF",
+				"orgURL": "http://newyork.ejaf.org/",
+				"orgSummary": "EJAF is a dynamic non-profit organization whose mission is to end the AIDS epidemic by ensuring everyone has the information and means to prevent infection and all people living with HIV have access to high-quality medical care and treatment.",
+				"donateURL": "https://org.salsalabs.com/o/1621/p/salsa/donation/common/public/?donate_page_KEY=2939"
+			},
+			{
+				"orgName": "San Francisco AIDS Fundation",
+				"orgURL": "http://www.sfaf.org/",
+				"orgSummary": "Established in 1982, our mission is the radical reduction of new infections in San Francisco because we refuse to accept HIV as inevitable.",
+				"donateURL": "https://actnow.tofighthiv.org/site/Donation2;jsessionid=00000000.app267b?df_id=4960&4960.donation=form1&s_src=WWW&s_subsrc=navbar_nonhomepage&__utma=1.1347135247.1488665232.1488665232.1488665232.1&__utmb=1.1.10.1488665232&__utmc=1&__utmx=-&__utmz=1.1488665232.1.1.utmcsr=sfaf.org|utmccn=(referral)|utmcmd=referral|utmcct=/&__utmv=-&__utmk=88258971&NONCE_TOKEN=A7E06B8AA09291DD55570F5D82A9B5C1"
+			},
+			{
+				"orgName": "International Partnership for Microbicides",
+				"orgURL": "http://www.ipmglobal.org/",
+				"orgSummary": "To prevent HIV transmission by accelerating the development and availability of safe and effective microbicides for use by women in developing countries.",
+				"donateURL": "https://donatenow.networkforgood.org/1420295?code=IPM-2010-11-24"
+			},
+			{
+				"orgName": "International Community of Women Living with HIV",
+				"orgURL": "http://www.icwglobal.org/",
+				"orgSummary": "ICW is the only global network by and for women living with HIV.",
+				"donateURL": "http://www.icwglobal.org/donation"
 			}]
 		},
 		{

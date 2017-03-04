@@ -25,48 +25,14 @@ var passData; // data to pass and render
 // Home page view
 exports.view = function(req, res){
 	setDayData();
-	//console.log(day);
-	passData = {
-		"month": month,
-		"mon": mon,
-		"date": date,
-		"theme": theme,
-		"query": query,
-		"summary": summary,
-		"challenge": challenge,
-		"participants": participants,
-		"category": category,
-		"orgs": orgs,
-		"news": news,
-		"trophies": trophies,
-		"color": color,
-		"darkerColor": darkerColor,
-		"showAlternate": false
-	};
+	passData['showAlternate'] = false;
   res.render('index', passData);
 };
 
 // Home page B view
 exports.view2 = function(req, res){
 	setDayData();
-	//console.log(day);
-	passData = {
-		"month": month,
-		"mon": mon,
-		"date": date,
-		"theme": theme,
-		"query": query,
-		"summary": summary,
-		"challenge": challenge,
-		"participants": participants,
-		"category": category,
-		"orgs": orgs,
-		"news": news,
-		"trophies": trophies,
-		"color": color,
-		"darkerColor": darkerColor,
-		"showAlternate": true
-  };
+  passData['showAlternate'] = true;
   res.render('index', passData);
 };
 
@@ -119,7 +85,7 @@ exports.viewHistory = function(req, res){
 function setDayData() {
 	var d = new Date();
 	d.setUTCHours(d.getUTCHours() - 8);
-  console.log(d.toLocaleString());
+  //console.log(d.toLocaleString());
 
 	// get the current Month and Date
 	var m = months[d.getMonth()];
@@ -127,14 +93,14 @@ function setDayData() {
 	mon = mons[d.getMonth()];
 	var n = d.getDate();
 	date = n;
-	console.log(m + " " + n);
+	//console.log(m + " " + n);
 
 	for(var i = 0; i < days.length; i++ ) {
 		// find a matching month
 		if(days[i].month == m) {
 			var weekBegin = days[i].da - 5;
 			var weekEnd = days[i].da + 1;
-			console.log("Found a matching month; days[i].da=" + days[i].da + "; Week " + weekBegin + "-" + weekEnd);
+			//console.log("Found a matching month; days[i].da=" + days[i].da + "; Week " + weekBegin + "-" + weekEnd);
 			
 			// find a day within the same week
 			//if( days[i].da-4 <= n && n <= days[i].da+2) {
@@ -147,13 +113,14 @@ function setDayData() {
 				color = days[i].color;
 				darkerColor = days[i].darkerColor;
 				day = days[i]; // getting the theme day data
-				console.log("   Found a match: " + days[i].month + " " + days[i].da);
+				//console.log("   Found a match: " + days[i].month + " " + days[i].da);
 				orgs = days[i].orgs;
 				break;
 			}
 		}
 	}
 
+	// data to pass and render
 	passData = {
 		"month": month,
 		"mon": mon,
