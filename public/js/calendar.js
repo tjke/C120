@@ -64,12 +64,11 @@ function displayEvent(eDate,eTheme,eChal){
     //console.log(eDate.toString());
     //console.log(currDate.toString());
     if( eDate <= currDate ) {
-        //console.log("it's earlier!");
         showChal = '<b>Past Challenge:</b> "' + eChal + '"';
     }
     else {
         //console.log("Challenge is a secret!");
-        showChal = 'Stay tuned for the next challenge!';
+        showChal = '<b>Future Challenge:</b> "' + eChal + '"';
     }
     var eMonth = eDate.getMonth();
     eMonth = eMonth+1;

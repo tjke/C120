@@ -63,7 +63,10 @@
                 "<% for(var j = 0; j < 7; j++){ %>" +
                 "<% var d = j + i * 7; %>" +
                     "<td class='<%= days[d].classes %>'>" +
-                        "<div class='day-contents'><%= days[d].day %></div>" +
+                        "<div class='day-contents'><%= days[d].day %>" +
+                        // edit below here for what shows up on a day
+                        //"<br>id='<%= days[d].events[0] %>-<%= days[d].day %>'" +
+                        "</div>" +
                     "</td>" +
                 "<% } %>" +
                 "</tr>" +

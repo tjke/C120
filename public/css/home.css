@@ -1,3 +1,9 @@
+.loginButton {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
 /*** HELP section ***/
 .help {
     position: absolute;
@@ -21,7 +27,7 @@
 }
 #help-btn:hover {
     cursor: pointer;
-    text-decoration: none;
+    /*text-decoration: none;*/
     /*background: #333;
     color: #ccc;*/
 }
@@ -71,12 +77,15 @@
     top: 0%;
     display: table;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 25px;
     padding: 15px;
     text-align: center;
     vertical-align: middle;
 	/*background-color: #80d4ff;*/
     color: #333333;
+}
+.date:hover {
+    cursor: pointer;
 }
 .date a {
      color: #333333;
@@ -115,6 +124,9 @@
     /*background-color: #4dc3ff; /* darker */
     /*color:#fff;
     line-height:20px;*/
+}
+.icon:hover {
+    cursor: pointer;
 }
 .icon a {
     font-weight: bold;
