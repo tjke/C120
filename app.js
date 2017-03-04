@@ -46,16 +46,18 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 //app.get('/project/:id', project.view);
-app.get('/challenge', challenge.view);
-app.get('/organizations', organizations.view);
-app.get('/news', news.view);
-app.get('/trophies', trophies.view);
-app.get('/login', login.view);
-app.get('/calendar', calendar.view);
-app.get('/history', history.view);
+app.get('/challenge', index.viewChallenge);
+app.get('/organizations', index.viewOrgs);
+app.get('/news', index.viewNews);
+app.get('/trophies', index.viewTrophies);
+app.get('/login', index.viewLogin);
+app.get('/calendar', index.viewCalendar);
+app.get('/history', index.viewHistory);
 app.get('/days.json', days.view);
-app.get('/past_A', calendar.view); // A testing
-app.get('/past_B', history.view); // B testing
+//app.get('/past_A', calendar.view); // A testing
+//app.get('/past_B', history.view); // B testing
+app.get('/home_A', index.view); // A testing
+app.get('/home_B', index.view2); // B testing
 // Example route
 // app.get('/users', user.list);
 

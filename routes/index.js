@@ -13,29 +13,109 @@ var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
 var challenge = "Do something nice for today.";
+var participants = 0;
 var category = "Other";
 var color = "#80d4ff";
 var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
+var orgs = days[0].orgs; // default orgs data
+var passData; // data to pass and render
 
+
+// Home page view
 exports.view = function(req, res){
 	setDayData();
 	//console.log(day);
-	var passData = {
-  		"month": month,
-  		"mon": mon,
-  		"date": date,
-  		"theme": theme,
-  		"summary": summary,
-  		"category": category,
-  		"news": news,
-  		"trophies": trophies,
-  		"color": color,
-  		"darkerColor": darkerColor
-  	};
-  	res.render('index', passData);
+	passData = {
+		"month": month,
+		"mon": mon,
+		"date": date,
+		"theme": theme,
+		"query": query,
+		"summary": summary,
+		"challenge": challenge,
+		"participants": participants,
+		"category": category,
+		"orgs": orgs,
+		"news": news,
+		"trophies": trophies,
+		"color": color,
+		"darkerColor": darkerColor,
+		"showAlternate": false
+	};
+  res.render('index', passData);
 };
 
+// Home page B view
+exports.view2 = function(req, res){
+	setDayData();
+	//console.log(day);
+	passData = {
+		"month": month,
+		"mon": mon,
+		"date": date,
+		"theme": theme,
+		"query": query,
+		"summary": summary,
+		"challenge": challenge,
+		"participants": participants,
+		"category": category,
+		"orgs": orgs,
+		"news": news,
+		"trophies": trophies,
+		"color": color,
+		"darkerColor": darkerColor,
+		"showAlternate": true
+  };
+  res.render('index', passData);
+};
+
+
+// Challenge page view
+exports.viewChallenge = function(req, res){
+	setDayData();
+	res.render('challenge',passData);
+};
+
+// Organizations page view
+exports.viewOrgs = function(req, res){
+	setDayData();
+	res.render('organizations',passData);
+};
+
+// News page view
+exports.viewNews = function(req, res){
+	setDayData();
+	convertNewsTime();
+	res.render('news',passData);
+};
+
+// Trophies page view
+exports.viewTrophies = function(req, res){
+	setDayData();
+	res.render('trophies',passData);
+};
+
+// Login page view
+exports.viewLogin = function(req, res){
+	setDayData();
+	res.render('login',passData);
+};
+
+// Calendar page view
+exports.viewCalendar = function(req, res){
+	setDayData();
+	res.render('calendar',passData);
+};
+
+// History page view
+exports.viewHistory = function(req, res){
+	setDayData();
+	res.render('history',passData);
+};
+
+
+// extracting data from today's date
 function setDayData() {
 	var d = new Date();
 	d.setUTCHours(d.getUTCHours() - 8);
@@ -60,18 +140,39 @@ function setDayData() {
 			//if( days[i].da-4 <= n && n <= days[i].da+2) {
 			if( days[i].da == n || i == days.length-1) {
 				theme = days[i].theme;
+				query = days[i].query;
 				summary = days[i].summary;
+				challenge = days[i].challenge;
 				category = days[i].category;
 				color = days[i].color;
 				darkerColor = days[i].darkerColor;
 				day = days[i]; // getting the theme day data
 				console.log("   Found a match: " + days[i].month + " " + days[i].da);
+				orgs = days[i].orgs;
 				break;
 			}
 		}
 	}
+
+	passData = {
+		"month": month,
+		"mon": mon,
+		"date": date,
+		"theme": theme,
+		"query": query,
+		"summary": summary,
+		"challenge": challenge,
+		"participants": participants,
+		"category": category,
+		"orgs": orgs,
+		"news": news,
+		"trophies": trophies,
+		"color": color,
+		"darkerColor": darkerColor
+  };
 }
 
+// convert the time from news into a string
 function convertNewsTime() {
 	for(var i = 0; i < news.length; i++ ) {
 		var newsTime = news[i].datePublished;

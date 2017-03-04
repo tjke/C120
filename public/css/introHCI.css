@@ -50,6 +50,9 @@ body {
 .date-square:hover {
      cursor: pointer;
 }
+.date-square a:hover {
+     /*color: white;*/
+}
 /* shows the theme of the day at the top */
 .heading-theme {
      height: 100px;
@@ -66,6 +69,9 @@ body {
 }
 .heading-theme:hover {
      cursor: pointer;
+}
+.heading-theme a:hover {
+     /*color: white;*/
 }
 
 

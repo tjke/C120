@@ -17,8 +17,6 @@ var color = "#80d4ff";
 var darkerColor = "#4dc3ff";
 var day = days[0]; // default data
 
-var count = 0;
-
 exports.view = function(req, res){
 	setDayData();
 	//console.log(day);

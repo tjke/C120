@@ -151,15 +151,16 @@ p {
   height: inherit;
 }
 .cal1 .clndr .clndr-table tr .day:hover {
-  background: #eee; /* MONTH DAY HOVER */
+  /*background: #eee; /* MONTH DAY HOVER */
 }
 .cal1 .clndr .clndr-table tr .day.today,
 .cal1 .clndr .clndr-table tr .day.my-today {
-  background: #9AD6E3; /* TODAY HIGHLIGHT */
+  /*background: #9AD6E3; /* TODAY HIGHLIGHT */
+  background: #72c6d8;
 }
 .cal1 .clndr .clndr-table tr .day.today:hover,
 .cal1 .clndr .clndr-table tr .day.my-today:hover {
-  background: #72c6d8; /* TODAY HOVER */
+  /*background: #72c6d8; /* TODAY HOVER */
 }
 .cal1 .clndr .clndr-table tr .day.today.event,
 .cal1 .clndr .clndr-table tr .day.my-today.event {
@@ -171,7 +172,8 @@ p {
 }
 .cal1 .clndr .clndr-table tr .day.event:hover,
 .cal1 .clndr .clndr-table tr .day.my-event:hover {
-  /*background: #96d478;*/ /* EVENT HOVER COLOR */
+  /*background: #96d478; /* EVENT HOVER COLOR */
+  background: #9AD6E3;
   cursor: pointer;
 }
 .cal1 .clndr .clndr-table tr .day.inactive,
@@ -201,7 +203,7 @@ p {
 .cal1 .clndr .clndr-table tr .adjacent-month:hover,
 .cal1 .clndr .clndr-table tr .my-empty:hover,
 .cal1 .clndr .clndr-table tr .my-adjacent-month:hover {
-  background: #bbb; /* NEXT MONTH DAY HOVER */
+  /*background: #bbb; /* NEXT MONTH DAY HOVER */
 }
 .cal1 .clndr .clndr-table tr .empty:last-child,
 .cal1 .clndr .clndr-table tr .adjacent-month:last-child,
