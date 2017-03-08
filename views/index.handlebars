@@ -41,13 +41,13 @@
     <![endif]-->        
 </head>
 
-<body>
+<body onload=renderLoginLogout()>
 	<!-- main content of the page goes here -->
 	<div class="main2">
 		<div class="header">
 			<!--Login link-->
 			<div class="loginButton">
-				<a style="float:top" href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+				<a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> <span id="logLabel">Login</span></a>
 			</div>
 
 			<!--Help button-->

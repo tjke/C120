@@ -52,6 +52,7 @@ app.get('/organizations', index.viewOrgs);
 app.get('/news', index.viewNews);
 app.get('/trophies', index.viewTrophies);
 app.get('/login', index.viewLogin);
+app.get('/logout', index.view);
 app.get('/calendar', index.viewCalendar);
 app.get('/history', index.viewHistory);
 app.get('/days.json', days.view);

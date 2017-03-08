@@ -28,6 +28,7 @@ $(document).ready(function() {
 
 //Function that is called when the document is ready.
 function initializePage() {
+	console.log("User logged in is " + sessionStorage.user);
 	setDayData();
 	$.get("trophies/", getProgress);
 	//$.get("trophies/", getChallengeHistory);
@@ -41,6 +42,7 @@ function initializePage() {
 	$(".calendar-btn").click(redirectCalendar);
 
 	// defining click listeners
+	$(".loginButton").click(logRedirect);
 	$("#signup-btn").click(signup);
 	$("#login-btn").click(login);
 	$("#help-btn").click(displayHelp);
@@ -50,6 +52,20 @@ function initializePage() {
 	$("#completed-btn").click(updateCount);
 }
 
+
+// display Login or Logout link on Home page
+function renderLoginLogout() {
+	if( sessionStorage.user == undefined || sessionStorage.user == "" ) {
+		$(".loginButton").html("<a href='/login'>"
+			+ "<i class='fa fa-sign-in' aria-hidden='true'></i> "
+			+ "<span id='logLabel'>Login</span></a>");
+	}
+	else {
+		$(".loginButton").html("<a href='/logout'>"
+			+ "<i class='fa fa-sign-out' aria-hidden='true'></i> "
+			+ "<span id='logLabel'>Logout</span></a>");
+	}
+}
 
 // does error checking when Sign Up button is clicked
 function signup(e) {
@@ -138,6 +154,8 @@ function login(e) {
 							console.log("Login credentials are correct.");
 							loginMessageHTML.innerHTML = "<br><font color=green>You are now logged in!</font>";
 							updateTrophy(2); // login10
+							// record the user logged in for this session
+							sessionStorage.user = user;
 							// redirect to Home
 							window.location.href = "/";
 						}
@@ -195,6 +213,16 @@ function redirectCalendar(e) {
 	// Google Analytics
 	// 'send', 'event', <Category>, <Action>
 	ga('send', 'event', 'calendar', 'click');
+}
+function logRedirect(e) {
+	var logLabel = $("#logLabel").text();
+	if( logLabel == "Login" ) {
+		window.location.href = "/login";
+	}
+	else if( logLabel == "Logout" ) {
+		sessionStorage.user = "";
+		window.location.href = "/";
+	}
 }
 
 // set today's date
