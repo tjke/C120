@@ -44,8 +44,8 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view); // A testing
-app.get('/home', index.view2); // B testing
+app.get('/', index.view);
+app.get('/home', index.view); // B testing
 //app.get('/project/:id', project.view);
 app.get('/challenge', index.viewChallenge);
 app.get('/organizations', index.viewOrgs);
@@ -58,8 +58,8 @@ app.get('/history', index.viewHistory);
 app.get('/days.json', days.view);
 //app.get('/past_A', calendar.view); // A testing
 //app.get('/past_B', history.view); // B testing
-app.get('/home_A', index.view); // A testing
-app.get('/home_B', index.view2); // B testing
+app.get('/home_A', index.view2); // A testing
+app.get('/home_B', index.view); // B testing
 // Example route
 // app.get('/users', user.list);
 

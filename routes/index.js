@@ -25,14 +25,14 @@ var passData; // data to pass and render
 // Home page view
 exports.view = function(req, res){
 	setDayData();
-	passData['showAlternate'] = false;
+	passData['showAlternate'] = true;
   res.render('index', passData);
 };
 
 // Home page B view
 exports.view2 = function(req, res){
 	setDayData();
-  passData['showAlternate'] = true;
+  passData['showAlternate'] = false;
   res.render('index', passData);
 };
 
