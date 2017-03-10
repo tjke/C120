@@ -1676,19 +1676,49 @@
 			"month": "March",
 			"da": 17,
 			"date": "2017-03-17",
-			"theme": "Internationl Day Against Homophobia and Transphobia",
-			"summary": "This day aims to coordinate international events that raise awareness of LGBT rights violations and stimulate interest in LGBT rights work worldwide.",
-			"query": "international day against homophobia and transphobia",
-			"challenge": "Talk openly about LGBT rights with your friends to show your support for the queer community.",
+			"theme": "St. Patrick's Day",
+			"summary": "St. Patrick's Day, on March 17, remembers one of Ireland’s patron saints, St Patrick. It largely celebrates Irish-American culture in the United States. Many people get into the spirit by dressing in green clothing and eating green colored food.",
+			"query": "st patricks day",
+			"challenge": "Go green! Use only public transportation today!",
 			"participants": 0,
-			"category": "LGBT",
-			"color": "#ccb3ff",
-			"darkerColor": "#aa80ff",
+			"category": "Other",
+			"color": "#71da71",
+			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Greenpeace",
+				"orgURL": "http://www.greenpeace.org/usa/",
+				"orgSummary": "Greenpeace is the leading independent campaigning organization that uses peaceful protest and creative communication to expose global environmental problems and promote solutions that are essential to a green and peaceful future.",
+				"donateURL": "https://secure3.convio.net/gpeace/site/Donation2;jsessionid=00000000.app303a?df_id=3241&3241.donation=form1&s_src=header&NONCE_TOKEN=E38B1374E8F72CF9F41588561C4DBF52"
+			},
+			{
+				"orgName": "Green America",
+				"orgURL": "http://www.greenamerica.org/",
+				"orgSummary": "Our mission is to harness economic power—the strength of consumers, investors, businesses, and the marketplace—to create a socially just and environmentally sustainable society.",
+				"donateURL": "https://www.greenamerica.org/supportus/donate/yearend.cfm?source=WDYEA1&step=form&trk=TopNav1&ref=https://www.greenamerica.org/supportus/donate/yearend.cfm&ask="
+			},
+			{
+				"orgName": "Global Green",
+				"orgURL": "http://www.greenamerica.org/",
+				"orgSummary": "Global Green USA's mission is to foster a global value shift toward a sustainable and secure future by reconnecting humanity with the environment.",
+				"donateURL": "http://www.globalgreen.org/donate"
+			},
+			{
+				"orgName": "Green Corps",
+				"orgURL": "http://www.greencorps.org/",
+				"orgSummary": "Global Green USA's mission is to foster a global value shift toward a sustainable and secure future by reconnecting humanity with the environment.",
+				"donateURL": "https://secure2.roisolutions.net/enterprise/donatenow?client=FUND&page=4046"
+			},
+			{
+				"orgName": "Turning Green",
+				"orgURL": "http://turninggreen.org/",
+				"orgSummary": "Turning Green is a global student-led movement devoted to cultivating a healthy, just and thriving planet through education and advocacy around environmentally sustainable and socially responsible choices.",
+				"donateURL": "http://turninggreen.org/donate/"
+			},
+			{
+				"orgName": "Wood Green Animal Shelters",
+				"orgURL": "http://www.woodgreen.org.uk/",
+				"orgSummary": "To take in unwanted and lost animals, provide shelter and care, find secure and loving homes, provide advice, support and guidance for pet owners and increase the public's awareness of its responsibility towards animals in society.",
+				"donateURL": "http://www.woodgreen.org.uk/how_to_help/donate/make_a_donation"
 			}]
 		},
 		{
