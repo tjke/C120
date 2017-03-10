@@ -21,13 +21,16 @@
 
 <body>
   <div class="main2">
-    <!--Back button-->
-    <a href="/" onClick="history.go(-1)">‹ Back</a>
+   <!--Back button-->
+    <a href="/" onClick="history.go(-1)">‹ Back</a><br><br>
+    <!--Calendar title-->
+    <div class="page-title" style="background-color: {{darkerColor}}">Login</div>
+
   <div class="container form1">
   <div class="row myCenter">  
   <div class="col-xs-6 col-md-4 col-center-block">
     <!--Login title-->
-    <h2 class="page-header text-center">Login</h2>
+    <!--<h2 class="page-header text-center">Login</h2>-->
 
     <form role="form">
       <!--Username login-->
@@ -50,7 +53,8 @@
     <div class="modal-content">
     <div class="form2">
       <!--Sign Up title-->
-      <h2 class="page-header text-center">Sign Up</h2>
+      <!--<h2 class="page-header text-center">Sign Up</h2>-->
+      <div class="page-title" style="background-color: {{darkerColor}}">Sign Up</div>
       <form role="form">
         <!--Username signup-->
         <div class="form-group signup-form">
@@ -71,7 +75,7 @@
       </form>
 
       <!--Footer with buttons-->
-      <div class="modal-footer">
+      <div>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary" id="signup-btn">Sign Up</button>
       </div>
