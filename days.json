@@ -1445,10 +1445,40 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Council on American-Islamic Relations",
+				"orgURL": "https://www.cair.com/",
+				"orgSummary": "The Council on American–Islamic Relations is a Muslim civil rights and advocacy group.",
+				"donateURL": "https://www.cair.com/donations/general-donation/campaign/#/donation"
+			},
+			{
+				"orgName": "Islamic Society of North America",
+				"orgURL": "http://www.isna.net/",
+				"orgSummary": "To foster the development of the Muslim community, interfaith relations, civic engagement, and better understanding of Islam.",
+				"donateURL": "https://isna.thankyou4caring.org/sslpage.aspx?pid=298"
+			},
+			{
+				"orgName": "Islamic Circle of North America",
+				"orgURL": "http://www.icna.org/",
+				"orgSummary": "Islamic Circle of North America is an Islamic North American grassroots umbrella organization.",
+				"donateURL": "https://www.icna.org/donation/"
+			},
+			{
+				"orgName": "Muslim American Society",
+				"orgURL": "http://www.muslimamericansociety.org/",
+				"orgSummary": "To move people to strive for God consciousness, liberty, and justice, and to convey Islam with utmost clarity.",
+				"donateURL": "https://www.muslimamericansociety.org/donate/"
+			},
+			{
+				"orgName": "Islamic Relief USA",
+				"orgURL": "http://irusa.org/",
+				"orgSummary": "Islamic Relief Worldwide is an international humanitarian organisation that provides development programs and humanitarian relief around the globe, regardless of race, political affiliation, gender or belief.",
+				"donateURL": "https://secure.irusa.org/donate/donate-now?_ga=1.185451945.1826322386.1489039129"
+			},
+			{
+				"orgName": "Muslim Council of Britain",
+				"orgURL": "http://www.mcb.org.uk/",
+				"orgSummary": "The Muslim Council of Britain, established in 1997, is an umbrella body for 500 mosques, schools and associations in Britain.",
+				"donateURL": "http://www.mcb.org.uk/get-involved/donate/"
 			}]
 		},
 		{
@@ -1464,10 +1494,40 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Green Belt Movement",
+				"orgURL": "http://www.greenbeltmovement.org/",
+				"orgSummary": "The Green Belt Movement (GBM) is an environmental organization that empowers communities, particularly women, to conserve the environment and improve livelihoods.",
+				"donateURL": "http://www.greenbeltmovement.org/get-involved/support-our-work"
+			},
+			{
+				"orgName": "Rainforest Alliance",
+				"orgURL": "http://www.rainforest-alliance.org/",
+				"orgSummary": "The Rainforest Alliance is a growing network of people who are inspired and committed to working together to achieve our mission of conserving biodiversity and ensuring sustainable livelihoods.",
+				"donateURL": "https://secure3.convio.net/ra/site/Donation2?df_id=6223&6223.donation=form1&mfc_pref=T&_ga=1.220361115.2073257508.1489039955"
+			},
+			{
+				"orgName": "Trees for the Future",
+				"orgURL": "http://trees.org/",
+				"orgSummary": "Trees has planted over 115 million trees in dozens of countries and revitalized hundreds of thousands of acres of soil while changing people’s lives forever.",
+				"donateURL": "https://donate.trees.org/checkout/donation?eid=62819"
+			},
+			{
+				"orgName": "Urban Ecology Center",
+				"orgURL": "http://urbanecologycenter.org/",
+				"orgSummary": "The Urban Ecology Center fosters ecological understanding as inspiration for change, neighborhood by neighborhood.",
+				"donateURL": "https://give.urbanecologycenter.org/campaign/urban-ecology-center-donation-page/c102197"
+			},
+			{
+				"orgName": "Amazon Conservation Association",
+				"orgURL": "http://www.amazonconservation.org/",
+				"orgSummary": "Conserving the biological diversity of the Amazon Basin.",
+				"donateURL": "http://www.amazonconservation.org/getinvolved/index.html"
+			},
+			{
+				"orgName": "Carbonfund",
+				"orgURL": "https://carbonfund.org/",
+				"orgSummary": "Our mission: toward a ZeroCarbon™ world.",
+				"donateURL": "https://carbonfund.org/product/general-donation/"
 			}]
 		},
 		{
@@ -1502,10 +1562,40 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "San Diego River Park Foundation",
+				"orgURL": "http://www.sandiegoriver.org/",
+				"orgSummary": "The San Diego River Park Foundation is dedicated to fostering stewardship and appreciation of the region’s namesake waterway.",
+				"donateURL": "http://www.sandiegoriver.org/give.html"
+			},
+			{
+				"orgName": "American Rivers",
+				"orgURL": "https://www.americanrivers.org/",
+				"orgSummary": "We work to protect and restore our nation’s rivers.",
+				"donateURL": "https://secure.americanrivers.org/page/contribute/make-a-gift"
+			},
+			{
+				"orgName": "International Rivers",
+				"orgURL": "https://www.internationalrivers.org/",
+				"orgSummary": "International Rivers protects rivers and defends the rights of communities that depend on them.",
+				"donateURL": "https://secure.everyaction.com/Q1x3Z_vEbUa62ROkXUvi5Q2"
+			},
+			{
+				"orgName": "Friends of the River",
+				"orgURL": "http://www.friendsoftheriver.org/",
+				"orgSummary": "Friends of the River protects and restores California rivers by influencing public policy and inspiring citizen action.",
+				"donateURL": "https://interland3.donorperfect.net/weblink/weblink.aspx?name=E9830&id=22"
+			},
+			{
+				"orgName": "Grand Canyon Trust",
+				"orgURL": "http://www.grandcanyontrust.org/",
+				"orgSummary": "Protector of the Grand Canyon & Colorado River, Arizona.",
+				"donateURL": "https://grandcanyontrust.secure.nonprofitsoapbox.com/donate"
+			},
+			{
+				"orgName": "Friends of the Yampa",
+				"orgURL": "http://friendsoftheyampa.com/",
+				"orgSummary": "Friends of the Yampa is a non-profit organization working to be the voice of the Yampa River in Northwestern Colorado.",
+				"donateURL": "http://friendsoftheyampa.com/donate/"
 			}]
 		},
 		{
@@ -1521,10 +1611,22 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Consumer Watchdog",
+				"orgURL": "http://www.consumerwatchdog.org/",
+				"orgSummary": "Consumer Watchdog is a nonprofit organization dedicated to providing an effective voice for taxpayers and consumers in an era when special interests dominate public discourse, government and politics.",
+				"donateURL": "https://consumerwatchdog.nationbuilder.com/donate"
+			},
+			{
+				"orgName": "Maryland Consumer Rights Coalition",
+				"orgURL": "http://www.marylandconsumers.org/",
+				"orgSummary": "The Maryland Consumer Rights Coalition (MCRC) is a statewide coalition of individuals and organizations that advances and protects the interests of consumers through education, advocacy, and training programs.",
+				"donateURL": "https://org2.salsalabs.com/o/6251/p/salsa/donation/common/public/?donate_page_KEY=2785"
+			},
+			{
+				"orgName": "Consumers Union",
+				"orgURL": "http://consumersunion.org/",
+				"orgSummary": "Consumers Union is the policy and action division of Consumer Reports. We work with our million plus activists to pass consumer protection laws in states and in Congress.",
+				"donateURL": "https://secure.consumersunion.org/site/Donation2?df_id=2160&2160.donation=form1"
 			}]
 		},
 		{
@@ -1540,10 +1642,34 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "World Wildlife Fund",
+				"orgURL": "http://www.worldwildlife.org/",
+				"orgSummary": "The world’s leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.",
+				"donateURL": "https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE1707OQ18299A01409RX&_ga=1.1931833.961322118.1488175796"
+			},
+			{
+				"orgName": "Pandas International",
+				"orgURL": "https://www.pandasinternational.org/",
+				"orgSummary": "Ensure the preservation and propagation of the endangered Giant Panda.",
+				"donateURL": "https://www.givedirect.org/donate/?cid=300"
+			},
+			{
+				"orgName": "Chengdu Research Base of Giant Panda Breeding",
+				"orgURL": "http://www.panda.org.cn/english/",
+				"orgSummary": "To rescue and protect the endangered giant panda species, the Chengdu Research Base of Giant Panda Breeding was established in March 1987 with the mission to further the research and conservation carried out by the Chengdu Zoo.",
+				"donateURL": "http://www.panda.org.cn/english/support/support/2013-09-12/2421.html"
+			},
+			{
+				"orgName": "Red Panda Network",
+				"orgURL": "https://redpandanetwork.org/",
+				"orgSummary": "The Red Panda Network saves wild red pandas and preserves their habitat through the empowerment of local communities by community-based research, education, and carbon mitigation.",
+				"donateURL": "https://give.redpandanetwork.org/checkout/donation?eid=53833"
+			},
+			{
+				"orgName": "EDGE of Existence Programme",
+				"orgURL": "http://www.edgeofexistence.org/mammals/species_info.php?id=18",
+				"orgSummary": "The EDGE of Existence programme is the only global conservation initiative to focus specifically on threatened species that represent a significant amount of unique evolutionary history.",
+				"donateURL": "http://www.edgeofexistence.org/support/default.php"
 			}]
 		},
 		{
@@ -1578,10 +1704,34 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Sierra Club",
+				"orgURL": "http://www.sierraclub.org/",
+				"orgSummary": "Sierra Club is now the nation's largest and most influential grassroots environmental organization -- with more than two million members and supporters.",
+				"donateURL": "https://vault.sierraclub.org/ways-to-give/"
+			},
+			{
+				"orgName": "Environmental Defense Fund",
+				"orgURL": "https://www.edf.org/",
+				"orgSummary": "Environmental Defense Fund’s mission is to preserve the natural systems on which all life depends.",
+				"donateURL": "https://secure2.edf.org/site/Donation2?df_id=18325&18325.donation=form1&addl_info=nav-button_/about/our-mission-and-values"
+			},
+			{
+				"orgName": "Wilderness Society",
+				"orgURL": "http://wilderness.org/",
+				"orgSummary": "We are the leading American conservation organization working to protect our nation’s shared wildlands.",
+				"donateURL": "http://wilderness.org/you-can-help?_ga=1.268728370.2131698371.1489048985"
+			},
+			{
+				"orgName": "Greenpeace",
+				"orgURL": "http://www.greenpeace.org/usa/",
+				"orgSummary": "Greenpeace is the leading independent campaigning organization that uses peaceful protest and creative communication to expose global environmental problems and promote solutions that are essential to a green and peaceful future.",
+				"donateURL": "https://secure3.convio.net/gpeace/site/Donation2;jsessionid=00000000.app303a?df_id=3241&3241.donation=form1&s_src=header&NONCE_TOKEN=E38B1374E8F72CF9F41588561C4DBF52"
+			},
+			{
+				"orgName": "American Council for an Energy-Efficient Economy",
+				"orgURL": "http://aceee.org/",
+				"orgSummary": "The American Council for an Energy-Efficient Economy (ACEEE), a nonprofit, 501(c)(3) organization, acts as a catalyst to advance energy efficiency policies, programs, technologies, investments, and behaviors.",
+				"donateURL": "http://aceee.org/about/latham-scholarship"
 			}]
 		},
 		{
