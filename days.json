@@ -1639,8 +1639,8 @@
 			"challenge": "Learn the habitats of pandas, and why they are endangered.",
 			"participants": 0,
 			"category": "Animal",
-			"color": "#71da71",
-			"darkerColor": "#34cb34",
+			"color": "#ffbf80",
+			"darkerColor": "#ffa64d",
 			"orgs": [ {
 				"orgName": "World Wildlife Fund",
 				"orgURL": "http://www.worldwildlife.org/",
@@ -1777,10 +1777,22 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Laughing At My Nightmare",
+				"orgURL": "http://www.laughingatmynightmare.com/",
+				"orgSummary": "Laughing at My Nightmare is nonprofit with a mission to spread a message of positivity equipment grants to those living with muscular dystrophy.",
+				"donateURL": "http://www.laughingatmynightmare.com/donate"
+			},
+			{
+				"orgName": "Global Happiness Organization",
+				"orgURL": "http://www.globalhappiness.com/",
+				"orgSummary": "Global Happiness Organization (GHO) is a scientifically-based, nonprofit organization that aims to promote happiness and reduce suffering worldwide.",
+				"donateURL": "http://www.globalhappiness.com/en/support-us/make-a-donation"
+			},
+			{
+				"orgName": "Association of Applied and Therapeutic Humor",
+				"orgURL": "http://www.aath.org/",
+				"orgSummary": "Our mission is to serve as the community of professionals who study, practice, and promote healthy humor and laughter.",
+				"donateURL": "https://aath.memberclicks.net/index.php?option=com_mc&view=formlogin&form=157284&return=L2luZGV4LnBocD9vcHRpb249Y29tX21jJnZpZXc9bWMmbWNpZD1mb3JtXzE1NzI4ND9zZXJ2SWQ9MTA2MCZvcHRpb249Y29tX21jJnZpZXc9bWMmbWNpZD1mb3JtXzE1NzI4NA=="
 			}]
 		},
 		{
@@ -1796,10 +1808,22 @@
 			"color": "#ffbf80",
 			"darkerColor": "#ffa64d",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "American Bird Conservancy",
+				"orgURL": "https://abcbirds.org/",
+				"orgSummary": "American Bird Conservancy is a not-for-profit dedicated to the conservation of wild birds and their habitats in the Americas. The fundamental role of ABC is to build coalitions of conservation groups, scientists, and members of the public, to tackle key bird priorities using the best resources available. ABC is a leader in Partners In Flight.",
+				"donateURL": "https://secure2.convio.net/abcb/site/Donation2?df_id=1744&1744.donation=form1&_ga=1.3117175.691685008.1489555002"
+			},
+			{
+				"orgName": "Nature Conservancy",
+				"orgURL": "http://www.nature.org/",
+				"orgSummary": "The mission of The Nature Conservancy is to preserve plants, animals and natural communities that represent the diversity of life on Earth by protecting the lands and waters they need to survive.",
+				"donateURL": "https://support.nature.org/site/Donation2?10420.donation=form1&df_id=10420&intc=nature.tnav.button.donate"
+			},
+			{
+				"orgName": "World Wildlife Fund",
+				"orgURL": "https://www.worldwildlife.org/?utm_campaign=301-redirects&utm_source=wwf.org&utm_medium=referral&utm_content=wwf.org",
+				"orgSummary": "World Wildlife Fund (WWF) is dedicated to protecting the world's wildlife and wildlands. The largest privately supported international conservation organization in the world, WWF directs its conservation efforts toward three global goals: protecting endangered spaces, saving endangered species, and addressing global threats.",
+				"donateURL": "https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE1707OQ18299A01409RX&_ga=1.5528634.82155730.1489555397"
 			}]
 		},
 		{
@@ -1815,10 +1839,22 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "National Forest Foundation",
+				"orgURL": "https://www.nationalforests.org/",
+				"orgSummary": "The National Forest Foundation was created in 1993 with a simple mission: bring people together to restore and enhance our National Forests and Grasslands.",
+				"donateURL": "https://www.nationalforests.org/donate/give"
+			},
+			{
+				"orgName": "Programme for the Endorsement of Forest Certification",
+				"orgURL": "https://www.pefc.org/",
+				"orgSummary": "PEFC is the world's largest forest certification system. Our credible standards seek to transform the way forests are managed globally – and locally - to ensure that all of us can enjoy the environmental, social and economic benefits that forests offer.",
+				"donateURL": "https://www.pefc.org/about-pefc/donate"
+			},
+			{
+				"orgName": "Forest Stewardship Council",
+				"orgURL": "https://us.fsc.org/en-us",
+				"orgSummary": "The Forest Stewardship Council sets standards for responsible forest management. A voluntary program, FSC uses the power of the marketplace to protect forests for future generations.",
+				"donateURL": "https://us.fsc.org/en-us/get-involved/donate-now"
 			}]
 		},
 		{
@@ -1834,10 +1870,22 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "The Water Project",
+				"orgURL": "https://thewaterproject.org/?gclid=CMXrtZHQ2dICFU5gfgodLHMEaw",
+				"orgSummary": "The Water Project provides access to clean, safe and reliable water across sub-Saharan Africa.",
+				"donateURL": "https://thewaterproject.org/give-water"
+			},
+			{
+				"orgName": "Water Mission",
+				"orgURL": "https://watermission.org/?gclid=COCbhsjQ2dICFYqifgoditwHQQ",
+				"orgSummary": "Water Mission builds safe water solutions that break through the global water crisis.",
+				"donateURL": "https://secure2.convio.net/wmi/site/Donation2?1400.donation=form1&df_id=1400&mfc_pref=T"
+			},
+			{
+				"orgName": "WaterAid",
+				"orgURL": "http://www.wateraid.org/",
+				"orgSummary": "WaterAid is an international charity that transforms lives by improving access to safe water, hygiene and sanitation.",
+				"donateURL": "https://www.wateraid.org/uk/donate"
 			}]
 		},
 		{
@@ -1853,10 +1901,22 @@
 			"color": "#ffbf80",
 			"darkerColor": "#ffa64d",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "San Francisco SPCA",
+				"orgURL": "https://www.sfspca.org/",
+				"orgSummary": "The San Francisco SPCA is dedicated to saving, protecting, caring, and advocating for animals.",
+				"donateURL": "https://www.sfspca.org/civicrm/contribute/transact?reset=1&id=2"
+			},
+			{
+				"orgName": "National Education for Assistance Dog Services",
+				"orgURL": "http://www.neads.org/",
+				"orgSummary": "NEADS (National Education for Assistance Dog Services, also known as Dogs for Deaf and Disabled Americans), is a 501(c)(3) non-profit organization that was established in 1976 and is based in Princeton, Massachusetts. Our Service Dogs become an extension of their handlers and bring freedom, physical autonomy and relief from social isolation to their human partners who are deaf or have a disability.",
+				"donateURL": "https://www.givedirect.org/donate/?cid=490"
+			},
+			{
+				"orgName": "Canine Companions for Independence",
+				"orgURL": "http://www.cci.org",
+				"orgSummary": "Founded in 1975, Canine Companions for Independence® is a non-profit organization that enhances the lives of people with disabilities by providing highly trained assistance dogs and ongoing support to ensure quality partnerships.",
+				"donateURL": "https://secure.cci.org/site/Donation2?df_id=2081&mfc_pref=T&2081.donation=form1&s_src=HQSITENAV&_ga=1.106252992.254022663.1489620974"
 			}]
 		},
 		{
@@ -1891,10 +1951,16 @@
 			"color": "#71da71",
 			"darkerColor": "#34cb34",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Earth Hour",
+				"orgURL": "https://www.earthhour.org",
+				"orgSummary": "Earth Hour is a charitable organisation based out of Singapore. Our mission is uniting people to protect the planet. We are an open source movement organised by WWF and volunteer organisations worldwide.",
+				"donateURL": "http://www.earthhour.org/donate"
+			},
+			{
+				"orgName": "Greenpeace",
+				"orgURL": "http://www.greenpeace.org/usa/",
+				"orgSummary": "Greenpeace is the leading independent campaigning organization that uses peaceful protest and creative communication to expose global environmental problems and promote solutions that are essential to a green and peaceful future.",
+				"donateURL": "https://secure3.convio.net/gpeace/site/Donation2;jsessionid=00000000.app315a?df_id=3241&3241.donation=form1&s_src=header&NONCE_TOKEN=7764F1E87A4F079F054C164A4274E9CD"
 			}]
 		},
 		{
@@ -1910,10 +1976,16 @@
 			"color": "#ccb3ff",
 			"darkerColor": "#aa80ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Epilepsy Association of Western New York",
+				"orgURL": "https://epilepsywny.org/",
+				"orgSummary": "The Epilepsy Association of Western New York, Inc. (EAWNY) is a nonprofit organization offering professional services to individuals with Epilepsy and/or seizure disorders, their families and significant others.",
+				"donateURL": "https://epilepsywny.org/donate/"
+			},
+			{
+				"orgName": "Epilepsy Foundation",
+				"orgURL": "http://www.epilepsy.com/",
+				"orgSummary": "The Epilepsy Foundation, a national non-profit with nearly 50 local organizations throughout the United States, has led the fight against seizures since 1968. The Foundation works to prevent, control, and cure epilepsy through community services; public education; federal and local advocacy; and supporting research into new treatments and therapies.",
+				"donateURL": "https://epilepsyfoundation.secure.force.com/EpilepsyPublicDonationPage?form=a04i000000AVI44"
 			}]
 		},
 		{
@@ -1948,10 +2020,16 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "American Diabetes Association",
+				"orgURL": "http://www.diabetes.org/",
+				"orgSummary": "The moving force behind the work of the Association is a network of more than one million volunteers, a membership of more than 500,000 people with diabetes, their families and caregivers, a professional society of nearly 14,000 health care professionals, as well as more than 800 staff members.",
+				"donateURL": "https://donations.diabetes.org/site/SPageNavigator/RED2015_General_Online_Donations_Accordion.html?df_id=15020&15020.donation=form1&loc=wtg_nav_b&s_src=dorg&formtype=one-time&set.DonationLevel=64509"
+			},
+			{
+				"orgName": "Internal Diabetes Federation",
+				"orgURL": "http://www.idf.org/",
+				"orgSummary": "The International Diabetes Federation (IDF) is an umbrella organization of over 230 national diabetes associations in 170 countries and territories. It represents the interests of the growing number of people with diabetes and those at risk.",
+				"donateURL": "http://www.idf.org/lifeforachild/donate"
 			}]
 		},
 		{
