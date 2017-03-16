@@ -1932,10 +1932,22 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Stop TB Partnership",
+				"orgURL": "http://www.stoptb.org/",
+				"orgSummary": "The Stop TB Partnership is leading the way to a world without tuberculosis (TB), a disease that is curable but still kills three people every minute.",
+				"donateURL": "https://secure.globalproblems-globalsolutions.org/site/Donation2;jsessionid=AF193EF091DE5F09890A290B19B8A6CF.app245a?df_id=11181&11181.donation=form1"
+			},
+			{
+				"orgName": "The Global Fund",
+				"orgURL": "https://www.finddx.org/",
+				"orgSummary": "FIND is an international non-profit organization that enables the development and delivery of much-needed diagnostic tests for poverty-related diseases, including tuberculosis, malaria, sleeping sickness, hepatitis C, HIV, leishmaniasis, Buruli ulcer and Chagas disease.",
+				"donateURL": "https://www.finddx.org/donate/"
+			},
+			{
+				"orgName": "Treatment Action Group",
+				"orgURL": "http://www.treatmentactiongroup.org/",
+				"orgSummary": "Treatment Action Group (TAG) is an independent, activist and community-based research and policy think tank fighting for better treatment, prevention, a vaccine, and a cure for HIV, tuberculosis, and hepatitis C virus.",
+				"donateURL": "https://donatenow.networkforgood.org/1391983"
 			}]
 		},
 		{
@@ -2001,10 +2013,10 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Friendship Force",
+				"orgURL": "https://friendshipforce.org/",
+				"orgSummary": "Friendship Force is a non-profit cultural organization focused on promoting understanding, cultural education and citizen diplomacy through homestay Journeys and personal friendships. Through these exciting personal encounters, strangers become friends – and we know that by experiencing different views, you can discover common ground.",
+				"donateURL": "https://donatenow.networkforgood.org/friendshipforce"
 			}]
 		},
 		{
@@ -2030,6 +2042,12 @@
 				"orgURL": "http://www.idf.org/",
 				"orgSummary": "The International Diabetes Federation (IDF) is an umbrella organization of over 230 national diabetes associations in 170 countries and territories. It represents the interests of the growing number of people with diabetes and those at risk.",
 				"donateURL": "http://www.idf.org/lifeforachild/donate"
+			},
+			{
+				"orgName": "Diabetes Hands Foundation",
+				"orgURL": "https://diabeteshandsfoundation.org/",
+				"orgSummary": "Diabetes Hands Foundation seeks to understand, connect and energize the millions of people living with diabetes through different programs.",
+				"donateURL": "https://diabeteshandsfoundation.org/donate/"
 			}]
 		},
 		{
@@ -2045,10 +2063,22 @@
 			"color": "#80d4ff",
 			"darkerColor": "#4dc3ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "Save the Manatee Club",
+				"orgURL": "http://www.savethemanatee.org/",
+				"orgSummary": "Save the Manatee Club is an award-winning national nonprofit and membership-based organization whose mission is to protect endangered manatees and their aquatic habitat for future generations.",
+				"donateURL": "https://secure3.convio.net/smc/site/Donation2;jsessionid=00000000.app334b?idb=1276944076&amp;1400.donation=form1&amp;df_id=1400&amp;NONCE_TOKEN=CBE5FBFF6A18736669C4AA5C1FF6F386&amp;idb=0"
+			},
+			{
+				"orgName": "Humane Society of the United States",
+				"orgURL": "http://www.humanesociety.org/",
+				"orgSummary": "The Humane Society of the United States provide hands-on care and services to more than 100,000 animals each year, and we professionalize the field through education and training for local organizations. We are the leading animal advocacy organization, seeking a humane world for people and animals alike.",
+				"donateURL": "https://secure.humanesociety.org/site/Donation2?df_id=23356&23356.donation=form1&s_pDX=1&s_pFreq=m&s_src=web_id93480558|web_topnav_bd_monthly_lform_id66433060"
+			},
+			{
+				"orgName": "World Wildlife Fund",
+				"orgURL": "https://www.worldwildlife.org/",
+				"orgSummary": "World Wildlife Fund (WWF) is dedicated to protecting the world's wildlife and wildlands. The largest privately supported international conservation organization in the world, WWF directs its conservation efforts toward three global goals: protecting endangered spaces, saving endangered species, and addressing global threats.",
+				"donateURL": "https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE1707OQ18299A01409RX&_ga=1.5528634.82155730.1489555397"
 			}]
 		},
 		{
@@ -2064,10 +2094,16 @@
 			"color": "#ffcccc",
 			"darkerColor": "#ffb3b3",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "American Medical Association",
+				"orgURL": "https://www.ama-assn.org/",
+				"orgSummary": "The AMA Foundation is the philanthropic arm of the American Medical Association; a 501(c)(3) dedicated to recognizing outstanding medical leaders and innovative community health initiatives. Thier mission is to bring together physicians and community to improve the nation's health.",
+				"donateURL": "https://secure2.convio.net/ama/site/Donation2;jsessionid=00000000.app202a?idb=0&df_id=1180&mfc_pref=T&1180.donation=form1&NONCE_TOKEN=AFA16B9AC6CB512D47A2C15286DDAD2C"
+			},
+			{
+				"orgName": "Doctors Without Borders",
+				"orgURL": "http://www.doctorswithoutborders.org/",
+				"orgSummary": "We are Doctors Without Borders/Médecins Sans Frontières (MSF). We help people worldwide where the need is greatest, delivering emergency medical aid to people affected by conflict, epidemics, disasters, or exclusion from health care.",
+				"donateURL": "https://donate.doctorswithoutborders.org/onetime.cfm?utm_expid=7773760-9.T4pemk1yTFeOymrJr_YtIQ.0&utm_referrer=http%3A%2F%2Fwww.doctorswithoutborders.org%2F"
 			}]
 		},
 		{
@@ -2083,10 +2119,22 @@
 			"color": "#ccb3ff",
 			"darkerColor": "#aa80ff",
 			"orgs": [ {
-				"orgName": "Charity Navigator",
-				"orgURL": "https://www.charitynavigator.org/",
-				"orgSummary": "A resource to learn about many different charity organizations that are out there.",
-				"donateURL": "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2013"
+				"orgName": "National Center for Transgender Equality",
+				"orgURL": "http://www.transequality.org/",
+				"orgSummary": "The National Center for Transgender Equality is the nation’s leading social justice advocacy organization winning life-saving change for transgender people.",
+				"donateURL": "https://salsa4.salsalabs.com/o/51171/p/salsa/donation/common/public/?donate_page_KEY=8966"
+			},
+			{
+				"orgName": "Transgender Law Center",
+				"orgURL": "https://transgenderlawcenter.org/",
+				"orgSummary": "Transgender Law Center works to change law, policy, and attitudes so that all people can live safely, authentically, and free from discrimination regardless of their gender identity or expression.",
+				"donateURL": "https://transgenderlawcenter.org/donate"
+			},
+			{
+				"orgName": "National LGBTQ Task Force",
+				"orgURL": "http://www.thetaskforce.org/",
+				"orgSummary": "The National LGBTQ Task Force advances full freedom, justice and equality for LGBTQ people.",
+				"donateURL": "https://secure2.convio.net/ngltf/site/Donation2?1842.donation=form1&df_id=1842&_ga=1.226102041.262180644.1489646194"
 			}]
 		}
 	]
