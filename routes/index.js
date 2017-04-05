@@ -12,6 +12,7 @@ var mon = "Mon";
 var date = 1;
 var theme = "Awareness Day";
 var summary = "Let's be aware of a cause.";
+var query = "awareness day";
 var challenge = "Do something nice for today.";
 var participants = 0;
 var category = "Other";
